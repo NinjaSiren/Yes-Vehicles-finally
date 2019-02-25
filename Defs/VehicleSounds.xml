@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>Vehicle_Idle</defName>
+    <sustain>False</sustain>
+    <context>MapOnly</context>
+    <eventNames />
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Electricity/GeothermalPlant/Run/GeothermalPlantRun_Loop1a</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>0</min>
+          <max>0</max>
+        </volumeRange>
+        <pitchRange>
+          <min>.9</min>
+          <max>1</max>
+        </pitchRange>
+        <distRange>
+          <min>0</min>
+          <max>25</max>
+        </distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

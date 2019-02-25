@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Yes, Vehicles, Finally!</name>
+	<author>Mason J. Caboose, NinjaSiren</author>
+	<targetVersion>1.0.2059</targetVersion>
+	<description>
+[V: 3.1]
+A true implementation of vehicles into RimWorld!
+
+First off, a big thank you to Jecrell, without him none of you would have this!
+
+Second thing, thank you to Mason J. Caboose for making the original mod! I wanted vehicles in the game, I ended up continuing this mod!
+
+This mod is a 'simple' implementation of a truck into our lovely rim world, you can load crew, passengers, turrets, and equipment for both crossing the map and for caravanning.
+
+To acquire a vehicle you need to research Machining and Smithing for the Vehicle Table. Here you can construct a box filled with appropriately named pieces.
+After following guides 1-Z on your ikea manual and throwing away the last 5 screws your pawn will have succesfully assembled a working scrap heap!
+
+Just like any partially oiled machine, youll have to fill and power it with Chemfuel! (not included)
+
+Upon assigning a driver, you must instruct the vehicle to draft itself for glorious duty.
+
+==Notes and Help==
+
+-If your goal is caravanning, please make sure to undraft the vehicle, if that doesnt work, force it onto the edge of the map then undraft
+-Save Load Safe (but once you go vehicular, you cant turn back >:D )
+-No one else should show up on your door with any of this stuff
+-You need both a gunner and a driver to fight.
+-Only the infantry turret fits on the Truck.
+-Bugs will be plenty in this mod, but hopefully that'll to break your game!
+</description>
+</ModMetaData>
