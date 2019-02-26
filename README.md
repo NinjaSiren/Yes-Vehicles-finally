@@ -11,4 +11,8 @@ Changelogs:
 v0.1
 - Updating some Verse and Core references from B17/18 to v1.0+ variants, to remove some errors on the log file.
 - Fixed some XML duplicate errors.
-- Fixed the 3 default vehicles. (Truck, APC, and Tank)
+- Fixed the 3 default vehicles. (Truck, APC, and Tank).
+
+v0.3
+- Fixed serious bug Rimworld.ThingDefGenerator_Corpses.CalculateMarketValue (Verse.ThingDef raceDef).
+- Fixed visual bugs.
