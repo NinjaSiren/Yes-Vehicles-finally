@@ -6,7 +6,7 @@
 		<label>tank</label>
 		<race>Tank</race>
 		<combatPower>200</combatPower>
-    <defaultFactionType>PlayerColony</defaultFactionType>
+		<defaultFactionType>PlayerColony</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
 		<lifeStages>
 			<li>
@@ -26,7 +26,7 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>Light_Weps</li>
-      <li>Heavy_Weps</li>
+			<li>Heavy_Weps</li>
 		</weaponTags>
 	</PawnKindDef>
 
@@ -35,7 +35,7 @@
 		<label>truck</label>
 		<race>Truck</race>
 		<combatPower>50</combatPower>
-    <defaultFactionType>PlayerColony</defaultFactionType>
+		<defaultFactionType>PlayerColony</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
 		<lifeStages>
 			<li>
@@ -57,13 +57,13 @@
 			<li>Light_Weps</li>
 		</weaponTags>
 	</PawnKindDef>
-	
+
 	<PawnKindDef>
 		<defName>Vehicle_APC</defName>
 		<label>APC</label>
 		<race>APC</race>
 		<combatPower>200</combatPower>
-    <defaultFactionType>PlayerColony</defaultFactionType>
+		<defaultFactionType>PlayerColony</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
 		<lifeStages>
 			<li>
@@ -83,8 +83,7 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>Light_Weps</li>
-      <li>Heavy_Weps</li>
+			<li>Heavy_Weps</li>
 		</weaponTags>
 	</PawnKindDef>
-	
 </Defs>

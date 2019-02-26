@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <SoundDef>
-    <defName>RailCannon_Fire</defName>
-    <context>MapOnly</context>
-    <eventNames />
-    <maxSimultaneous>1</maxSimultaneous>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/InfernoCannon_Fire</clipFolderPath>
-          </li>
-        </grains>
-        <pitchRange>
-          <min>1.4</min>
-          <max>1.6</max>
-        </pitchRange>
-      </li>
-    </subSounds>
-  </SoundDef>
+	<SoundDef>
+		<defName>RailCannon_Fire</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/InfernoCannon_Fire</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>1.4</min>
+					<max>1.6</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 
-  <SoundDef>
-    <defName>TankCannon_Fire</defName>
-    <context>MapOnly</context>
-    <eventNames />
-    <maxSimultaneous>1</maxSimultaneous>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/ChargeLance/Fire</clipFolderPath>
-          </li>
-        </grains>
-        <pitchRange>
-          <min>0.9082353</min>
-          <max>1.045882</max>
-        </pitchRange>
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
+	<SoundDef>
+		<defName>TankCannon_Fire</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/ChargeLance/Fire</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9082353</min>
+					<max>1.045882</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 
-  <SoundDef>
-    <defName>BurstCannon_Fire</defName>
-    <context>MapOnly</context>
-    <eventNames />
-    <maxSimultaneous>1</maxSimultaneous>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>Weapon/ChargeShotA</clipPath>
-          </li>
-        </grains>
-        <pitchRange>
-          <min>1.4</min>
-          <max>1.6</max>
-        </pitchRange>
-      </li>
-    </subSounds>
-  </SoundDef>
+	<SoundDef>
+		<defName>BurstCannon_Fire</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/ChargeShotA</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>1.4</min>
+					<max>1.6</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 
 </Defs>

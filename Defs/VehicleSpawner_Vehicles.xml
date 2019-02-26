@@ -1,140 +1,140 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <!--================== Bases ==================-->
+	<!--================== Bases ==================-->
 
-    <ThingDef Name="ResourceBase" Abstract="True">
-      <thingClass>ThingWithComps</thingClass>
-      <category>Item</category>
-      <resourceReadoutPriority>Middle</resourceReadoutPriority>
-      <useHitPoints>true</useHitPoints>
-      <selectable>true</selectable>
-      <altitudeLayer>Item</altitudeLayer>
-      <stackLimit>75</stackLimit>
-  		<statBases>
-  			<Beauty>-6</Beauty>
-  		</statBases>
-  		<comps>
-  			<li Class="CompProperties_Forbiddable"/>
-  		</comps>
-  		<alwaysHaulable>true</alwaysHaulable>
-  		<drawGUIOverlay>true</drawGUIOverlay>
-  		<rotatable>false</rotatable>
-  		<pathCost>15</pathCost>
-  	</ThingDef>
-	
-	
-  <!--================== Parts ==================-->
+	<ThingDef Name="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<Beauty>-6</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>Vehicle_TruckParts</defName>
-    <label>truck parts</label>
-    <description>A collection of all the essential parts to build one's own vehicle. This set of parts allows the assembly of a highly useful pickup-truck.</description>
-    <graphicData>
-      <texPath>Box/TruckBox</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.0</drawSize>
-    </graphicData>
-    <size>(1,1)</size>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Metal_Drop</soundDrop>
-    <stackLimit>1</stackLimit>
-    <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MarketValue>1000</MarketValue>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>2</Mass>
-    </statBases>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <comps>
-      <li Class="CompVehicle.CompProperties_VehicleSpawner">
-        <useVerb>Assemble {0}</useVerb>
-        <vehicleToSpawn>Vehicle_Truck</vehicleToSpawn>
-        <assemblyTime>100.0</assemblyTime>
-        <workEffect>ConstructMetal</workEffect>
-      </li>
-    </comps>
-    <drawGUIOverlay>false</drawGUIOverlay>
-    <tradeTags>
-      <li>Exotic</li>
-    </tradeTags>
-  </ThingDef>
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>Vehicle_TankParts</defName>
-    <label>tank parts</label>
-    <description>A collection of all the essential parts to build one's own vehicle. This set of parts allows the assembly of a combat useful tank.</description>
-    <graphicData>
-      <texPath>Box/TankBox</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.0</drawSize>
-    </graphicData>
-    <size>(1,1)</size>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Metal_Drop</soundDrop>
-    <stackLimit>1</stackLimit>
-    <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MarketValue>6000</MarketValue>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>4</Mass>
-    </statBases>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <comps>
-      <li Class="CompVehicle.CompProperties_VehicleSpawner">
-        <useVerb>Assemble {0}</useVerb>
-        <vehicleToSpawn>Vehicle_Tank</vehicleToSpawn>
-        <assemblyTime>2000.0</assemblyTime>
-        <workEffect>ConstructMetal</workEffect>
-      </li>
-    </comps>
-    <drawGUIOverlay>false</drawGUIOverlay>
-    <tradeTags>
-      <li>Exotic</li>
-    </tradeTags>
-  </ThingDef>
-  
-    <ThingDef ParentName="ResourceBase">
-    <defName>Vehicle_APCParts</defName>
-    <label>tank parts</label>
-    <description>A collection of all the essential parts to build one's own vehicle. This set of parts allows the assembly of a combat useful APC.</description>
-    <graphicData>
-      <texPath>Box/APCBox</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.0</drawSize>
-    </graphicData>
-    <size>(1,1)</size>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Metal_Drop</soundDrop>
-    <stackLimit>1</stackLimit>
-    <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MarketValue>6000</MarketValue>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>4</Mass>
-    </statBases>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <comps>
-      <li Class="CompVehicle.CompProperties_VehicleSpawner">
-        <useVerb>Assemble {0}</useVerb>
-        <vehicleToSpawn>Vehicle_APC</vehicleToSpawn>
-        <assemblyTime>2000.0</assemblyTime>
-        <workEffect>ConstructMetal</workEffect>
-      </li>
-    </comps>
-    <drawGUIOverlay>false</drawGUIOverlay>
-    <tradeTags>
-      <li>Exotic</li>
-    </tradeTags>
-  </ThingDef>
-	
+	<!--================== Parts ==================-->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Vehicle_TruckParts</defName>
+		<label>truck parts</label>
+		<description>A collection of all the essential parts to build one's own vehicle. This set of parts allows the assembly of a highly useful pickup-truck.</description>
+		<graphicData>
+			<texPath>Box/TruckBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>2</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompVehicle.CompProperties_VehicleSpawner">
+				<useVerb>Assemble {0}</useVerb>
+				<vehicleToSpawn>Vehicle_Truck</vehicleToSpawn>
+				<assemblyTime>100</assemblyTime>
+				<workEffect>ConstructMetal</workEffect>
+			</li>
+		</comps>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Vehicle_TankParts</defName>
+		<label>tank parts</label>
+		<description>A collection of all the essential parts to build one's own vehicle. This set of parts allows the assembly of a combat useful tank.</description>
+		<graphicData>
+			<texPath>Box/TankBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompVehicle.CompProperties_VehicleSpawner">
+				<useVerb>Assemble {0}</useVerb>
+				<vehicleToSpawn>Vehicle_Tank</vehicleToSpawn>
+				<assemblyTime>500</assemblyTime>
+				<workEffect>ConstructMetal</workEffect>
+			</li>
+		</comps>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Vehicle_APCParts</defName>
+		<label>tank parts</label>
+		<description>A collection of all the essential parts to build one's own vehicle. This set of parts allows the assembly of a combat useful APC.</description>
+		<graphicData>
+			<texPath>Box/APCBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompVehicle.CompProperties_VehicleSpawner">
+				<useVerb>Assemble {0}</useVerb>
+				<vehicleToSpawn>Vehicle_APC</vehicleToSpawn>
+				<assemblyTime>250</assemblyTime>
+				<workEffect>ConstructMetal</workEffect>
+			</li>
+		</comps>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+
 </Defs>
