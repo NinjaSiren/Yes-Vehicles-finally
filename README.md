@@ -16,3 +16,4 @@ v0.1
 v0.3
 - Fixed serious bug Rimworld.ThingDefGenerator_Corpses.CalculateMarketValue (Verse.ThingDef raceDef).
 - Fixed visual bugs.
+- Weapons not operable yet.
