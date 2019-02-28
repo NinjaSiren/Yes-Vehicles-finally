@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Cannon_Shell</defName>
+		<label>Cannon shell</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Cannon_Shell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>74</damageAmountBase>
+			<speed>99</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Dense_Shell</defName>
+		<label>Dense shell</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Dense_Shell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>65</damageAmountBase>
+			<speed>205</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Small_Bullet</defName>
+		<label>Small bullet</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>33</damageAmountBase>
+			<speed>105</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

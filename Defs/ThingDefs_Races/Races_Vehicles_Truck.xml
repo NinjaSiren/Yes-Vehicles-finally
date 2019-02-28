@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Truck-->
+	<ThingDef ParentName="Vehicle">
+		<defName>Truck</defName>
+		<label>truck</label>
+		<description>An all purpose truck used to carry goods over large distances at a much quicker speed</description>
+
+		<statBases>
+			<MarketValue>5000</MarketValue>
+			<MoveSpeed>30</MoveSpeed>
+			<CarryingCapacity>250</CarryingCapacity>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<MeatAmount>0</MeatAmount>		
+		</statBases>
+
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+
+		<race>
+			<body>Truck_Body</body>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>10.0</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>BulletImpactMetal</soundWounded>
+					<soundDeath>Explosion_Bomb</soundDeath>
+					<soundCall>Vehicle_Idle</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>50</min>
+				<max>50</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+		</race>
+
+		<recipes>
+			<li>Vehicle_RepairsTruck</li>
+		</recipes>
+
+		<butcherProducts>
+			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</butcherProducts>
+
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>70.0</fuelConsumptionRate>
+				<fuelCapacity>100.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+
+			<li Class="CompVehicle.CompProperties_Vehicle">
+
+				<!--
+                Vehicle Type determines how movements are calculated.
+                Vehicle Types :
+                Aircraft, AircraftAmphibious, AircraftSpace
+                Amphibious, LandWheeled, LandHover, LandWalker,
+                Sea, SeaSubmarine, SpaceOuter
+                -->
+				<vehicleType>LandWheeled</vehicleType>
+
+				<!--
+                Handler types determine if vehicles require a person to
+                handle various aspects of the vehicle's functions.
+                Handling Types :
+                Incapable, HandlerRequired, NoHandlerRequired
+                -->
+				<movementHandling>HandlerRequired</movementHandling>
+				<weaponHandling>NoHandlerRequired</weaponHandling>
+				<manipulationHandling>Incapable</manipulationHandling>
+
+				<!-- Determines how much a vehicle can carry -->
+				<cargoCapacity>250</cargoCapacity>
+
+				<!-- Unloads all passengers when health percent reaches below this percentage. -->
+				<ejectIfBelowHealthPercent>0.30</ejectIfBelowHealthPercent>
+
+				<!-- If a bullet hits a seat, the passenger is injured by this factor of damage. -->
+				<seatHitDamageFactor>1.75</seatHitDamageFactor>
+
+				<!-- Chance of doubling that damage. -->
+				<seatHitCriticalHitChance>0.03</seatHitCriticalHitChance>
+				<canBeDowned>true</canBeDowned>
+				<canWiggleWhenDowned>false</canWiggleWhenDowned>
+				<soundEntry>Pawn_Mech_Centipede_Wounded</soundEntry>
+				<soundMoving />
+				<soundEject>Pawn_Mech_Centipede_Wounded</soundEject>
+				<labelUndamaged>Undamaged</labelUndamaged>
+				<labelDamaged>Damaged</labelDamaged>
+				<labelInoperable>Inoperable</labelInoperable>
+				<labelBroken>Broken</labelBroken>
+
+				<roles>
+					<li>
+						<label>driver</label>
+						<labelPlural>drivers</labelPlural>
+						<handlingTypes>Movement</handlingTypes>
+						<slots>1</slots>
+						<slotsToOperate>1</slotsToOperate>
+						<!--slotTag>DriverSeat</slotTag-->
+					</li>
+					<li>
+						<label>gunner</label>
+						<labelPlural>gunner</labelPlural>
+						<handlingTypes>Weapons</handlingTypes>
+						<slots>1</slots>
+						<!--slotTag>PassengerSeat</slotTag-->
+					</li>
+					<li>
+						<label>passenger</label>
+						<labelPlural>passengers</labelPlural>
+						<handlingTypes>Weapons</handlingTypes>
+						<slots>4</slots>
+						<!--slotTag>PassengerSeat</slotTag-->
+					</li>
+				</roles>
+			</li>
+
+			<!--Keeping this here for future turning wheel animation>
+ 
+	        <li Class="CompLumbering.CompProperties_Lumbering">
+	            <cycledGraphic>
+			    <texPath>Imp/Walkers/ATSTCycle/ATST</texPath>
+			    <graphicClass>Graphic_Multi</graphicClass>
+			    <drawSize>4.3</drawSize>
+			    <shadowData>
+				    <volume>(0.4, 0.8, 0.4)</volume>
+			    </shadowData>
+		        </cycledGraphic>
+		        <sound>PJ_ATST_Step</sound>
+                <secondsPerStep>1.15</secondsPerStep>
+		        <secondsBetweenSteps>0.5</secondsBetweenSteps>
+            </li-->
+		</comps>
+	</ThingDef>
+</Defs>

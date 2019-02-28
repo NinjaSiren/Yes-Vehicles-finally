@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BenchBase" ParentName="BuildingBase" Abstract="True">
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <canOverlapZones>false</canOverlapZones>
+		<building>
+			<workSpeedPenaltyOutdoors>true</workSpeedPenaltyOutdoors>
+			<workSpeedPenaltyTemperature>true</workSpeedPenaltyTemperature>
+		</building>
+		<comps>
+			<li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+		</placeWorkers>
+  </ThingDef>
+  
+</Defs>

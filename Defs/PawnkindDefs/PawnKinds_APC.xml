@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef>
+		<defName>Vehicle_APC</defName>
+		<label>APC</label>
+		<race>APC</race>
+		<combatPower>200</combatPower>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Vehicles/APC/APC</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>6,6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>	
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>Light_Weps</li>
+			<li>Heavy_Weps</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>

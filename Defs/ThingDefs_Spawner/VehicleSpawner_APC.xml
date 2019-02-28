@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Vehicle_APCParts</defName>
+		<label>apc parts</label>
+		<description>A collection of all the essential parts to build one's own vehicle. This set of parts allows the assembly of a combat useful APC.</description>
+		<graphicData>
+			<texPath>Box/APCBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompVehicle.CompProperties_VehicleSpawner">
+				<useVerb>Assemble {0}</useVerb>
+				<vehicleToSpawn>Vehicle_APC</vehicleToSpawn>
+				<assemblyTime>250</assemblyTime>
+				<workEffect>ConstructMetal</workEffect>
+			</li>
+		</comps>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

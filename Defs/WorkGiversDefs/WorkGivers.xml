@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>DoBillsVehicleTable</defName>
+		<label>do bills at vehicle table</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>25</priorityInType>
+		<fixedBillGiverDefs>
+			<li>VehicleTable</li>
+		</fixedBillGiverDefs>
+		<verb>work</verb>
+		<gerund>working at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>
