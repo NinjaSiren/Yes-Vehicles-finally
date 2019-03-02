@@ -38,6 +38,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<recipes>
+		    <li>MakeVehicleATV</li>
 			<li>MakeVehicleTruck</li>
 			<li>MakeVehicleAPC</li>
 			<li>MakeVehicleTank</li>

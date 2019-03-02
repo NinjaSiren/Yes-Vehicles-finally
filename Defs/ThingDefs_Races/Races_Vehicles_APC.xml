@@ -10,7 +10,7 @@
 		<statBases>
 			<MarketValue>6250</MarketValue>
 			<MoveSpeed>18</MoveSpeed>
-			<CarryingCapacity>500</CarryingCapacity>
+			<CarryingCapacity>250</CarryingCapacity>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
@@ -96,11 +96,11 @@
                 Incapable, HandlerRequired, NoHandlerRequired
                 -->
 				<movementHandling>HandlerRequired</movementHandling>
-				<weaponHandling>NoHandlerRequired</weaponHandling>
-				<manipulationHandling>Incapable</manipulationHandling>
+				<weaponHandling>HandlerRequired</weaponHandling>
+				<manipulationHandling>NoHandlerRequired</manipulationHandling>
 
 				<!-- Determines how much a vehicle can carry -->
-				<cargoCapacity>500</cargoCapacity>
+				<cargoCapacity>250</cargoCapacity>
 
 				<!-- Unloads all passengers when health percent reaches below this percentage. -->
 				<ejectIfBelowHealthPercent>0.20</ejectIfBelowHealthPercent>
@@ -126,21 +126,21 @@
 						<labelPlural>drivers</labelPlural>
 						<handlingTypes>Movement</handlingTypes>
 						<slotsToOperate>1</slotsToOperate>
-						<!--slotTag>DriverSeat</slotTag-->
+						<slotTag>DriverSeat</slotTag>
 					</li>
 					<li>
 						<label>gunner</label>
 						<labelPlural>gunners</labelPlural>
 						<handlingTypes>Weapons</handlingTypes>
 						<slots>1</slots>
-						<!--slotTag>GunnerSeat</slotTag-->
+						<slotTag>GunnerSeat</slotTag>
 					</li>
 					<li>
 						<label>passenger</label>
 						<labelPlural>passengers</labelPlural>
 						<handlingTypes>Weapons</handlingTypes>
-						<slots>8</slots>
-						<!--slotTag>PassengerSeat</slotTag-->
+						<slots>4</slots>
+						<slotTag>PassengerSeat</slotTag>
 					</li>
 				</roles>
 			</li>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- Tank-->
+	<!-- Truck-->
 	<ThingDef ParentName="Vehicle">
-		<defName>Tank</defName>
-		<label>tank</label>
-		<description>A heavily armored machine designed for the art of modern war</description>
+		<defName>ATV</defName>
+		<label>atv</label>
+		<description>An all-terrain vehicle that is capable of driving over large distances at a much quicker speed</description>
 
 		<statBases>
-			<MarketValue>7500</MarketValue>
-			<MoveSpeed>6</MoveSpeed>
-			<CarryingCapacity>100</CarryingCapacity>
-			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
-			<MeatAmount>0</MeatAmount>
+			<MarketValue>5000</MarketValue>
+			<MoveSpeed>45</MoveSpeed>
+			<CarryingCapacity>500</CarryingCapacity>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<MeatAmount>0</MeatAmount>		
 		</statBases>
 
 		<tools>
@@ -30,14 +30,14 @@
 		</tools>
 
 		<race>
-			<body>Tank_Hull</body>
+			<body>ATV_Body</body>
 			<baseBodySize>1.0</baseBodySize>
 			<baseHealthScale>10.0</baseHealthScale>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
 					<minAge>0</minAge>
-					<soundWounded>ArtilleryHitThickRoof</soundWounded>
+					<soundWounded>BulletImpactMetal</soundWounded>
 					<soundDeath>Explosion_Bomb</soundDeath>
 					<soundCall>Vehicle_Idle</soundCall>
 				</li>
@@ -52,21 +52,20 @@
 		</race>
 
 		<recipes>
-			<li>Vehicle_RepairsTank</li>
+			<li>Vehicle_RepairsTruck</li>
 		</recipes>
 
 		<butcherProducts>
-			<Steel>200</Steel>
-			<Plasteel>20</Plasteel>
-			<ComponentIndustrial>20</ComponentIndustrial>
+			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</butcherProducts>
 
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>100.0</fuelConsumptionRate>
-				<fuelCapacity>200.0</fuelCapacity>
+				<fuelConsumptionRate>70.0</fuelConsumptionRate>
+				<fuelCapacity>100.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>Chemfuel</li>
@@ -97,16 +96,16 @@
 				<manipulationHandling>NoHandlerRequired</manipulationHandling>
 
 				<!-- Determines how much a vehicle can carry -->
-				<cargoCapacity>100</cargoCapacity>
+				<cargoCapacity>500</cargoCapacity>
 
 				<!-- Unloads all passengers when health percent reaches below this percentage. -->
-				<ejectIfBelowHealthPercent>0.20</ejectIfBelowHealthPercent>
+				<ejectIfBelowHealthPercent>0.30</ejectIfBelowHealthPercent>
 
 				<!-- If a bullet hits a seat, the passenger is injured by this factor of damage. -->
 				<seatHitDamageFactor>1.75</seatHitDamageFactor>
 
 				<!-- Chance of doubling that damage. -->
-				<seatHitCriticalHitChance>0.04</seatHitCriticalHitChance>
+				<seatHitCriticalHitChance>0.03</seatHitCriticalHitChance>
 				<canBeDowned>true</canBeDowned>
 				<canWiggleWhenDowned>false</canWiggleWhenDowned>
 				<soundEntry>Pawn_Mech_Centipede_Wounded</soundEntry>
@@ -126,26 +125,19 @@
 						<slotsToOperate>1</slotsToOperate>
 						<slotTag>DriverSeat</slotTag>
 					</li>
-					<li>
-						<label>gunner</label>
-						<labelPlural>gunners</labelPlural>
-						<handlingTypes>Weapons</handlingTypes>
-						<slots>1</slots>
-						<slotTag>GunnerSeat</slotTag>
-					</li>
 				</roles>
 			</li>
 
 			<!--Keeping this here for future turning wheel animation>
-
+ 
 	        <li Class="CompLumbering.CompProperties_Lumbering">
 	            <cycledGraphic>
-			        <texPath>Imp/Walkers/ATSTCycle/ATST</texPath>
-			        <graphicClass>Graphic_Multi</graphicClass>
-			        <drawSize>4.3</drawSize>
-			        <shadowData>
-			        	<volume>(0.4, 0.8, 0.4)</volume>
-			        </shadowData>
+			    <texPath>Imp/Walkers/ATSTCycle/ATST</texPath>
+			    <graphicClass>Graphic_Multi</graphicClass>
+			    <drawSize>4.3</drawSize>
+			    <shadowData>
+				    <volume>(0.4, 0.8, 0.4)</volume>
+			    </shadowData>
 		        </cycledGraphic>
 		        <sound>PJ_ATST_Step</sound>
                 <secondsPerStep>1.15</secondsPerStep>
