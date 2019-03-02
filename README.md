@@ -13,7 +13,10 @@ v0.1
 - Fixed some XML duplicate errors.
 - Fixed the 3 default vehicles. (Truck, APC, and Tank).
 
-v0.3
+v0.3a
 - Fixed serious bug Rimworld.ThingDefGenerator_Corpses.CalculateMarketValue (Verse.ThingDef raceDef).
 - Fixed visual bugs.
 - Weapons not operable yet while in vehicles.
+
+v0.3b
+- Added new vehicle (ATV)
