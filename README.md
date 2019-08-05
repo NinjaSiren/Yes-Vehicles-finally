@@ -2,10 +2,17 @@
 
 I was searching for a mod of vehicles and it ended up me finding this old mod from B17 to B18. I ended up forking it from github and continuing the work of Mason J. Caboose's Yes, Vehicles mod.
 
-The mod requires the latest JecTools to run as some dependencies are requiring Jecrell's tools.
-link to JecTools: https://github.com/jecrell/JecsTools/releases/
+Thank You Jecrell for making JecTools, Neronix for forking the Vehicle code from JecsTools (-O21-Vehicle Framework), and Mason J. Caboose for making the original WIP 
+mod!
 
-Currently, Yes Vehicles Finally mod is at WIP as there is a serious bug that disables the bug because of a System.NullReferenceException caused at Rimworld.ThingDefGenerator_Corpses.CalculateMarketValue.
+The mod requires the latest JecsTools by Jecrell:
+https://github.com/jecrell/JecsTools/releases/
+
+and -O21-Vehicle Framework by neronix17:
+https://github.com/neronix17/-O21-Vehicle-Framework
+
+Currently, Yes Vehicles Finally mod is at WIP, but will be always keep you posted if any
+new things arise!
 
 Changelogs:
 v0.1
