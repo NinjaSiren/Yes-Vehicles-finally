@@ -21,8 +21,8 @@
 		<bleedRate>0</bleedRate>
 		<alive>false</alive>
 		<tags>
-			<!--li>GunnerSeat</li>
-			<li>PassengerSeat</li-->
+			<!--li>GunnerSeat</li-->
+			<!--li>PassengerSeat</li-->
 			<li>SightSource</li>
 			<li>HearingSource</li>
 			<li>ConsciousnessSource</li>

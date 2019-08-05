@@ -24,7 +24,7 @@
 			<li>Items</li>
 		</thingCategories>
 		<comps>
-			<li Class="CompVehicle.CompProperties_VehicleSpawner">
+			<li Class="O21VehicleFramework.CompProperties_VehicleSpawner">
 				<useVerb>Assemble {0}</useVerb>
 				<vehicleToSpawn>Vehicle_APC</vehicleToSpawn>
 				<assemblyTime>250</assemblyTime>

@@ -21,9 +21,9 @@
 		<bleedRate>0</bleedRate>		
 		<alive>false</alive>
 		<tags>
-			<!--li>DriverSeat</li>
-			<li>PassengerSeat</li>
-			<li>HearingSource</li-->
+			<!--li>DriverSeat</li-->
+			<!--li>PassengerSeat</li-->
+			<li>HearingSource</li>
 			<li>ConsciousnessSource</li>
 			<li>ManipulationLimbCore</li>
 		</tags>

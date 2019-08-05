@@ -5,7 +5,7 @@
 		<defName>Vehicle_RepairsTruck</defName>
 		<label>repair truck (50 steel, 1 component)</label>
 		<description>Repairs the truck.</description>
-		<workerClass>CompVehicle.Recipe_RepairVehicle</workerClass>
+		<workerClass>O21VehicleFramework.Recipe_RepairVehicle</workerClass>
 		<jobString>Repairing truck.</jobString>
 		<workAmount>2000</workAmount>
 		<ingredients>
@@ -39,7 +39,7 @@
 		<defName>Vehicle_RepairsTank</defName>
 		<label>repair tank (100 steel, 10 plasteel, 3 components)</label>
 		<description>Repairs the tank.</description>
-		<workerClass>CompVehicle.Recipe_RepairVehicle</workerClass>
+		<workerClass>O21VehicleFramework.Recipe_RepairVehicle</workerClass>
 		<jobString>Repairing tank.</jobString>
 		<workAmount>2000</workAmount>
 		<ingredients>
@@ -82,7 +82,7 @@
 		<defName>Vehicle_RepairsAPC</defName>
 		<label>repair tank (80 steel, 10 plasteel, 3 components)</label>
 		<description>Repairs the APC.</description>
-		<workerClass>CompVehicle.Recipe_RepairVehicle</workerClass>
+		<workerClass>O21VehicleFramework.Recipe_RepairVehicle</workerClass>
 		<jobString>Repairing APC.</jobString>
 		<workAmount>2000</workAmount>
 		<ingredients>

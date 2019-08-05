@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- APC-->
-	<ThingDef ParentName="Vehicle">
+	<ThingDef ParentName="O21BaseVehicle">
 		<defName>APC</defName>
 		<label>apc</label>
 		<description>A heavily armored machine designed for the art of modern war and carrying goods around.</description>
@@ -55,7 +55,7 @@
 		</race>
 
 		<recipes>
-			<li>Vehicle_RepairsAPC</li>
+			<!--li>Vehicle_RepairsAPC</li-->
 		</recipes>
 
 		<butcherProducts>
@@ -78,7 +78,7 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 			</li>
 
-			<li Class="CompVehicle.CompProperties_Vehicle">
+			<li Class="O21VehicleFramework.CompProperties_Vehicle">
 
 				<!--
                 Vehicle Type determines how movements are calculated.
@@ -86,7 +86,7 @@
                 Aircraft, AircraftAmphibious, AircraftSpace,
                 Amphibious, LandWheeled, LandHover, LandWalker,
                 Sea, SeaSubmarine, SpaceOuter
-                 -->
+                -->
 				<vehicleType>LandWheeled</vehicleType>
 
 				<!--
@@ -112,9 +112,9 @@
 				<seatHitCriticalHitChance>0.04</seatHitCriticalHitChance>
 				<canBeDowned>true</canBeDowned>
 				<canWiggleWhenDowned>false</canWiggleWhenDowned>
-				<soundEntry>Pawn_Mech_Centipede_Wounded</soundEntry>
-				<soundMoving />
-				<soundEject>Pawn_Mech_Centipede_Wounded</soundEject>
+				<soundEntry>Vehicle_Close</soundEntry>
+				<soundMoving>APC_Moving</soundMoving>
+				<soundEject>Vehicle_Open</soundEject>
 				<labelUndamaged>Undamaged</labelUndamaged>
 				<labelDamaged>Damaged</labelDamaged>
 				<labelInoperable>Inoperable</labelInoperable>
@@ -144,7 +144,6 @@
 					</li>
 				</roles>
 			</li>
-
 			<!--Keeping this here for future turning wheel animation>
 
 	        <li Class="CompLumbering.CompProperties_Lumbering">
@@ -161,5 +160,12 @@
 		        <secondsBetweenSteps>0.5</secondsBetweenSteps>
             </li-->
 		</comps>
+        <modExtensions>
+			<li Class="O21VehicleFramework.DefModExt_RenderWeaponExt">
+				<alwaysRender>True</alwaysRender>
+				<renderOverVehicle>True</renderOverVehicle>
+				<renderPosOffset>(0.0, -0.8)</renderPosOffset>
+			</li>
+		</modExtensions>		
 	</ThingDef>
 </Defs>
