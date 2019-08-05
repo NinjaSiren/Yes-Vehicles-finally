@@ -9,9 +9,10 @@ Currently, Yes Vehicles Finally mod is at WIP as there is a serious bug that dis
 
 Changelogs:
 v0.1
-- Updating some Verse and Core references from B17/18 to v1.0+ variants, to remove some errors on the log file.
+- Updating some Verse and Core references from B17/18 to v1.0+ variants, to remove 
+  some errors on the log file. Though, there are still possible incompatibility issues.
 - Fixed some XML duplicate errors.
-- Fixed the 3 default vehicles. (Truck, APC, and Tank).
+- Fixed the 3 default vehicles. (Truck, APC, and Tank)
 
 v0.3a
 - Fixed serious bug Rimworld.ThingDefGenerator_Corpses.CalculateMarketValue (Verse.ThingDef raceDef).
@@ -20,3 +21,8 @@ v0.3a
 
 v0.3b
 - Added new vehicle (ATV)
+
+v0.6
+- Transferred vehicle code from JecsTools to -O21-Vehicle Framework by neronix17
+- Working as intended, including weapons. YEAH!!!!
+- Some random non-critical bugs may occur, and some visual bugs.
