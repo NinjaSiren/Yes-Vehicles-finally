@@ -33,3 +33,4 @@ v0.6
 - Transferred vehicle code from JecsTools to -O21-Vehicle Framework by neronix17
 - Working as intended, including weapons. YEAH!!!!
 - Some random non-critical bugs may occur, and some visual bugs.
+- ATV graphics changes.
