@@ -34,3 +34,11 @@ v0.6
 - Working as intended, including weapons. YEAH!!!!
 - Some random non-critical bugs may occur, and some visual bugs.
 - ATV graphics changes.
+
+v0.7
+- Changed Tank and APC visuals.
+- Added new weapon: Machine Gun.
+- Added Combat Extended compatibility!
+- Added ATV and Truck weapon placement. (Buggy)
+- Changed some values of the weapons.
+- Added build time for weapons.
