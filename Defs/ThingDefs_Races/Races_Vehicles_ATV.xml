@@ -96,7 +96,7 @@
 				<manipulationHandling>NoHandlerRequired</manipulationHandling>
 
 				<!-- Determines how much a vehicle can carry -->
-				<cargoCapacity>500</cargoCapacity>
+				<cargoCapacity>150</cargoCapacity>
 
 				<!-- Unloads all passengers when health percent reaches below this percentage. -->
 				<ejectIfBelowHealthPercent>0.30</ejectIfBelowHealthPercent>
@@ -124,6 +124,14 @@
 						<slots>1</slots>
 						<slotsToOperate>1</slotsToOperate>
 						<slotTag>DriverSeat</slotTag>
+					</li>
+					<li>
+						<label>passenger</label>
+						<labelPlural>passengers</labelPlural>
+						<handlingTypes>Weapons</handlingTypes>
+						<slots>1</slots>
+						<slotsToOperate>1</slotsToOperate>
+						<slotTag>PassengerSeat</slotTag>
 					</li>
 				</roles>
 			</li>

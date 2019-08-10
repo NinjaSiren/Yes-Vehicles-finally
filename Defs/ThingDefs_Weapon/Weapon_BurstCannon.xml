@@ -16,8 +16,6 @@
 		<comps>
 			<li Class="CompInstalledPart.CompProperties_InstalledPart">
 				<allowedToInstallOn>
-					<li>Truck</li>
-					<li>Tank</li>
 					<li>APC</li>
 				</allowedToInstallOn>
 				<installedWeaponGraphic>
@@ -45,18 +43,24 @@
 		</graphicData>
 		<soundInteract>InteractPistol</soundInteract>
 		<statBases>
+            <WorkToMake>6000</WorkToMake>
 			<Mass>6.85</Mass>
 			<MarketValue>3200</MarketValue>
 			<AccuracyTouch>0.90</AccuracyTouch>
-			<AccuracyShort>0.80</AccuracyShort>
-			<AccuracyMedium>0.71</AccuracyMedium>
-			<AccuracyLong>0.62</AccuracyLong>
+			<AccuracyShort>0.73</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.67</AccuracyLong>
 			<RangedWeapon_Cooldown>3.32</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>100</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

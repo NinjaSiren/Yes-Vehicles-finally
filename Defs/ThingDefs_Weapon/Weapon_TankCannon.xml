@@ -17,7 +17,6 @@
 			<li Class="CompInstalledPart.CompProperties_InstalledPart">
 				<allowedToInstallOn>
 					<li>Tank</li>
-					<li>APC</li>
 				</allowedToInstallOn>
 				<installedWeaponGraphic>
 					<texPath>Weps/Turrets/Tank_Cannon</texPath>
@@ -47,12 +46,13 @@
 		</graphicData>
 		<soundInteract>InteractPistol</soundInteract>
 		<statBases>
-			<Mass>6.85</Mass>
+            <WorkToMake>8000</WorkToMake>
+			<Mass>7.85</Mass>
 			<MarketValue>3200</MarketValue>
-			<AccuracyTouch>0.94</AccuracyTouch>
-			<AccuracyShort>0.84</AccuracyShort>
-			<AccuracyMedium>0.78</AccuracyMedium>
-			<AccuracyLong>0.66</AccuracyLong>
+			<AccuracyTouch>0.92</AccuracyTouch>
+			<AccuracyShort>0.67</AccuracyShort>
+			<AccuracyMedium>0.77</AccuracyMedium>
+			<AccuracyLong>0.87</AccuracyLong>
 			<RangedWeapon_Cooldown>3.32</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -60,6 +60,11 @@
 			<Plasteel>40</Plasteel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

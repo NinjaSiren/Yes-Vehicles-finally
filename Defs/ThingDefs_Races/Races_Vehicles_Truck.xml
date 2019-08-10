@@ -126,17 +126,10 @@
 						<slotTag>DriverSeat</slotTag>
 					</li>
 					<li>
-						<label>gunner</label>
-						<labelPlural>gunner</labelPlural>
-						<handlingTypes>Weapons</handlingTypes>
-						<slots>1</slots>
-						<slotTag>GunnerSeat</slotTag>
-					</li>
-					<li>
 						<label>passenger</label>
 						<labelPlural>passengers</labelPlural>
 						<handlingTypes>Weapons</handlingTypes>
-						<slots>8</slots>
+						<slots>10</slots>
 						<slotTag>PassengerSeat</slotTag>
 					</li>
 				</roles>

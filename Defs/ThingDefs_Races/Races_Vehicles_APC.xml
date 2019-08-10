@@ -164,7 +164,7 @@
 			<li Class="O21VehicleFramework.DefModExt_RenderWeaponExt">
 				<alwaysRender>True</alwaysRender>
 				<renderOverVehicle>True</renderOverVehicle>
-				<renderPosOffset>(0.0, -0.8)</renderPosOffset>
+				<renderPosOffset>(0.0, -0.75)</renderPosOffset>
 			</li>
 		</modExtensions>		
 	</ThingDef>

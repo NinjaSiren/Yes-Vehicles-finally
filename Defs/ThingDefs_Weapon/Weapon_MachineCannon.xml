@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Specific gun bases, important to alocate graphics -->
-    <ThingDef Name="Rail_CannonBase" ParentName="O21Vehicle_GunBase" Abstract="True">
+	<ThingDef Name="Machine_CannonBase" ParentName="O21Vehicle_GunBase" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -16,10 +16,11 @@
 		<comps>
 			<li Class="CompInstalledPart.CompProperties_InstalledPart">
 				<allowedToInstallOn>
-					<li>Tank</li>
+				    <li>Tank</li>
+					<li>APC</li>
 				</allowedToInstallOn>
 				<installedWeaponGraphic>
-					<texPath>Weps/Turrets/Rail_Cannon</texPath>
+					<texPath>Weps/Turrets/Infantry_Turret</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>6</drawSize>
 					<shaderType>TransparentPostLight</shaderType>
@@ -28,57 +29,53 @@
 				<workToUninstall>500</workToUninstall>
 				<workEffect>Repair</workEffect>
 			</li>
-			<li>
-				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-			</li>
 		</comps>
 	</ThingDef>
 	
 	<!-- actual Gun defs -->
-		<ThingDef ParentName="Rail_CannonBase">
-		<defName>Rail_Cannon</defName>
-		<label>Rail cannon</label>
-		<description>A pin point cannon capable of delivering a dense round down the battlefield quickly.</description>
+	<ThingDef ParentName="Machine_CannonBase">
+		<defName>Machine_Cannon</defName>
+		<label>Machine cannon</label>
+		<description>An ultra rapid fire cannon for infantry and animal attacks.</description>
 		<graphicData>
-			<texPath>Box/Rail_Cannon</texPath>
+			<texPath>Box/Burst_Cannon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
 		</graphicData>
 		<soundInteract>InteractPistol</soundInteract>
 		<statBases>
-            <WorkToMake>10000</WorkToMake>
-			<Mass>8.85</Mass>
-			<MarketValue>5200</MarketValue>
+            <WorkToMake>4000</WorkToMake>
+			<Mass>5.65</Mass>
+			<MarketValue>3200</MarketValue>
 			<AccuracyTouch>0.97</AccuracyTouch>
-			<AccuracyShort>0.57</AccuracyShort>
-			<AccuracyMedium>0.77</AccuracyMedium>
-			<AccuracyLong>0.97</AccuracyLong>
-			<RangedWeapon_Cooldown>3.55</RangedWeapon_Cooldown>
+			<AccuracyShort>0.97</AccuracyShort>
+			<AccuracyMedium>0.67</AccuracyMedium>
+			<AccuracyLong>0.37</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>150</Steel>
-			<Plasteel>80</Plasteel>
-			<ComponentIndustrial>15</ComponentIndustrial>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>9</Crafting>
+                <Crafting>3</Crafting>
             </skillRequirements>
         </recipeMaker>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Dense_Shell</defaultProjectile>
-				<warmupTime>6.53</warmupTime>
-				<range>60</range>
-				<soundCast>RailCannon_Fire</soundCast>
+				<defaultProjectile>Small_Bullet</defaultProjectile>				
+				<warmupTime>1.4</warmupTime>
+				<range>30</range>
+				<soundCast>BurstCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>42</muzzleFlashScale>
+				<muzzleFlashScale>20</muzzleFlashScale>
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>Heavy_Weps</li>
+			<li>Light_Weps</li>
 		</weaponTags>
 	</ThingDef>
 </Defs>
