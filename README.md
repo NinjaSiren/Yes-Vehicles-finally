@@ -42,3 +42,8 @@ v0.7
 - Added ATV and Truck weapon placement. (Buggy)
 - Changed some values of the weapons.
 - Added build time for weapons.
+
+v0.7b
+
+- Updated Combat Extended Patch (Uses CE projectiles now).
+- Modified some weapon capabilities.
