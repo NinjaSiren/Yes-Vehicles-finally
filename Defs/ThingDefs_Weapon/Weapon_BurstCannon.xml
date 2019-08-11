@@ -13,6 +13,7 @@
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
 		</recipeMaker>
+        <techLevel>Industrial</techLevel>
 		<comps>
 			<li Class="CompInstalledPart.CompProperties_InstalledPart">
 				<allowedToInstallOn>
@@ -77,6 +78,7 @@
 		</verbs>
 		<weaponTags>
 			<li>Light_Weps</li>
+            <li>GunHeavy</li>
 		</weaponTags>
 	</ThingDef>
 </Defs>

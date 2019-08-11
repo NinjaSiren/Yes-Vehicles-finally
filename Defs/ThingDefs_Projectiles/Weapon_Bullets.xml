@@ -12,8 +12,8 @@
 		<projectile>
 			<flyOverhead>False</flyOverhead>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>74</damageAmountBase>
-			<speed>99</speed>
+			<damageAmountBase>250</damageAmountBase>
+			<speed>250</speed>
 		</projectile>
 	</ThingDef>
 
@@ -28,8 +28,8 @@
 		<projectile>
 			<flyOverhead>False</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>65</damageAmountBase>
-			<speed>205</speed>
+			<damageAmountBase>200</damageAmountBase>
+			<speed>350</speed>
 		</projectile>
 	</ThingDef>
 
@@ -44,8 +44,8 @@
 		<projectile>
 			<flyOverhead>False</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>33</damageAmountBase>
-			<speed>105</speed>
+			<damageAmountBase>150</damageAmountBase>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 </Defs>
