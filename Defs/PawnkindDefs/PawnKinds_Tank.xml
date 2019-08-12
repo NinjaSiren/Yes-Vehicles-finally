@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<PawnKindDef>
+    <PawnKindDef>
 		<defName>Vehicle_Tank</defName>
 		<label>tank</label>
 		<race>Tank</race>
 		<combatPower>400</combatPower>
-		<defaultFactionType>PlayerColony</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
 		<lifeStages>
 			<li>
@@ -21,12 +20,13 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>
-			<min>0</min>
-			<max>0</max>
+			<min>2400</min>
+			<max>6000</max>
 		</weaponMoney>
 		<weaponTags>
 			<li>Light_Weps</li>
 			<li>Heavy_Weps</li>
 		</weaponTags>
+		<defaultFactionType>PlayerColony</defaultFactionType>
 	</PawnKindDef>
 </Defs>

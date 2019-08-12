@@ -80,7 +80,6 @@
 		</verbs>
 		<weaponTags>
 			<li>Heavy_Weps</li>
-            <li>GunHeavy</li>
 		</weaponTags>
 	</ThingDef>
 </Defs>

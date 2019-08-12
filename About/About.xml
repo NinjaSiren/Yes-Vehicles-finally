@@ -2,11 +2,13 @@
 
 <ModMetaData>
 	
-<name>Yes, Vehicles, Finally! [WIP]</name>
+<name>Yes, Vehicles, Finally! [v0.7c]</name>
 	
 <author>Mason J. Caboose, NinjaSiren</author>
 	
-<targetVersion>1.0.2059</targetVersion>
+<supportedVersions>
+	<li>1.0</li>
+</supportedVersions>
 	
 <description>
 [V: 1.0]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li/options</xpath>
+		<value>
+		    <Vehicle_Tank>4</Vehicle_Tank>
+			<Vehicle_APC>2</Vehicle_APC>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/options</xpath>
+		<value>
+		    <Vehicle_Tank>2</Vehicle_Tank>
+			<Vehicle_APC>4</Vehicle_APC>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/guards</xpath>
+		<value>
+			<Vehicle_APC>2</Vehicle_APC>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/carriers</xpath>
+		<value>
+		    <Vehicle_Truck>1</Vehicle_Truck>
+		</value>
+	</Operation>
+</Patch>

@@ -47,7 +47,7 @@
 		<statBases>
             <WorkToMake>2000</WorkToMake>
 			<Mass>2.65</Mass>
-			<MarketValue>3200</MarketValue>
+			<MarketValue>2400</MarketValue>
 			<AccuracyTouch>0.97</AccuracyTouch>
 			<AccuracyShort>0.90</AccuracyShort>
 			<AccuracyMedium>0.30</AccuracyMedium>
@@ -77,7 +77,6 @@
 		</verbs>
 		<weaponTags>
 			<li>Light_Weps</li>
-            <li>GunHeavy</li>
 		</weaponTags>
 	</ThingDef>
 </Defs>
