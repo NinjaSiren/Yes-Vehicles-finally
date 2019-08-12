@@ -44,6 +44,9 @@ v0.7
 - Added build time for weapons.
 
 v0.7b
-
 - Updated Combat Extended Patch (Uses CE projectiles now).
 - Modified some weapon capabilities.
+
+v0.7c
+- Additional patch changes for Combat Extended.
+- Added AI enemy vehicles in raids, and defensive + cargo vehicles in AI caravans.
