@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <!--ID>32418f60-269c-4a70-ae6e-a51d7a34cb2f</ID-->
+  <ModName>Yes, Vehicles, Finally!</ModName>
+  <Version>v0.7d</Version>
+  <SaveBreaking>True</SaveBreaking>
+  <Host name="Github">
+    <Owner>NinjaSiren</Owner>
+    <Project>Yes-vehicles-finally</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncReleases</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>

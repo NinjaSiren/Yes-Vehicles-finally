@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <PawnKindDef>
-		<defName>Vehicle_APC</defName>
-		<label>apc</label>
+    <PawnKindDef Name="ApcBase" Abstract="True">
 		<race>APC</race>
-		<defaultFactionType>PlayerColony</defaultFactionType>
 		<combatPower>200</combatPower>
 		<aiAvoidCover>true</aiAvoidCover>
+		<weaponTags>
+			<li>Light_Weps</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<!-- Player variant of APC -->
+    <PawnKindDef ParentName="ApcBase">
+		<defName>Vehicle_APC</defName>
+		<label>apc</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -21,11 +28,54 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>
-			<min>2400</min>
-			<max>4000</max>
+			<min>0</min>
+			<max>0</max>
 		</weaponMoney>
-		<weaponTags>
-			<li>Light_Weps</li>
-		</weaponTags>
+	</PawnKindDef>
+
+	<!-- Industrial AI variant of APC -->
+    <PawnKindDef ParentName="ApcBase">
+		<defName>Vehicle_APC_Civil</defName>
+		<label>civil apc</label>
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Vehicles/APC/Civil/APC</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>6,6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>	
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>2400</min>
+			<max>9999</max>
+		</weaponMoney>
+	</PawnKindDef>
+	
+    <!-- Pirate AI variant of APC -->
+    <PawnKindDef ParentName="ApcBase">
+		<defName>Vehicle_APC_Pirate</defName>
+		<label>pirate apc</label>
+		<defaultFactionType>Pirate</defaultFactionType>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Vehicles/APC/Pirate/APC</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>6,6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>	
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>2400</min>
+			<max>3000</max>
+		</weaponMoney>
 	</PawnKindDef>
 </Defs>

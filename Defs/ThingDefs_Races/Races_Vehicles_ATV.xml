@@ -8,12 +8,15 @@
 		<description>An all-terrain vehicle that is capable of driving over large distances at a much quicker speed</description>
 
 		<statBases>
-			<MarketValue>5000</MarketValue>
-			<MoveSpeed>45</MoveSpeed>
-			<CarryingCapacity>500</CarryingCapacity>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<MeatAmount>0</MeatAmount>		
+			<MarketValue>4500</MarketValue>
+			<MoveSpeed>9.5</MoveSpeed>
+			<CarryingCapacity>150</CarryingCapacity>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<MeatAmount>0</MeatAmount>	
+            <!--WorkToBuild>0</WorkToBuild-->
+            <Flammability>0.1</Flammability>
+            <!--Beauty>0</Beauty-->			
 		</statBases>
 
 		<tools>
@@ -22,7 +25,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>19</power>
+				<power>15</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -33,6 +36,7 @@
 			<body>ATV_Body</body>
 			<baseBodySize>1.0</baseBodySize>
 			<baseHealthScale>10.0</baseHealthScale>
+            <executionRange>2</executionRange>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -56,11 +60,20 @@
 		</recipes>
 
 		<butcherProducts>
-			<Steel>40</Steel>
+			<Steel>20</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</butcherProducts>
 
 		<comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.5</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.6</chanceNeverExplodeFromDamage>
+                <chanceToStartFire>0.20</chanceToStartFire>
+                <damageFalloff>true</damageFalloff>
+                <!--explosionEffect>GiantExplosion</explosionEffect-->
+                <!--explosionSound>Explosion_GiantBomb</explosionSound-->
+            </li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Refuelable">

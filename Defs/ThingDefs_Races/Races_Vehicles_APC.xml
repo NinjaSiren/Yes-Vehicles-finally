@@ -9,11 +9,14 @@
 
 		<statBases>
 			<MarketValue>6250</MarketValue>
-			<MoveSpeed>18</MoveSpeed>
-			<CarryingCapacity>250</CarryingCapacity>
-			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<MoveSpeed>8.0</MoveSpeed>
+			<CarryingCapacity>500</CarryingCapacity>
+			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
+            <!--WorkToBuild>0</WorkToBuild-->
+            <Flammability>0.05</Flammability>
+            <!--Beauty>0</Beauty-->
 		</statBases>
 
 		<tools>
@@ -22,7 +25,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>19</power>
+				<power>25</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -32,8 +35,7 @@
 		<race>
 			<body>APC_Hull</body>
 			<baseBodySize>1.0</baseBodySize>
-			<baseHealthScale>10.0</baseHealthScale>
-
+			<baseHealthScale>16.66</baseHealthScale>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -65,6 +67,15 @@
 		</butcherProducts>
 		
 		<comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.75</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.7</chanceNeverExplodeFromDamage>
+                <chanceToStartFire>0.15</chanceToStartFire>
+                <damageFalloff>true</damageFalloff>
+                <!--explosionEffect>GiantExplosion</explosionEffect-->
+                <!--explosionSound>Explosion_GiantBomb</explosionSound-->
+            </li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Refuelable">
@@ -100,7 +111,7 @@
 				<manipulationHandling>NoHandlerRequired</manipulationHandling>
 
 				<!-- Determines how much a vehicle can carry -->
-				<cargoCapacity>250</cargoCapacity>
+				<cargoCapacity>500</cargoCapacity>
 
 				<!-- Unloads all passengers when health percent reaches below this percentage. -->
 				<ejectIfBelowHealthPercent>0.20</ejectIfBelowHealthPercent>

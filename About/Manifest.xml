@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>Yes-vehicles-finally</identifier>
+    <version>v0.7d</version>
+    <dependencies>
+	    <li>JecsTools<li> <!-- JecsTools -->
+	    <li>-O21-Vehicle-Framework<li> <!-- [O21] Vehicle Framework -->
+    </dependencies>
+    <incompatibleWith>
+    </incompatibleWith>
+    <loadBefore>
+    </loadBefore>
+    <loadAfter>
+    </loadAfter>
+    <suggests>
+        <li>CombatExtended</li> <!-- CombatExtended -->
+    </suggests>
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri>https://raw.githubusercontent.com/NoImageAvailable/Yes-vehicles-finally/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/NinjaSiren/Yes-Vehicles-finally/releases/latest</downloadUri>
+</Manifest>

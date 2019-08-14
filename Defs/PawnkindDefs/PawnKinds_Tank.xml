@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <PawnKindDef>
-		<defName>Vehicle_Tank</defName>
-		<label>tank</label>
+    <PawnKindDef Name="TankBase" Abstract="True">
 		<race>Tank</race>
 		<combatPower>400</combatPower>
 		<aiAvoidCover>true</aiAvoidCover>
+		<weaponTags>
+			<li>Light_Weps</li>
+			<li>Heavy_Weps</li>
+		</weaponTags>
+	</PawnKindDef>
+
+    <PawnKindDef ParentName="TankBase">
+		<defName>Vehicle_Tank</defName>
+		<label>tank</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -20,13 +28,52 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>
-			<min>2400</min>
-			<max>6000</max>
+			<min>0</min>
+			<max>0</max>
 		</weaponMoney>
-		<weaponTags>
-			<li>Light_Weps</li>
-			<li>Heavy_Weps</li>
-		</weaponTags>
-		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+    <PawnKindDef ParentName="TankBase">
+		<defName>Vehicle_Tank_Civil</defName>
+		<label>civil tank</label>
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Vehicles/Tank/Civil/Tank</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>6,6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>2400</min>
+			<max>9999</max>
+		</weaponMoney>
+	</PawnKindDef>
+	
+    <PawnKindDef ParentName="TankBase">
+		<defName>Vehicle_Tank_Pirate</defName>
+		<label>pirate tank</label>
+		<defaultFactionType>Pirate</defaultFactionType>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Vehicles/Tank/Pirate/Tank</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>6,6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>2400</min>
+			<max>5000</max>
+		</weaponMoney>
 	</PawnKindDef>
 </Defs>

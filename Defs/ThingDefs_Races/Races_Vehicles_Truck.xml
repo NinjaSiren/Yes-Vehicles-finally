@@ -9,11 +9,14 @@
 
 		<statBases>
 			<MarketValue>5000</MarketValue>
-			<MoveSpeed>30</MoveSpeed>
-			<CarryingCapacity>500</CarryingCapacity>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<MeatAmount>0</MeatAmount>		
+			<MoveSpeed>7.5</MoveSpeed>
+			<CarryingCapacity>750</CarryingCapacity>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<MeatAmount>0</MeatAmount>
+            <!--WorkToBuild>0</WorkToBuild-->
+            <Flammability>0.075</Flammability>
+            <!--Beauty>0</Beauty-->			
 		</statBases>
 
 		<tools>
@@ -22,7 +25,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>19</power>
+				<power>20</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -32,7 +35,8 @@
 		<race>
 			<body>Truck_Body</body>
 			<baseBodySize>1.0</baseBodySize>
-			<baseHealthScale>10.0</baseHealthScale>
+			<baseHealthScale>13.33</baseHealthScale>
+            <executionRange>6</executionRange>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -57,15 +61,24 @@
 
 		<butcherProducts>
 			<Steel>40</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</butcherProducts>
 
 		<comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.25</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.65</chanceNeverExplodeFromDamage>
+                <chanceToStartFire>0.25</chanceToStartFire>
+                <damageFalloff>true</damageFalloff>
+                <!--explosionEffect>GiantExplosion</explosionEffect-->
+                <!--explosionSound>Explosion_GiantBomb</explosionSound-->
+            </li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>70.0</fuelConsumptionRate>
-				<fuelCapacity>100.0</fuelCapacity>
+				<fuelConsumptionRate>65.0</fuelConsumptionRate>
+				<fuelCapacity>150.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>Chemfuel</li>
@@ -96,7 +109,7 @@
 				<manipulationHandling>NoHandlerRequired</manipulationHandling>
 
 				<!-- Determines how much a vehicle can carry -->
-				<cargoCapacity>500</cargoCapacity>
+				<cargoCapacity>750</cargoCapacity>
 
 				<!-- Unloads all passengers when health percent reaches below this percentage. -->
 				<ejectIfBelowHealthPercent>0.30</ejectIfBelowHealthPercent>
