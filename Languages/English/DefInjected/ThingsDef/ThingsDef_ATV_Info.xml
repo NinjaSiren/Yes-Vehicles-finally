@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- ATV info -->
+	<ATV.label>tank</ATV.label>
+	<ATV.description>A heavily armored machine designed for the art of modern war.</ATV.description>
+	<ATV.ArmorRating_Blunt>Armor Rating (Blunt):</ATV.ArmorRating_Blunt>
+	<ATV.ArmorRating_Sharp>Armor Rating (Sharp):</ATV.ArmorRating_Sharp>
+	<ATV.Flammability>Flammability:</ATV.Flammability>
+	<ATV.statBases.MarketValue>Market Price:</ATV.statBases.MarketValue>
+	<ATV.statBases.MoveSpeed>Movement Speed:</ATV.statBases.MoveSpeed>
+	<ATV.comps.fuelConsumptionRate>Fuel Rate:</ATV.comps.fuelConsumptionRate>
+	<ATV.comps.fuelCapacity>Fuel Amount:</ATV.comps.fuelCapacity>	
+	<ATV.comps.fuelFilter>Fuel Type:</ATV.comps.fuelFilter>		
+	<ATV.comps.glowRadius>Light Radius (when running):</ATV.comps.glowRadius>	
+	<ATV.comps.vehicleType>Vehicle Type:</ATV.comps.vehicleType>
+	<ATV.comps.cargoCapacity>Cargo Capacity:</ATV.comps.cargoCapacity>
+	<ATV.comps.ejectIfBelowHealthPercent>Eject Pawn Percent:</ATV.comps.ejectIfBelowHealthPercent>
+	<ATV.comps.seatHitDamageFactor>Seat Hit Damage Percent:</ATV.comps.seatHitDamageFactor>	
+</LanguageData>

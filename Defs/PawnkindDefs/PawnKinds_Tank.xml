@@ -15,6 +15,9 @@
 		<defName>Vehicle_Tank</defName>
 		<label>tank</label>
 		<defaultFactionType>PlayerColony</defaultFactionType>
+        <!--backstoryCategories>
+            <li>Civil</li>
+        </backstoryCategories-->
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -37,6 +40,9 @@
 		<defName>Vehicle_Tank_Civil</defName>
 		<label>civil tank</label>
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
+        <!--backstoryCategories>
+            <li>Civil</li>
+        </backstoryCategories-->
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -59,6 +65,9 @@
 		<defName>Vehicle_Tank_Pirate</defName>
 		<label>pirate tank</label>
 		<defaultFactionType>Pirate</defaultFactionType>
+        <!--backstoryCategories>
+            <li>Raider</li>
+        </backstoryCategories-->
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

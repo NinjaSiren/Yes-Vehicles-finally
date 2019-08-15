@@ -15,6 +15,9 @@
 		<defName>Vehicle_APC</defName>
 		<label>apc</label>
 		<defaultFactionType>PlayerColony</defaultFactionType>
+        <!--backstoryCategories>
+            <li>Civil</li>
+        </backstoryCategories-->
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -38,6 +41,9 @@
 		<defName>Vehicle_APC_Civil</defName>
 		<label>civil apc</label>
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
+        <!--backstoryCategories>
+            <li>Civil</li>
+        </backstoryCategories-->
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -61,6 +67,9 @@
 		<defName>Vehicle_APC_Pirate</defName>
 		<label>pirate apc</label>
 		<defaultFactionType>Pirate</defaultFactionType>
+        <!--backstoryCategories>
+            <li>Raider</li>
+        </backstoryCategories-->
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

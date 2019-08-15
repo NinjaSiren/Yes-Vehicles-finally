@@ -50,11 +50,11 @@
             <WorkToMake>10000</WorkToMake>
 			<Mass>8.85</Mass>
 			<MarketValue>5200</MarketValue>
-			<AccuracyTouch>0.97</AccuracyTouch>
-			<AccuracyShort>0.57</AccuracyShort>
-			<AccuracyMedium>0.77</AccuracyMedium>
+			<AccuracyTouch>0.98</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
 			<AccuracyLong>0.97</AccuracyLong>
-			<RangedWeapon_Cooldown>3.55</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>150</Steel>
@@ -71,11 +71,11 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Dense_Shell</defaultProjectile>
-				<warmupTime>6.53</warmupTime>
-				<range>60</range>
+				<warmupTime>3.2</warmupTime>
+				<range>120</range>
 				<soundCast>RailCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>42</muzzleFlashScale>
+				<muzzleFlashScale>15</muzzleFlashScale>
 			</li>
 		</verbs>
 		<weaponTags>

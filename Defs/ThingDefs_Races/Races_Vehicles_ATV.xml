@@ -6,8 +6,8 @@
 		<defName>ATV</defName>
 		<label>atv</label>
 		<description>An all-terrain vehicle that is capable of driving over large distances at a much quicker speed</description>
-
-		<statBases>
+		
+		<statBases Inherit= "False">
 			<MarketValue>4500</MarketValue>
 			<MoveSpeed>9.5</MoveSpeed>
 			<CarryingCapacity>150</CarryingCapacity>
@@ -15,10 +15,23 @@
 			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>	
             <!--WorkToBuild>0</WorkToBuild-->
+            <!--Beauty>0</Beauty-->	
+            <Mass>100</Mass>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
             <Flammability>0.1</Flammability>
-            <!--Beauty>0</Beauty-->			
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax> 			
 		</statBases>
 
+        <inspectorTabs Inherit="False">
+            <li>ITab_Pawn_Health</li>
+            <li>ITab_Pawn_Needs</li>
+            <li>ITab_Pawn_FormingCaravan</li>
+            <li>ITab_Pawn_Gear</li>
+            <li>ITab_Pawn_Log</li>
+        </inspectorTabs>		
+		
 		<tools>
 			<li>
 				<label>body</label>
@@ -36,7 +49,8 @@
 			<body>ATV_Body</body>
 			<baseBodySize>1.0</baseBodySize>
 			<baseHealthScale>10.0</baseHealthScale>
-            <executionRange>2</executionRange>
+            <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
+            <packAnimal>true</packAnimal>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -65,15 +79,6 @@
 		</butcherProducts>
 
 		<comps>
-            <li Class="CompProperties_Explosive">
-                <explosiveRadius>1.5</explosiveRadius>
-                <explosiveDamageType>Bomb</explosiveDamageType>
-                <chanceNeverExplodeFromDamage>0.6</chanceNeverExplodeFromDamage>
-                <chanceToStartFire>0.20</chanceToStartFire>
-                <damageFalloff>true</damageFalloff>
-                <!--explosionEffect>GiantExplosion</explosionEffect-->
-                <!--explosionSound>Explosion_GiantBomb</explosionSound-->
-            </li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Refuelable">
@@ -86,7 +91,12 @@
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 			</li>
-            
+            <!--li Class="CompProperties_Explosive">
+                <explosiveRadius>3.0</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.2</chanceNeverExplodeFromDamage>
+            </li-->
+			
 			<li Class="O21VehicleFramework.CompProperties_Vehicle">
 
 				<!--
@@ -164,6 +174,7 @@
 		        <secondsBetweenSteps>0.5</secondsBetweenSteps>
             </li-->
 		</comps>
+		
         <modExtensions>
 			<li Class="O21VehicleFramework.DefModExt_RenderWeaponExt">
 				<alwaysRender>True</alwaysRender>

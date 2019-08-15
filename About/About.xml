@@ -2,13 +2,14 @@
 
 <ModMetaData>
 
-	<name>Yes, Vehicles, Finally! [v0.7d]</name>
+	<name>Yes, Vehicles, Finally!</name>
 	<author>Mason J. Caboose, NinjaSiren</author>
 	<supportedVersions>
         <li>1.0</li>
 	</supportedVersions>
     <url>https://ludeon.com/forums/index.php?topic=48126.0</url>
 	<description>
+	    [v0.7d + Hotfix]
         A true implementation of vehicles into RimWorld!
     
         First off, a big thank you to Jecrell and Neronix, without him none of you would have this!
@@ -27,18 +28,24 @@
         ==Notes and Help==
     
         - If your goal is caravanning, please put a driver at least with good mood and no needs.
-        - New Game Required. (Old saves without this mod will break.)
+        - New game is optional, but maybe needed. (Old saves without this mod or updates may break game saves.)
         - No one else should show up on your door with any of this stuff.
         - You need both a gunner and a driver to fight.
         - Only the machine gun turret fits on the Truck and ATV.
-        - Bugs is possibly be plenty in this mod, but hopefully that it woudn't to break your game!
+        - Bugs is possibly plenty in this mod, but hopefully that it woudn't to break your game!
 		
 		==Version changelog==
 		
+		- Major update, New game is optional, but maybe needed. (Sorry for the inconvinence.)
 		- Added vehicle flammability values. (Vehicles can now burn!)
-		- Added randomly exploding vehicles when damaged. (Military-grade vehicles are less likely to explode.)
+		- Added exploding vehicles when damaged. (Boom! Vehicles, it kinda has a bug but non-critical.)
 		- Added chanceToStartFire values. (When vehicles explode, it can cause a wildfire!)
 		- Added different color schemes for different AI faction type. (Red = Bandits, Light Green = Outlanders)
-		- Nerfed vehicle excessive movement speeds.
+		- Added support compatibility with Run and Gun when Combat Extended is installed.
+		- Nerfed vehicle excessive movement speeds. (No more ultra-Blitzkrieg!)
+		- Changed Combat Extended weapon and melee patches. (Fast firing guns galore and accuracy hotfix.)
+		- Changed Combat Extended 20x110mm Hispano projectile to explode on impact. (Fire in the hole, Boom!)
+		- Non-critical bug found when clicking the info of a vehicle.
+		- Non-critical bug found when vehicles die and explode.
     </description>
 </ModMetaData>

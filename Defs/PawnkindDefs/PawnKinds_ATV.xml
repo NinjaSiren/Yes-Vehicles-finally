@@ -6,7 +6,11 @@
 		<label>atv</label>
 		<race>ATV</race>
 		<combatPower>100</combatPower>
+        <canBeSapper>true</canBeSapper>
 		<defaultFactionType>PlayerColony</defaultFactionType>
+        <!--backstoryCategories>
+            <li>Civil</li>
+        </backstoryCategories-->
 		<aiAvoidCover>true</aiAvoidCover>
 		<lifeStages>
 			<li>

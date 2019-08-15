@@ -6,6 +6,7 @@
 		<value>
 		    <Vehicle_Tank_Pirate>4</Vehicle_Tank_Pirate>
 			<Vehicle_APC_Pirate>2</Vehicle_APC_Pirate>
+			<!--Vehicle_ATV>8</Vehicle_ATV-->
 		</value>
 	</Operation>
 
@@ -14,6 +15,7 @@
 		<value>
 		    <Vehicle_Tank_Civil>2</Vehicle_Tank_Civil>
 			<Vehicle_APC_Civil>4</Vehicle_APC_Civil>
+			<!--Vehicle_ATV>4</Vehicle_ATV-->
 		</value>
 	</Operation>
 	

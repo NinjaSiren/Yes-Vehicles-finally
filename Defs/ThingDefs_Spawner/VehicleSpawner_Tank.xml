@@ -19,7 +19,8 @@
 		<statBases>
 			<MarketValue>6000</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>4</Mass>
+            <WorkToMake>5850</WorkToMake>
+			<Mass>5</Mass>
 		</statBases>
 		<thingCategories>
 			<li>Items</li>

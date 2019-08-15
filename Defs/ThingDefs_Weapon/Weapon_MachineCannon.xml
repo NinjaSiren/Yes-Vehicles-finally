@@ -68,11 +68,13 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Small_Bullet</defaultProjectile>				
-				<warmupTime>1.4</warmupTime>
+				<warmupTime>2.5</warmupTime>
 				<range>30</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>75</burstShotCount>
 				<soundCast>BurstCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>20</muzzleFlashScale>
+				<muzzleFlashScale>18</muzzleFlashScale>
 			</li>
 		</verbs>
 		<weaponTags>

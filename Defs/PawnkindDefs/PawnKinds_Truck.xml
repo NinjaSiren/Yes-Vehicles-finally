@@ -7,6 +7,9 @@
 		<race>Truck</race>
 		<combatPower>100</combatPower>
 		<defaultFactionType>PlayerColony</defaultFactionType>
+        <!--backstoryCategories>
+            <li>Civil</li>
+        </backstoryCategories-->
 		<aiAvoidCover>true</aiAvoidCover>
 		<lifeStages>
 			<li>

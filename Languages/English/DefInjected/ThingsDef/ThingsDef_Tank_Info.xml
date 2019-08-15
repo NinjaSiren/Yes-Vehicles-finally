@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- Tank info -->
+	<Tank.label>tank</Tank.label>
+	<Tank.description>A heavily armored machine designed for the art of modern war.</Tank.description>
+	<Tank.ArmorRating_Blunt>Armor Rating (Blunt):</Tank.ArmorRating_Blunt>
+	<Tank.ArmorRating_Sharp>Armor Rating (Sharp):</Tank.ArmorRating_Sharp>
+	<Tank.Flammability>Flammability:</Tank.Flammability>
+	<Tank.statBases.MarketValue>Market Price:</Tank.statBases.MarketValue>
+	<Tank.statBases.MoveSpeed>Movement Speed:</Tank.statBases.MoveSpeed>
+	<Tank.comps.fuelConsumptionRate>Fuel Rate:</Tank.comps.fuelConsumptionRate>
+	<Tank.comps.fuelCapacity>Fuel Amount:</Tank.comps.fuelCapacity>	
+	<Tank.comps.fuelFilter>Fuel Type:</Tank.comps.fuelFilter>		
+	<Tank.comps.glowRadius>Light Radius (when running):</Tank.comps.glowRadius>	
+	<Tank.comps.vehicleType>Vehicle Type:</Tank.comps.vehicleType>
+	<Tank.comps.cargoCapacity>Cargo Capacity:</Tank.comps.cargoCapacity>
+	<Tank.comps.ejectIfBelowHealthPercent>Eject Pawn Percent:</Tank.comps.ejectIfBelowHealthPercent>
+	<Tank.comps.seatHitDamageFactor>Seat Hit Damage Percent:</Tank.comps.seatHitDamageFactor>
+</LanguageData>
