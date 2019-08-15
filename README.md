@@ -50,3 +50,16 @@ v0.7b
 v0.7c
 - Additional patch changes for Combat Extended.
 - Added AI enemy vehicles in raids, and defensive + cargo vehicles in AI caravans.
+
+v0.7d + Hotfix
+- Major update, New game is optional, but maybe needed. (Sorry for the inconvinence.)
+- Added vehicle flammability values. (Vehicles can now burn!)
+- Added exploding vehicles when damaged. (Boom! Vehicles, it kinda has a bug but non-critical.)
+- Added chanceToStartFire values. (When vehicles explode, it can cause a wildfire!)
+- Added different color schemes for different AI faction type. (Red = Bandits, Light Green = Outlanders)
+- Added support compatibility with Run and Gun.
+- Nerfed vehicle excessive movement speeds. (No more ultra-Blitzkrieg!)
+- Changed Combat Extended weapon and melee patches. (Fast firing guns galore and accuracy hotfix.)
+- Changed Combat Extended 20x110mm Hispano projectile to explode on impact. (Fire in the hole, Boom!)
+- Non-critical bug found when clicking the info of a vehicle.
+- Non-critical bug found when vehicles die and explode.
