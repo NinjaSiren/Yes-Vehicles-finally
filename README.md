@@ -11,6 +11,13 @@ https://github.com/jecrell/JecsTools/releases/
 and -O21-Vehicle Framework by neronix17:
 https://github.com/neronix17/-O21-Vehicle-Framework
 
+Recommended mods (Optional):
+Combat Extended
+https://github.com/NoImageAvailable/CombatExtended/releases
+
+Run and Gun
+https://github.com/rheirman/RunAndGun/releases
+
 Currently, Yes Vehicles Finally mod is at WIP, but will be always keep you posted if any
 new things arise!
 
