@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <!-- Adds explosion and explosion damage on the tank projectile -->
+                <li Class="PatchOperationInsert">
+                    <xpath>Defs/ThingDef[defName="Bullet_20x110mmHispano_HE"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.CompProperties_ExplosiveCE">
+                            <explosionDamage>50</explosionDamage>
+                            <explosionDamageDef>Flame</explosionDamageDef>
+                            <explosionRadius>2.5</explosionRadius>
+                            <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                            <chanceToStartFire>0.2</chanceToStartFire>
+                            <damageFalloff>true</damageFalloff>
+                        </li>
+                    </value>
+                </li>
+           
+                <!-- Adds CE compatibility with vehicle melee -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="APC"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>25</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+           
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ATV"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>25</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+           
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Tank"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>25</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+           
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Truck"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>25</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+               
+                <!-- Rail Cannon CE Patch -->  
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>Rail_Cannon</defName>
+                    <statBases>
+                        <SightsEfficiency>4.40</SightsEfficiency>
+                        <ShotSpread>0.01</ShotSpread>
+                        <SwayFactor>0.20</SwayFactor>
+                        <Bulk>9.25</Bulk>
+                        <Mass>8.85</Mass>
+                    </statBases>
+           
+                    <costList>
+                        <Steel>150</Steel>
+                        <Plasteel>80</Plasteel>
+                        <ComponentIndustrial>15</ComponentIndustrial>
+                    </costList>
+                   
+                    <Properties>
+                        <recoilAmount>2.15</recoilAmount>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>Bullet_20x110mmHispano_FMJ</defaultProjectile>
+                        <range>75</range>
+                        <soundCast>RailCannon_Fire</soundCast>
+                        <soundCastTail>GunTail_Heavy</soundCastTail>
+                        <muzzleFlashScale>40</muzzleFlashScale>
+                    </Properties>
+                   
+                    <!-- Leaving this here in case of weapon ammo limits. -->
+                    <!--AmmoUser>
+                        <magazineSize>40</magazineSize>
+                        <reloadTime>7</reloadTime>
+                        <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+                    </AmmoUser-->
+                   
+                    <FireModes>
+                        <aiUseBurstMode>FALSE</aiUseBurstMode>
+                        <aiAimMode>AimedShot</aiAimMode>
+                    </FireModes>
+                   
+                    <weaponTags>
+                        <li>CE_AI_Rifle</li>
+                        <li>EliteGun</li>
+                    </weaponTags>
+                    <AllowWithRunAndGun>false</AllowWithRunAndGun>     
+                </li>
+           
+                <!-- Tank Cannon CE Patch -->  
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>Tank_Cannon</defName>
+                    <statBases>
+                        <SightsEfficiency>4.40</SightsEfficiency>
+                        <ShotSpread>0.02</ShotSpread>
+                        <SwayFactor>0.40</SwayFactor>
+                        <Bulk>9.75</Bulk>
+                        <Mass>7.85</Mass>
+                    </statBases>
+           
+                    <costList>
+                        <Steel>150</Steel>
+                        <Plasteel>40</Plasteel>
+                        <ComponentIndustrial>5</ComponentIndustrial>
+                    </costList>
+                   
+                    <Properties>
+                        <recoilAmount>3.02</recoilAmount>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>Bullet_20x110mmHispano_HE</defaultProjectile>
+                        <range>65</range>
+                        <soundCast>TankCannon_Fire</soundCast>
+                        <soundCastTail>GunTail_Heavy</soundCastTail>
+                        <muzzleFlashScale>50</muzzleFlashScale>
+                        <targetParams>
+                            <canTargetLocations>true</canTargetLocations>
+                        </targetParams>
+                    </Properties>
+                   
+                    <!-- Leaving this here in case of weapon ammo limits. -->
+                    <!--AmmoUser>
+                        <magazineSize>40</magazineSize>
+                        <reloadTime>5</reloadTime>
+                        <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+                    </AmmoUser-->
+                   
+                    <FireModes>
+                        <aiUseBurstMode>FALSE</aiUseBurstMode>
+                        <aiAimMode>AimedShot</aiAimMode>
+                    </FireModes>
+                   
+                    <weaponTags>
+                        <li>CE_AI_Rifle</li>
+                        <li>EliteGun</li>
+                    </weaponTags>  
+                    <AllowWithRunAndGun>true</AllowWithRunAndGun>
+                </li>
+           
+                <!-- Burst Cannon CE Patch -->
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>Burst_Cannon</defName>
+                    <statBases>
+                        <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+                        <SightsEfficiency>2.20</SightsEfficiency>
+                        <ShotSpread>0.04</ShotSpread>
+                        <SwayFactor>0.80</SwayFactor>
+                        <Bulk>9.00</Bulk>
+                        <Mass>6.85</Mass>
+                    </statBases>
+           
+                    <costList>
+                        <Steel>100</Steel>
+                        <ComponentIndustrial>5</ComponentIndustrial>
+                    </costList>
+                   
+                    <Properties>
+                        <recoilAmount>1.51</recoilAmount>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>Bullet_20x82mmMauser_HE</defaultProjectile>         
+                        <warmupTime>0.56</warmupTime>
+                        <range>55</range>
+                        <soundCast>BurstCannon_Fire</soundCast>
+                        <soundCastTail>GunTail_Heavy</soundCastTail>
+                        <muzzleFlashScale>20</muzzleFlashScale>
+                        <burstShotCount>75</burstShotCount>
+                        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                    </Properties>
+           
+                    <!-- Leaving this here in case of weapon ammo limits. -->
+                    <!--AmmoUser>
+                        <magazineSize>60</magazineSize>
+                        <reloadTime>1</reloadTime>
+                        <ammoSet>AmmoSet_20x82mmMauser</ammoSet>
+                    </AmmoUser-->
+                   
+                    <FireModes>
+                        <aiUseBurstMode>TRUE</aiUseBurstMode>
+                        <noSingleShot>true</noSingleShot>
+                        <aimedBurstShotCount>75</aimedBurstShotCount>  
+                    </FireModes>
+                   
+                    <weaponTags>
+                        <li>CE_AI_Rifle</li>
+                        <li>EliteGun</li>
+                    </weaponTags>  
+                    <AllowWithRunAndGun>true</AllowWithRunAndGun>
+                </li>
+           
+                <!-- Machine Cannon CE Patch -->
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>Machine_Cannon</defName>
+                    <statBases>
+                        <RangedWeapon_Cooldown>0.16</RangedWeapon_Cooldown>
+                        <SightsEfficiency>1.10</SightsEfficiency>
+                        <ShotSpread>0.04</ShotSpread>
+                        <SwayFactor>1.00</SwayFactor>
+                        <Bulk>7.00</Bulk>
+                        <Mass>5.65</Mass>
+                    </statBases>
+                   
+                    <costList>
+                        <Steel>100</Steel>
+                        <ComponentIndustrial>5</ComponentIndustrial>
+                    </costList>    
+                   
+                    <Properties>
+                        <recoilAmount>1.58</recoilAmount>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>Bullet_127x55mmAR_FMJ</defaultProjectile>               
+                        <warmupTime>0.36</warmupTime>
+                        <range>45</range>
+                        <soundCast>BurstCannon_Fire</soundCast>
+                        <soundCastTail>GunTail_Heavy</soundCastTail>
+                        <muzzleFlashScale>20</muzzleFlashScale>
+                        <burstShotCount>150</burstShotCount>
+                        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                    </Properties>
+                   
+                    <!-- Leaving this here in case of weapon ammo limits. -->
+                    <!--AmmoUser>
+                        <magazineSize>120</magazineSize>
+                        <reloadTime>0.75</reloadTime>
+                        <ammoSet>AmmoSet_127x55mmAR</ammoSet>
+                    </AmmoUser-->
+                   
+                    <FireModes>
+                        <aiUseBurstMode>TRUE</aiUseBurstMode>
+                        <noSingleShot>true</noSingleShot>
+                        <aimedBurstShotCount>150</aimedBurstShotCount>
+                    </FireModes>
+                   
+                    <weaponTags>
+                        <li>CE_AI_Rifle</li>
+                        <li>EliteGun</li>  
+                    </weaponTags>  
+                    <AllowWithRunAndGun>true</AllowWithRunAndGun>
+                </li>
+           
+                <!-- Machine Gun CE Patch -->
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>Machine_Gun</defName>
+                    <statBases>
+                        <RangedWeapon_Cooldown>0.06</RangedWeapon_Cooldown>
+                        <SightsEfficiency>1</SightsEfficiency>
+                        <ShotSpread>0.08</ShotSpread>
+                        <SwayFactor>1.20</SwayFactor>
+                        <Bulk>5.00</Bulk>
+                        <Mass>2.65</Mass>
+                    </statBases>
+               
+                    <Properties>
+                        <recoilAmount>1.32</recoilAmount>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>           
+                        <warmupTime>0.26</warmupTime>
+                        <range>30</range>
+                        <burstShotCount>300</burstShotCount>
+                        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                        <soundCast>BurstCannon_Fire</soundCast>
+                        <soundCastTail>GunTail_Heavy</soundCastTail>
+                        <muzzleFlashScale>10</muzzleFlashScale>
+                    </Properties>
+                   
+                    <!-- Leaving this here in case of weapon ammo limits. -->
+                    <!--AmmoUser>
+                        <magazineSize>220</magazineSize>
+                        <reloadTime>0.25</reloadTime>
+                        <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+                    </AmmoUser-->
+                   
+                    <FireModes>
+                        <aiUseBurstMode>TRUE</aiUseBurstMode>
+                        <noSingleShot>true</noSingleShot>  
+                        <aimedBurstShotCount>300</aimedBurstShotCount>         
+                    </FireModes>
+                   
+                    <weaponTags>
+                        <li>CE_AI_Rifle</li>
+                        <li>EliteGun</li>
+                    </weaponTags>  
+                    <AllowWithRunAndGun>true</AllowWithRunAndGun>      
+                </li>
+    </operations>
+    </match>
+    </Operation>
+</Patch>
