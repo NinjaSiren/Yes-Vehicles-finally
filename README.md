@@ -5,6 +5,8 @@ I was searching for a mod of vehicles and it ended up me finding this old mod fr
 Thank You Jecrell for making JecTools, Neronix for forking the Vehicle code from JecsTools (-O21-Vehicle Framework), and Mason J. Caboose for making the original WIP 
 mod!
 
+Thank you for Hjkma for the Combat Extended patch Hotfix #2!
+
 The mod requires the latest JecsTools by Jecrell:
 https://github.com/jecrell/JecsTools/releases/
 
