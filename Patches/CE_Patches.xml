@@ -142,6 +142,7 @@
                                 </skillRequirements>
                             </recipeMaker>
 		                    <weaponTags>
+                                <li>Gun</li>							
 			                    <li>Heavy_Weps</li>								
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
@@ -209,6 +210,7 @@
                                 </skillRequirements>
                             </recipeMaker>
 		                    <weaponTags>
+                                <li>Gun</li>
 			                    <li>Heavy_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
@@ -278,6 +280,7 @@
                                 </skillRequirements>
                             </recipeMaker>
 		                    <weaponTags>
+                                <li>Gun</li>
 			                    <li>Light_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
@@ -348,6 +351,7 @@
                                 </skillRequirements>
                             </recipeMaker>
 		                    <weaponTags>
+                                <li>Gun</li>							
 			                    <li>Light_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
@@ -418,6 +422,7 @@
                                 </skillRequirements>
                             </recipeMaker>
 		                    <weaponTags>
+                                <li>Gun</li>
 			                    <li>Light_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>

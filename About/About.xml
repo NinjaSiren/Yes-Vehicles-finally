@@ -9,13 +9,15 @@
 	</supportedVersions>
     <url>https://ludeon.com/forums/index.php?topic=48126.0</url>
 	<description>
-	    [v0.7d + Hotfix]
+	    [v0.7d + Hotfix #2]
         A true implementation of vehicles into RimWorld!
     
         First off, a big thank you to Jecrell and Neronix, without him none of you would have this!
     
         Second thing, thank you to Mason J. Caboose for making the original mod! I really wanted vehicles in the game, I ended up continuing this mod!
     
+	    Thirdly, thank you to Hjkma for helping me fix the Combat Extended patch!
+	
         This mod is a 'simple' implementation of a truck into our lovely rim world, you can load crew, passengers, turrets, and equipment for both crossing the map and for caravanning.
     
         To acquire a vehicle you need to research Machining and Smithing for the Vehicle Table. Here you can construct a box filled with appropriately named pieces.
