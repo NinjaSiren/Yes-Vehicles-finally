@@ -71,3 +71,9 @@ v0.7d + Hotfix + Hotfix #2*
 - Non-critical bug found when vehicles die and explode.
 - Transferred and updated CE_patches.xml from CombatExtended/Patches folder to Yes, Vehicles, Finally!/Patches (Updated by Hjkma)*
 - Updated Combat Extended patch to run with or without Combat Extended, thanks to Hjkima.*
+
+v0.7e
+- Added vehicle fuel gauge.
+- Patched some weaponTags.
+- Added variety of weapon quality.
+- Fixed bug: JobDriver error when building weapon above "good" quality.
