@@ -36,7 +36,7 @@
 	</ThingDef>
 	
 	<!-- actual Gun defs -->
-		<ThingDef ParentName="Rail_CannonBase">
+    <ThingDef ParentName="Rail_CannonBase">
 		<defName>Rail_Cannon</defName>
 		<label>Rail cannon</label>
 		<description>A pin point cannon capable of delivering a dense round down the battlefield quickly.</description>
