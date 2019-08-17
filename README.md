@@ -56,7 +56,7 @@ v0.7c
 - Additional patch changes for Combat Extended.
 - Added AI enemy vehicles in raids, and defensive + cargo vehicles in AI caravans.
 
-v0.7d + Hotfix
+v0.7d + Hotfix + Hotfix #2*
 - Major update, New game is optional, but maybe needed. (Sorry for the inconvinence.)
 - Added vehicle flammability values. (Vehicles can now burn!)
 - Added exploding vehicles when damaged. (Boom! Vehicles, it kinda has a bug but non-critical.)
@@ -68,4 +68,5 @@ v0.7d + Hotfix
 - Changed Combat Extended 20x110mm Hispano projectile to explode on impact. (Fire in the hole, Boom!)
 - Non-critical bug found when clicking the info of a vehicle.
 - Non-critical bug found when vehicles die and explode.
-- Transferred and updated CE_patches.xml from CombatExtended/Patches folder to Yes, Vehicles, Finally!/Patches (Updated by Hjkma)
+- Transferred and updated CE_patches.xml from CombatExtended/Patches folder to Yes, Vehicles, Finally!/Patches (Updated by Hjkma)*
+- Updated Combat Extended patch to run with or without Combat Extended, thanks to Hjkima.*
