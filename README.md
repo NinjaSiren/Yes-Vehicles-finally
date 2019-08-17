@@ -68,3 +68,4 @@ v0.7d + Hotfix
 - Changed Combat Extended 20x110mm Hispano projectile to explode on impact. (Fire in the hole, Boom!)
 - Non-critical bug found when clicking the info of a vehicle.
 - Non-critical bug found when vehicles die and explode.
+- Transferred and updated CE_patches.xml from CombatExtended/Patches folder to Yes, Vehicles, Finally!/Patches (Updated by Hjkma)
