@@ -78,4 +78,5 @@ v0.7e
 - Added specialDisplayRadius for weapons.
 - Changed weapon ranges depending either CE is installed or not.
 - Patched some weaponTags.
-- Fixed bug: JobDriver error when building weapon above "good" quality.	
+- Fixed bug: JobDriver error when building weapon above "good" quality.
+- Vehicle repairs now possible, as updated by neronix17. (Repairs are automatic, no user control needed)
