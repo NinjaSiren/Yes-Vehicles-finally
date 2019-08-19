@@ -5,7 +5,7 @@
 	<ThingDef ParentName="O21BaseVehicle">
 		<defName>ATV</defName>
 		<label>atv</label>
-		<description>An all-terrain vehicle that is capable of driving over large distances at a much quicker speed</description>
+		<description>An all-terrain vehicle that is capable of driving over large distances at a much quicker speed.</description>
 		
 		<statBases Inherit= "False">
 			<MarketValue>4500</MarketValue>

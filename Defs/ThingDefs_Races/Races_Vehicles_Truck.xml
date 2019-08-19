@@ -5,7 +5,7 @@
 	<ThingDef ParentName="O21BaseVehicle">
 		<defName>Truck</defName>
 		<label>truck</label>
-		<description>An all purpose truck used to carry goods over large distances at a much quicker speed</description>
+		<description>An all purpose truck used to carry goods over large distances at a much quicker speed.</description>
 		
 		<statBases Inherit= "False">
 			<MarketValue>5000</MarketValue>
