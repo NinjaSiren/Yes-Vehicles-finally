@@ -74,6 +74,8 @@ v0.7d + Hotfix + Hotfix #2*
 
 v0.7e
 - Added vehicle fuel gauge.
-- Patched some weaponTags.
 - Added variety of weapon quality.
-- Fixed bug: JobDriver error when building weapon above "good" quality.
+- Added specialDisplayRadius for weapons.
+- Changed weapon ranges depending either CE is installed or not.
+- Patched some weaponTags.
+- Fixed bug: JobDriver error when building weapon above "good" quality.	
