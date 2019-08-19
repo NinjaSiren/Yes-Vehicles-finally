@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Weapon Patches -->
+
+<Patch>
+		
+    <!-- Adds all weapons with additional skill needs and crafting speed values -->
+	<Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="Rail_Cannon" or defName="Tank_Cannon" or defName="Burst_Cannon" or defName="Machine_Cannon" or defName="Machine_Gun"]/recipeMaker</xpath>
+		<value>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+		</value>
+	</Operation>
+
+	<!-- Adds all weapons with the weaponTags Gun value -->
+	<Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="Rail_Cannon" or defName="Tank_Cannon" or defName="Burst_Cannon" or defName="Machine_Cannon" or defName="Machine_Gun"]/weaponTags</xpath>
+		<value>
+	        <li>Gun</li>
+		</value>
+	</Operation>	
+
+	<!-- Adds all weapons with specialDisplayRadius -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+            <operations>
+			    
+				<li Class="PatchOperationAdd">
+				    <xpath>Defs/ThingDef[defName="Rail_Cannon"]</xpath>
+					    <value>
+						    <specialDisplayRadius>90</specialDisplayRadius>
+						</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+				    <xpath>Defs/ThingDef[defName="Tank_Cannon"]</xpath>
+					    <value>
+						    <specialDisplayRadius>60</specialDisplayRadius>
+						</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+				    <xpath>Defs/ThingDef[defName="Burst_Cannon"]</xpath>
+					    <value>
+						    <specialDisplayRadius>30</specialDisplayRadius>
+						</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+				    <xpath>Defs/ThingDef[defName="Machine_Cannon"]</xpath>
+					    <value>
+						    <specialDisplayRadius>27.5</specialDisplayRadius>
+						</value>
+				</li>	
+
+				<li Class="PatchOperationAdd">
+				    <xpath>Defs/ThingDef[defName="Machine_Gun"]</xpath>
+					    <value>
+						    <specialDisplayRadius>27</specialDisplayRadius>
+						</value>
+				</li>				
+			</operations>
+	</Operation>		
+</Patch>

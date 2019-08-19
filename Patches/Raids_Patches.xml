@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-	    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li/options</xpath>
-		<value>
-		    <Vehicle_Tank_Pirate>4</Vehicle_Tank_Pirate>
-			<Vehicle_APC_Pirate>2</Vehicle_APC_Pirate>
-			<!--Vehicle_ATV>8</Vehicle_ATV-->
-		</value>
-	</Operation>
+    <!-- Adds AI vehicles in raids and caravans -->
+    <Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		    <operations>
+			
+				<li Class="PatchOperationAdd">
+	    				<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li/options</xpath>
+						<value>
+						    <Vehicle_Tank_Pirate>4</Vehicle_Tank_Pirate>
+							<Vehicle_APC_Pirate>2</Vehicle_APC_Pirate>
+							<!--Vehicle_ATV>8</Vehicle_ATV-->
+						</value>
+					</li>
 
-	<Operation Class="PatchOperationAdd">
-	    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/options</xpath>
-		<value>
-		    <Vehicle_Tank_Civil>2</Vehicle_Tank_Civil>
-			<Vehicle_APC_Civil>4</Vehicle_APC_Civil>
-			<!--Vehicle_ATV>4</Vehicle_ATV-->
-		</value>
-	</Operation>
+					<li Class="PatchOperationAdd">
+	    				<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/options</xpath>
+						<value>
+						    <Vehicle_Tank_Civil>2</Vehicle_Tank_Civil>
+							<Vehicle_APC_Civil>4</Vehicle_APC_Civil>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->
+						</value>
+					</li>
 	
-	<Operation Class="PatchOperationAdd">
-	    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/guards</xpath>
-		<value>
-			<Vehicle_APC_Civil>2</Vehicle_APC_Civil>
-		</value>
-	</Operation>
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/guards</xpath>
+						<value>
+							<Vehicle_APC_Civil>2</Vehicle_APC_Civil>
+						</value>
+					</li>
 	
-	<Operation Class="PatchOperationAdd">
-	    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/carriers</xpath>
-		<value>
-		    <Vehicle_Truck>1</Vehicle_Truck>
-		</value>
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/carriers</xpath>
+						<value>
+						    <Vehicle_Truck>1</Vehicle_Truck>
+						</value>
+					</li>
+			</operations>
 	</Operation>
 </Patch>

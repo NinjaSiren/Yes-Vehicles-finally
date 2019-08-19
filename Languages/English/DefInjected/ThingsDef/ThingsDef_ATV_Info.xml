@@ -2,19 +2,18 @@
 <LanguageData>
 
     <!-- ATV info -->
-	<ATV.label>tank</ATV.label>
-	<ATV.description>A heavily armored machine designed for the art of modern war.</ATV.description>
+	<ATV.label>ATV</ATV.label>
+	<ATV.description>An all-terrain vehicle that is capable of driving over large distances at a much quicker speed.</ATV.description>
 	<ATV.ArmorRating_Blunt>Armor Rating (Blunt):</ATV.ArmorRating_Blunt>
 	<ATV.ArmorRating_Sharp>Armor Rating (Sharp):</ATV.ArmorRating_Sharp>
 	<ATV.Flammability>Flammability:</ATV.Flammability>
 	<ATV.statBases.MarketValue>Market Price:</ATV.statBases.MarketValue>
 	<ATV.statBases.MoveSpeed>Movement Speed:</ATV.statBases.MoveSpeed>
-	<ATV.comps.fuelConsumptionRate>Fuel Rate:</ATV.comps.fuelConsumptionRate>
-	<ATV.comps.fuelCapacity>Fuel Amount:</ATV.comps.fuelCapacity>	
-	<ATV.comps.fuelFilter>Fuel Type:</ATV.comps.fuelFilter>		
-	<ATV.comps.glowRadius>Light Radius (when running):</ATV.comps.glowRadius>	
-	<ATV.comps.vehicleType>Vehicle Type:</ATV.comps.vehicleType>
-	<ATV.comps.cargoCapacity>Cargo Capacity:</ATV.comps.cargoCapacity>
-	<ATV.comps.ejectIfBelowHealthPercent>Eject Pawn Percent:</ATV.comps.ejectIfBelowHealthPercent>
-	<ATV.comps.seatHitDamageFactor>Seat Hit Damage Percent:</ATV.comps.seatHitDamageFactor>	
+	<ATV.comps.3.fuelConsumptionRate>Fuel Rate:</ATV.comps.3.fuelConsumptionRate>
+	<ATV.comps.3.fuelCapacity>Fuel Amount:</ATV.comps.3.fuelCapacity>	
+	<ATV.comps.3.fuelFilter>Fuel Type:</ATV.comps.3.fuelFilter>		
+	<ATV.comps.4.vehicleType>Vehicle Type:</ATV.comps.4.vehicleType>
+	<ATV.comps.4.cargoCapacity>Cargo Capacity:</ATV.comps.4.cargoCapacity>
+	<ATV.comps.4.ejectIfBelowHealthPercent>Eject Pawn Percent:</ATV.comps.4.ejectIfBelowHealthPercent>
+	<ATV.comps.4.seatHitDamageFactor>Seat Hit Damage Percent:</ATV.comps.4.seatHitDamageFactor>	
 </LanguageData>

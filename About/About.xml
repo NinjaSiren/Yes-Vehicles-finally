@@ -9,7 +9,7 @@
 	</supportedVersions>
     <url>https://ludeon.com/forums/index.php?topic=48126.0</url>
 	<description>
-	    [v0.7d + Hotfix #2]
+	    [v0.7e]
         A true implementation of vehicles into RimWorld!
     
         First off, a big thank you to Jecrell and Neronix, without him none of you would have this!
@@ -38,16 +38,12 @@
 		
 		==Version changelog==
 		
-		- Major update, New game is optional, but maybe needed. (Sorry for the inconvinence.)
-		- Added vehicle flammability values. (Vehicles can now burn!)
-		- Added exploding vehicles when damaged. (Boom! Vehicles, it kinda has a bug but non-critical.)
-		- Added chanceToStartFire values. (When vehicles explode, it can cause a wildfire!)
-		- Added different color schemes for different AI faction type. (Red = Bandits, Light Green = Outlanders)
-		- Added support compatibility with Run and Gun when Combat Extended is installed.
-		- Nerfed vehicle excessive movement speeds. (No more ultra-Blitzkrieg!)
-		- Changed Combat Extended weapon and melee patches. (Fast firing guns galore and accuracy hotfix.)
-		- Changed Combat Extended 20x110mm Hispano projectile to explode on impact. (Fire in the hole, Boom!)
-		- Non-critical bug found when clicking the info of a vehicle.
-		- Non-critical bug found when vehicles die and explode.
+		- Added vehicle fuel gauge.
+		- Added variety of weapon quality.
+		- Added specialDisplayRadius for weapons.
+		- Changed weapon ranges depending either CE is installed or not.
+		- Patched some weaponTags.
+		- Fixed bug: JobDriver error when building weapon above "good" quality.		
+		
     </description>
 </ModMetaData>

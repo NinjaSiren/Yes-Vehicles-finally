@@ -153,7 +153,7 @@
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
                                     <defaultProjectile>Bullet_20x110mmHispano_FMJ</defaultProjectile>
-                                    <range>75</range>
+                                    <range>95</range>
                                     <soundCast>RailCannon_Fire</soundCast>
                                     <soundCastTail>GunTail_Heavy</soundCastTail>
                                     <muzzleFlashScale>40</muzzleFlashScale>
@@ -221,7 +221,7 @@
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
                                     <defaultProjectile>Bullet_20x110mmHispano_HE</defaultProjectile>
-                                    <range>65</range>
+                                    <range>75</range>
                                     <soundCast>TankCannon_Fire</soundCast>
                                     <soundCastTail>GunTail_Heavy</soundCastTail>
                                     <muzzleFlashScale>50</muzzleFlashScale>
@@ -363,7 +363,7 @@
                                     <hasStandardCommand>true</hasStandardCommand>
                                     <defaultProjectile>Bullet_127x55mmAR_FMJ</defaultProjectile>               
                                     <warmupTime>0.36</warmupTime>
-                                    <range>45</range>
+                                    <range>35</range>
                                     <soundCast>BurstCannon_Fire</soundCast>
                                     <soundCastTail>GunTail_Heavy</soundCastTail>
                                     <muzzleFlashScale>20</muzzleFlashScale>
@@ -460,5 +460,33 @@
 			    </li>
             </operations>
         </match>
-    </Operation>
+
+	    <!-- Reduces gun ranges -->		
+        <nomatch Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+			    
+				<li Class="PatchOperationReplace">
+	                <xpath>Defs/ThingDef[defName="Rail_Cannon"]/verbs/li/range</xpath>
+						<value>
+							<range>90</range>
+						</value>
+				</li>				
+				
+    			<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Machine_Cannon"]/verbs/li/range</xpath>
+						<value>
+							<range>27.5</range>
+						</value>
+				</li>	
+
+    			<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Machine_Gun'"]/verbs/li/range</xpath>
+						<value>
+							<range>27</range>
+						</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>			
 </Patch>

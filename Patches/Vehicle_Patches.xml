@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Vehicle Patches -->
+
+<Patch>
+		
+	<!-- Adds fuel gauge on the GUI -->
+	<Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[@ParentName="O21BaseVehicle"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+		<value>
+            <fuelLabel>Fuel gauge</fuelLabel>
+            <fuelGizmoLabel>Fuel level</fuelGizmoLabel>		
+            <initialFuelPercent>1.0</initialFuelPercent>
+            <autoRefuelPercent>0.0</autoRefuelPercent>
+            <showFuelGizmo>true</showFuelGizmo>
+            <fuelMultiplier>1.0</fuelMultiplier>
+            <outOfFuelMessage>Vehicle has an empty fuel tank, please refill</outOfFuelMessage>
+            <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+		</value>
+	</Operation>
+</Patch>
