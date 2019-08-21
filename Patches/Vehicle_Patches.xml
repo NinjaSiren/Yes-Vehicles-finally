@@ -10,12 +10,14 @@
 		<value>
             <fuelLabel>Fuel gauge</fuelLabel>
             <fuelGizmoLabel>Fuel level</fuelGizmoLabel>		
-            <initialFuelPercent>1.0</initialFuelPercent>
-            <autoRefuelPercent>0.0</autoRefuelPercent>
+            <initialFuelPercent>0.0</initialFuelPercent>
+            <autoRefuelPercent>0.75</autoRefuelPercent>
+			<minimumFueledThreshold>1.0</minimumFueledThreshold>
             <showFuelGizmo>true</showFuelGizmo>
-            <fuelMultiplier>1.0</fuelMultiplier>
+            <fuelMultiplier>3.0</fuelMultiplier>
+			<factorByDifficulty>true</factorByDifficulty>
             <outOfFuelMessage>Vehicle has an empty fuel tank, please refill</outOfFuelMessage>
             <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
-		</value>
+		</value>			
 	</Operation>
 </Patch>

@@ -6,7 +6,7 @@
 		
     <!-- Adds all weapons with additional skill needs and crafting speed values -->
 	<Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="Rail_Cannon" or defName="Tank_Cannon" or defName="Burst_Cannon" or defName="Machine_Cannon" or defName="Machine_Gun"]/recipeMaker</xpath>
+	    <xpath>Defs/ThingDef[defName="Rail_Cannon" or defName="Tank_Cannon" or defName="Burst_Cannon" or defName="Machine_Cannon" or defName="Machine_Gun" or defName="Arty_Cannon"]/recipeMaker</xpath>
 		<value>
             <workSpeedStat>SmithingSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
@@ -17,7 +17,7 @@
 
 	<!-- Adds all weapons with the weaponTags Gun value -->
 	<Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="Rail_Cannon" or defName="Tank_Cannon" or defName="Burst_Cannon" or defName="Machine_Cannon" or defName="Machine_Gun"]/weaponTags</xpath>
+	    <xpath>Defs/ThingDef[defName="Rail_Cannon" or defName="Tank_Cannon" or defName="Burst_Cannon" or defName="Machine_Cannon" or defName="Machine_Gun" or defName="Arty_Cannon"]/weaponTags</xpath>
 		<value>
 	        <li>Gun</li>
 		</value>
@@ -27,39 +27,46 @@
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
             <operations>
-			    
+	
+				<li Class="PatchOperationAdd">
+				    <xpath>Defs/ThingDef[defName="Arty_Cannon"]</xpath>
+					    <value>
+						    <specialDisplayRadius>30</specialDisplayRadius>
+						</value>
+				</li>
+	
 				<li Class="PatchOperationAdd">
 				    <xpath>Defs/ThingDef[defName="Rail_Cannon"]</xpath>
 					    <value>
-						    <specialDisplayRadius>90</specialDisplayRadius>
+						    <specialDisplayRadius>100</specialDisplayRadius>
 						</value>
 				</li>
 				
 				<li Class="PatchOperationAdd">
 				    <xpath>Defs/ThingDef[defName="Tank_Cannon"]</xpath>
 					    <value>
-						    <specialDisplayRadius>60</specialDisplayRadius>
+						    <specialDisplayRadius>80</specialDisplayRadius>
 						</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
 				    <xpath>Defs/ThingDef[defName="Burst_Cannon"]</xpath>
 					    <value>
-						    <specialDisplayRadius>30</specialDisplayRadius>
+						    <specialDisplayRadius>55</specialDisplayRadius>
 						</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
 				    <xpath>Defs/ThingDef[defName="Machine_Cannon"]</xpath>
 					    <value>
-						    <specialDisplayRadius>27.5</specialDisplayRadius>
+						    <specialDisplayRadius>35</specialDisplayRadius>
 						</value>
 				</li>	
 
 				<li Class="PatchOperationAdd">
 				    <xpath>Defs/ThingDef[defName="Machine_Gun"]</xpath>
 					    <value>
-						    <specialDisplayRadius>27</specialDisplayRadius>
+						    <specialDisplayRadius>30</specialDisplayRadius>
 						</value>
 				</li>				
 			</operations>

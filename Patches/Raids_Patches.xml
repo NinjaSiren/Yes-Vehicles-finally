@@ -6,6 +6,7 @@
 	    <success>Always</success>
 		    <operations>
 			
+			    <!-- Pirate -->
 				<li Class="PatchOperationAdd">
 	    				<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li/options</xpath>
 						<value>
@@ -15,6 +16,7 @@
 						</value>
 					</li>
 
+                    <!-- Outlander -->
 					<li Class="PatchOperationAdd">
 	    				<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/options</xpath>
 						<value>
@@ -22,21 +24,182 @@
 							<Vehicle_APC_Civil>4</Vehicle_APC_Civil>
 							<!--Vehicle_ATV>4</Vehicle_ATV-->
 						</value>
-					</li>
-	
+					</li>	
 					<li Class="PatchOperationAdd">
 					    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/guards</xpath>
 						<value>
 							<Vehicle_APC_Civil>2</Vehicle_APC_Civil>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->							
 						</value>
-					</li>
-	
+					</li>	
 					<li Class="PatchOperationAdd">
 					    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li/carriers</xpath>
 						<value>
 						    <Vehicle_Truck>1</Vehicle_Truck>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->
 						</value>
 					</li>
-			</operations>
+
+                    <!-- Tribal -->
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li/Peaceful</xpath>
+						<value>
+						    <Vehicle_Cart>2</Vehicle_Cart>
+						</value>
+					</li>					
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li/Trader</xpath>
+						<value>
+						    <Vehicle_Cart>1</Vehicle_Cart>
+						</value>
+					</li>					
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li/Settlement</xpath>
+						<value>
+						    <Vehicle_Cart>4</Vehicle_Cart>
+						</value>
+					</li>					
+			</operations>		
 	</Operation>
+	
+	<!-- Rimsenal Federation patches -->
+	<Operation Class="PatchOperationFindMod">
+	    <mods>
+		    <li>Rimsenal - Federation</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+		    <success>Always</success>
+		        <operations>
+				    
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+						<value>
+						    <Vehicle_Tank_Civil>3</Vehicle_Tank_Civil>
+							<Vehicle_APC_Civil>4</Vehicle_APC_Civil>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->
+						</value>
+					</li>	
+
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+						<value>
+						    <Vehicle_Tank_Civil>4</Vehicle_Tank_Civil>
+							<Vehicle_APC_Civil>3</Vehicle_APC_Civil>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->
+						</value>
+					</li>						
+			    </operations>
+		</match>
+	</Operation>
+
+	<!-- Rimsenal Feral patches -->	
+	<Operation Class="PatchOperationFindMod">
+	    <mods>
+		    <li>Rimsenal - Feral</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+		    <success>Always</success>
+		        <operations>
+				    
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+						<value>
+						    <Vehicle_Tank_Pirate>3</Vehicle_Tank_Pirate>
+							<Vehicle_APC_Pirate>3</Vehicle_APC_Piratel>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->
+						</value>
+					</li>	
+
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+						<value>
+						    <Vehicle_Tank_Pirate>4</Vehicle_Tank_Pirate>
+							<Vehicle_APC_Pirate>3</Vehicle_APC_Pirate>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->
+						</value>
+					</li>						
+			    </operations>
+		</match>
+	</Operation>
+
+	<!-- Rimsenal Marauders patches : will leave this here until the mod is finished -->	
+	<!--Operation Class="PatchOperationFindMod">
+	    <mods>
+		    <li>Rimsenal - Marauders</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+		    <success>Always</success>
+		        <operations>
+				    
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+						<value>
+						    <Vehicle_Tank_Civil>3</Vehicle_Tank_Civil>
+							<Vehicle_APC_Civil>3</Vehicle_APC_Civil>
+							<Vehicle_ATV>4</Vehicle_ATV>
+						</value>
+					</li>	
+
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+						<value>
+						    <Vehicle_Tank_Civil>4</Vehicle_Tank_Civil>
+							<Vehicle_APC_Civil>3</Vehicle_APC_Civil>
+							<Vehicle_ATV>4</Vehicle_ATV>
+						</value>
+					</li>						
+			    </operations>
+		</match>
+	</Operation-->
+
+	<!-- Polarisbloc - Security Force -->	
+	<Operation Class="PatchOperationFindMod">
+	    <mods>
+		    <li>Polarisbloc - Security Force</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+		    <success>Always</success>
+		        <operations>
+
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
+						<value>
+						    <Vehicle_Tank_Civil>1</Vehicle_Tank_Civil>
+							<Vehicle_APC_Civil>2</Vehicle_APC_Civil>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->
+						</value>
+					</li>	
+				    
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+						<value>
+						    <Vehicle_Tank_Civil>3</Vehicle_Tank_Civil>
+							<Vehicle_APC_Civil>3</Vehicle_APC_Civil>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->
+						</value>
+					</li>	
+
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Trader"]/options</xpath>
+						<value>
+						    <Vehicle_Truck>1</Vehicle_Truck>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->							
+						</value>
+					</li>	
+
+					<li Class="PatchOperationAdd">
+					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+						<value>
+						    <Vehicle_Tank_Civil>4</Vehicle_Tank_Civil>
+							<Vehicle_APC_Civil>3</Vehicle_APC_Civil>
+							<!--Vehicle_ATV>4</Vehicle_ATV-->
+						</value>
+					</li>						
+			    </operations>
+		</match>
+	</Operation>	
 </Patch>

@@ -9,20 +9,25 @@
 		
         <match Class="PatchOperationSequence">
             <success>Always</success>
-            <operations>
+            <operations>             
 			
                 <!-- Adds explosion and explosion damage on the tank projectile -->
                 <li Class="PatchOperationInsert">
                     <xpath>Defs/ThingDef[defName="Bullet_20x110mmHispano_HE"]</xpath>
                         <value>
-                            <li Class="CombatExtended.CompProperties_ExplosiveCE">
-                                <explosionDamage>50</explosionDamage>
-                                <explosionDamageDef>Flame</explosionDamageDef>
-                                <explosionRadius>2.5</explosionRadius>
-                                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-                                <chanceToStartFire>0.2</chanceToStartFire>
-                                <damageFalloff>true</damageFalloff>
-                            </li>
+						    <comps>
+                                <li Class="CombatExtended.CompProperties_ExplosiveCE">
+                                    <explosionDamage>62.5</explosionDamage>
+                                    <explosionDamageDef>Bomb</explosionDamageDef>
+                                    <explosionRadius>2.5</explosionRadius>
+                                    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                                    <chanceToStartFire>0.2</chanceToStartFire>
+									<fragRange>3.0</fragRange>
+						    		<fragments>
+                                        <Fragment_Shell>60</Fragment_Shell>
+                                    </fragments>
+                                </li>
+						    </comps>
                         </value>
                 </li>
            
@@ -106,10 +111,30 @@
                             </tools>
                         </value>
                 </li>
-               
+ 
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Cart"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>15</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+ 
                 <!-- Rail Cannon CE Patch -->  
                 <li Class="PatchOperationReplace">
-				    <xpath>/Defs/ThingDef[defName="Rail_Cannon"]</xpath>
+				    <xpath>Defs/ThingDef[defName="Rail_Cannon"]</xpath>
 				    <value>
                         <ThingDef ParentName="Rail_CannonBase">
                             <defName>Rail_Cannon</defName>
@@ -126,10 +151,14 @@
 			                    <Mass>8.85</Mass>
 			                    <MarketValue>5200</MarketValue>
 			                    <AccuracyTouch>0.98</AccuracyTouch>
-			                    <AccuracyShort>0.72</AccuracyShort>
-			                    <AccuracyMedium>0.95</AccuracyMedium>
-			                    <AccuracyLong>0.97</AccuracyLong>
+                                <AccuracyShort>0.72</AccuracyShort>
+                                <AccuracyMedium>0.88</AccuracyMedium>
+                                <AccuracyLong>0.90</AccuracyLong>
 			                    <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+        	                    <SightsEfficiency>3.7</SightsEfficiency>
+        	                    <ShotSpread>0.01</ShotSpread>
+        	                    <SwayFactor>1.30</SwayFactor>
+        	                    <Bulk>19.00</Bulk>								
 		                    </statBases>
 		                    <costList>
 			                    <Steel>150</Steel>
@@ -141,8 +170,7 @@
                                     <Crafting>9</Crafting>
                                 </skillRequirements>
                             </recipeMaker>
-		                    <weaponTags>
-                                <li>Gun</li>							
+		                    <weaponTags>							
 			                    <li>Heavy_Weps</li>								
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
@@ -150,10 +178,12 @@
 						    <verbs>
 						        <li Class="CombatExtended.VerbPropertiesCE">
                                     <recoilAmount>2.15</recoilAmount>
+				                    <warmupTime>3.1</warmupTime>									
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
                                     <defaultProjectile>Bullet_20x110mmHispano_FMJ</defaultProjectile>
-                                    <range>95</range>
+                                    <range>100</range>
+									<minRange>10</minRange>
                                     <soundCast>RailCannon_Fire</soundCast>
                                     <soundCastTail>GunTail_Heavy</soundCastTail>
                                     <muzzleFlashScale>40</muzzleFlashScale>
@@ -177,7 +207,7 @@
            
                 <!-- Tank Cannon CE Patch -->  
                 <li Class="PatchOperationReplace">
-				    <xpath>/Defs/ThingDef[defName="Tank_Cannon"]</xpath>
+				    <xpath>Defs/ThingDef[defName="Tank_Cannon"]</xpath>
 				    <value>
                         <ThingDef ParentName="Tank_CannonBase">
                             <defName>Tank_Cannon</defName>
@@ -194,10 +224,14 @@
 		                    	<Mass>7.85</Mass>
 		                    	<MarketValue>4200</MarketValue>
 		                    	<AccuracyTouch>0.98</AccuracyTouch>
-		                    	<AccuracyShort>0.87</AccuracyShort>
-		                    	<AccuracyMedium>0.95</AccuracyMedium>
-		                    	<AccuracyLong>0.92</AccuracyLong>
+                            	<AccuracyShort>0.70</AccuracyShort>
+                            	<AccuracyMedium>0.86</AccuracyMedium>
+                            	<AccuracyLong>0.88</AccuracyLong>
 		                    	<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+								<SightsEfficiency>2.6</SightsEfficiency>
+      							<ShotSpread>0.02</ShotSpread>
+      							<SwayFactor>1.20</SwayFactor>
+      							<Bulk>15.35</Bulk>
 		                    </statBases>
 		                    <costList>
 		                    	<Steel>150</Steel>
@@ -210,7 +244,6 @@
                                 </skillRequirements>
                             </recipeMaker>
 		                    <weaponTags>
-                                <li>Gun</li>
 			                    <li>Heavy_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
@@ -218,16 +251,15 @@
 						    <verbs>
 						        <li Class="CombatExtended.VerbPropertiesCE">
                                     <recoilAmount>3.02</recoilAmount>
+				                    <warmupTime>2.6</warmupTime>									
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
                                     <defaultProjectile>Bullet_20x110mmHispano_HE</defaultProjectile>
-                                    <range>75</range>
+                                    <range>80</range>
+									<minRange>8</minRange>
                                     <soundCast>TankCannon_Fire</soundCast>
                                     <soundCastTail>GunTail_Heavy</soundCastTail>
                                     <muzzleFlashScale>50</muzzleFlashScale>
-                                    <targetParams>
-                                        <canTargetLocations>true</canTargetLocations>
-                                    </targetParams>
 						        </li>
 						    </verbs>
 						    <comps>
@@ -248,7 +280,7 @@
  
                 <!-- Burst Cannon CE Patch -->
                 <li Class="PatchOperationReplace">
-				    <xpath>/Defs/ThingDef[defName="Burst_Cannon"]</xpath>
+				    <xpath>Defs/ThingDef[defName="Burst_Cannon"]</xpath>
 				    <value>
                         <ThingDef ParentName="Burst_CannonBase">
                             <defName>Burst_Cannon</defName>
@@ -265,10 +297,14 @@
 			                	<Mass>6.85</Mass>
 			                	<MarketValue>3200</MarketValue>
 			                	<AccuracyTouch>0.90</AccuracyTouch>
-			                	<AccuracyShort>0.73</AccuracyShort>
-			                	<AccuracyMedium>0.80</AccuracyMedium>
-			                	<AccuracyLong>0.67</AccuracyLong>
+			                	<AccuracyShort>0.70</AccuracyShort>
+			                	<AccuracyMedium>0.65</AccuracyMedium>
+			                	<AccuracyLong>0.60</AccuracyLong>
 			                	<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    	                	    <SightsEfficiency>1.60</SightsEfficiency>
+    	                        <ShotSpread>0.08</ShotSpread>
+    	                        <SwayFactor>1.10</SwayFactor>
+    	                	    <Bulk>12.56</Bulk>								
 		                    </statBases>
 		                    <costList>
 		                    	<Steel>100</Steel>
@@ -280,7 +316,6 @@
                                 </skillRequirements>
                             </recipeMaker>
 		                    <weaponTags>
-                                <li>Gun</li>
 			                    <li>Light_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
@@ -293,6 +328,7 @@
                                     <defaultProjectile>Bullet_20x82mmMauser_HE</defaultProjectile>         
                                     <warmupTime>0.56</warmupTime>
                                     <range>55</range>
+									<minRange>5.5</minRange>
                                     <soundCast>BurstCannon_Fire</soundCast>
                                     <soundCastTail>GunTail_Heavy</soundCastTail>
                                     <muzzleFlashScale>20</muzzleFlashScale>
@@ -319,7 +355,7 @@
 				
                 <!-- Machine Cannon CE Patch -->
                 <li Class="PatchOperationReplace">
-				    <xpath>/Defs/ThingDef[defName="Machine_Cannon"]</xpath>
+				    <xpath>Defs/ThingDef[defName="Machine_Cannon"]</xpath>
 				    <value>
                         <ThingDef ParentName="Machine_CannonBase">
 		                    <defName>Machine_Cannon</defName>
@@ -336,10 +372,14 @@
 		                    	<Mass>5.65</Mass>
 		                    	<MarketValue>2800</MarketValue>
 		                    	<AccuracyTouch>0.97</AccuracyTouch>
-		                    	<AccuracyShort>0.97</AccuracyShort>
-		                    	<AccuracyMedium>0.67</AccuracyMedium>
-		                    	<AccuracyLong>0.37</AccuracyLong>
+			                	<AccuracyShort>0.52</AccuracyShort>
+			                	<AccuracyMedium>0.39</AccuracyMedium>
+			                	<AccuracyLong>0.30</AccuracyLong>
 		                    	<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    	                	    <SightsEfficiency>1.40</SightsEfficiency>
+    	                        <ShotSpread>0.05</ShotSpread>
+    	                        <SwayFactor>1.33</SwayFactor>
+    	                	    <Bulk>11.35</Bulk>								
 		                    </statBases>
 		                    <costList>
 		                    	<Steel>100</Steel>
@@ -350,8 +390,7 @@
                                     <Crafting>3</Crafting>
                                 </skillRequirements>
                             </recipeMaker>
-		                    <weaponTags>
-                                <li>Gun</li>							
+		                    <weaponTags>							
 			                    <li>Light_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
@@ -362,7 +401,7 @@
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
                                     <defaultProjectile>Bullet_127x55mmAR_FMJ</defaultProjectile>               
-                                    <warmupTime>0.36</warmupTime>
+                                    <warmupTime>0.72</warmupTime>
                                     <range>35</range>
                                     <soundCast>BurstCannon_Fire</soundCast>
                                     <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -390,7 +429,7 @@
 				
                 <!-- Machine Gun CE Patch -->
                 <li Class="PatchOperationReplace">
-				    <xpath>/Defs/ThingDef[defName="Machine_Gun"]</xpath>
+				    <xpath>Defs/ThingDef[defName="Machine_Gun"]</xpath>
 				    <value>
                         <ThingDef ParentName="Machine_GunBase">
 		                    <defName>Machine_Gun</defName>
@@ -407,10 +446,14 @@
 		                    	<Mass>2.65</Mass>
 			                    <MarketValue>2400</MarketValue>
 			                    <AccuracyTouch>0.97</AccuracyTouch>
-			                    <AccuracyShort>0.90</AccuracyShort>
-			                    <AccuracyMedium>0.30</AccuracyMedium>
-			                    <AccuracyLong>0.15</AccuracyLong>
+			                    <AccuracyShort>0.48</AccuracyShort>
+			                    <AccuracyMedium>0.35</AccuracyMedium>
+			                    <AccuracyLong>0.26</AccuracyLong>
 			                    <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    	                        <SightsEfficiency>1.20</SightsEfficiency>
+    	                        <ShotSpread>0.05</ShotSpread>
+    	                        <SwayFactor>1.53</SwayFactor>
+    	                        <Bulk>9.15</Bulk>								
 		                    </statBases>
 		                    <costList>
 		                    	<Steel>100</Steel>
@@ -422,7 +465,6 @@
                                 </skillRequirements>
                             </recipeMaker>
 		                    <weaponTags>
-                                <li>Gun</li>
 			                    <li>Light_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
@@ -433,7 +475,7 @@
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
                                     <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>           
-                                    <warmupTime>0.26</warmupTime>
+                                    <warmupTime>0.36</warmupTime>
                                     <range>30</range>
                                     <burstShotCount>300</burstShotCount>
                                     <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -458,35 +500,90 @@
 					    </ThingDef>
 				    </value>
 			    </li>
+				
+                <!-- Artillery Cannon CE Patch -->
+                <li Class="PatchOperationReplace">
+				    <xpath>Defs/ThingDef[defName="Arty_Cannon"]</xpath>
+				    <value>
+				        <ThingDef ParentName="Arty_CannonBase">
+				        	<defName>Arty_Cannon</defName>
+				        	<label>Artillery cannon</label>
+				        	<description>A powerful cannon for use on a tank chassis, capable of sending exploding shells accurately at the enemy.</description>
+				        	<graphicData>
+				        		<texPath>Box/Tank_Cannon</texPath>
+				        		<graphicClass>Graphic_Single</graphicClass>
+				        		<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+				        	</graphicData>
+				        	<soundInteract>InteractPistol</soundInteract>
+				        	<statBases>
+        		        	    <WorkToMake>9000</WorkToMake>
+				        		<Mass>8.85</Mass>
+				        		<MarketValue>5000</MarketValue>
+				        		<AccuracyTouch>0.98</AccuracyTouch>
+				        		<AccuracyShort>0.50</AccuracyShort>
+				        		<AccuracyMedium>0.70</AccuracyMedium>
+				        		<AccuracyLong>0.90</AccuracyLong>
+				        		<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+								<SightsEfficiency>0.5</SightsEfficiency>
+				        	</statBases>
+				        	<costList>
+				        		<Steel>200</Steel>
+				        		<Plasteel>50</Plasteel>
+				        		<ComponentIndustrial>6</ComponentIndustrial>
+				        	</costList>
+        		        	<recipeMaker>
+        		        	    <skillRequirements>
+        		        	        <Crafting>8</Crafting>
+        		        	    </skillRequirements>
+        		        	</recipeMaker>
+				        	<verbs>
+				        		<li Class="CombatExtended.VerbPropertiesCE">
+			    	        		<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+			    	        		<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			    	        		<hasStandardCommand>true</hasStandardCommand>								
+			    	        		<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
+			    	        		<warmupTime>3.4</warmupTime>
+			    	        		<minRange>30</minRange>
+			    	        		<range>680</range>
+			    	        		<burstShotCount>1</burstShotCount>
+			    	        		<soundCast>TankCannon_Fire</soundCast>
+									<soundCastTail>GunTail_Heavy</soundCastTail>
+			    	        		<muzzleFlashScale>51</muzzleFlashScale>
+			    	        		<circularError>1</circularError>
+			    	        		<indirectFirePenalty>0.2</indirectFirePenalty>
+			    	        		<targetParams>
+			    	        		    <canTargetLocations>true</canTargetLocations>
+			    	        		</targetParams>		
+						    	</li>
+						    </verbs>
+						    <comps>
+                                <!-- Leaving this here in case of weapon ammo limits. -->
+							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>220</magazineSize>
+                                    <reloadTime>0.25</reloadTime>
+                                    <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+							    </li-->	
+							    <li Class="CombatExtended.CompProperties_Charges">
+			    			        <chargeSpeeds>
+			    			            <li>30</li>
+			    			            <li>50</li>
+			    			            <li>70</li>
+			    			            <li>90</li>
+			    			        </chargeSpeeds>
+						        </li>								
+						    </comps>		
+						    <weaponTags>
+							    <li>Artillery</li>
+								<li>Artillery_BaseDestroyer</li>								
+						    	<li>Heavy_Weps</li>
+                                <li>CE_AI_Rifle</li>
+								<li>TurretGun</li>
+                                <li>EliteGun</li>								
+						    </weaponTags>
+				        </ThingDef>
+                    </value>
+                </li>					
             </operations>
         </match>
-
-	    <!-- Reduces gun ranges -->		
-        <nomatch Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-			    
-				<li Class="PatchOperationReplace">
-	                <xpath>Defs/ThingDef[defName="Rail_Cannon"]/verbs/li/range</xpath>
-						<value>
-							<range>90</range>
-						</value>
-				</li>				
-				
-    			<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Machine_Cannon"]/verbs/li/range</xpath>
-						<value>
-							<range>27.5</range>
-						</value>
-				</li>	
-
-    			<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Machine_Gun'"]/verbs/li/range</xpath>
-						<value>
-							<range>27</range>
-						</value>
-				</li>
-			</operations>
-		</nomatch>
 	</Operation>			
 </Patch>
