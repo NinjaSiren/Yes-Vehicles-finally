@@ -80,3 +80,17 @@ v0.7e
 - Patched some weaponTags.
 - Fixed bug: JobDriver error when building weapon above "good" quality.
 - Vehicle repairs now possible, as updated by neronix17. (Repairs are automatic, no user control needed)
+
+v0.8
+- Added support for Rimsenal and Polarisbloc mods.
+- Added vehicle faction AI for Rimsenal and Polarisbloc mods. (Raids, Caravans, and Bases)
+- New vehicle: ATV with a Cart/Wagon. (on its back, I downloaded that old mod, Tools for Haul. Might revive it?)
+- Not recommended to use Combat Extended while running this update. (No CE patches yet for Polarisbloc, and Rimsenal CE patch is kinda buggy yet.)
+
+v0.8b
+- Added new tank weapon, Artillery Cannon.
+- Added carts for tribal traders, peaceful visits, and settlements.
+- Fixed minor bug: specialDisplayRadius errors for all the weapons.
+- Fixed possibly the Manifest and ModSync xml files.
+- Changed some details on the CE patch.
+- Nerfed abit of weapon accuracy percentages.
