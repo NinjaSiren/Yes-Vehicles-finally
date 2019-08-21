@@ -39,9 +39,9 @@
 		<surfaceType>Item</surfaceType>
 		<recipes>
 		    <li>MakeVehicleATV</li>
-			<li>MakeVehicleTruck</li>
-			<li>MakeVehicleAPC</li>
 			<li>MakeVehicleTank</li>
+			<li>MakeVehicleTruck</li>
+			<li>MakeVehicleAPC</li>			
 		</recipes>
 		<inspectorTabs>
 			<li>ITab_Bills</li>

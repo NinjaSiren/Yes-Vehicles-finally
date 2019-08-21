@@ -49,9 +49,9 @@
 			<Mass>2.65</Mass>
 			<MarketValue>2400</MarketValue>
 			<AccuracyTouch>0.97</AccuracyTouch>
-			<AccuracyShort>0.90</AccuracyShort>
-			<AccuracyMedium>0.30</AccuracyMedium>
-			<AccuracyLong>0.15</AccuracyLong>
+			<AccuracyShort>0.48</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.26</AccuracyLong>
 			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -71,7 +71,7 @@
 				<warmupTime>1.8</warmupTime>
                 <burstShotCount>150</burstShotCount>
                 <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-				<range>27.5</range>
+				<range>30</range>
 				<soundCast>BurstCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

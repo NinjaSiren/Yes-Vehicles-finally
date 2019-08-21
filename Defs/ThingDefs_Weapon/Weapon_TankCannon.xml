@@ -51,9 +51,9 @@
 			<Mass>7.85</Mass>
 			<MarketValue>4200</MarketValue>
 			<AccuracyTouch>0.98</AccuracyTouch>
-			<AccuracyShort>0.87</AccuracyShort>
-			<AccuracyMedium>0.95</AccuracyMedium>
-			<AccuracyLong>0.92</AccuracyLong>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.86</AccuracyMedium>
+            <AccuracyLong>0.88</AccuracyLong>
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -72,7 +72,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cannon_Shell</defaultProjectile>
 				<warmupTime>2.7</warmupTime>
-				<range>60</range>
+				<range>80</range>
+				<minRange>8</minRange>				
 				<soundCast>TankCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>31</muzzleFlashScale>

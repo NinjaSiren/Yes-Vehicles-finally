@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>Exterior_Thermometer</defName>
+		<label>thermometer</label>
+		<hitPoints>1</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<frostbiteVulnerability>0.01</frostbiteVulnerability>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Cart_Hull</defName>
+		<label>body</label>
+		<hitPoints>200</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>		
+		<alive>false</alive>
+		<tags>
+			<!--li>DriverSeat</li-->
+			<!--li>PassengerSeat</li-->
+			<li>HearingSource</li>
+			<li>ConsciousnessSource</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Cart_Viewport</defName>
+		<label>viewport</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>		
+		<alive>false</alive>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Cart_Turret</defName>
+		<label>cabin</label>
+		<hitPoints>40</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>		
+		<alive>false</alive>
+		<tags>
+			<!--li>GunnerSeat</li-->
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+
+	<BodyPartDef>
+		<defName>Cart_Mantlet</defName>
+		<label>mantlet</label>
+		<hitPoints>40</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Cart_Barrel</defName>
+		<label>barrel</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Cart_Cupola</defName>
+		<label>cupola</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Cart_Engine</defName>
+		<label>engine</label>
+		<hitPoints>60</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>BreathingPathway</li>
+			<li>EatingPathway</li>
+			<li>TalkingPathway</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Cart_Transmission</defName>
+		<label>transmission</label>
+		<hitPoints>60</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Fuel_Carts</defName>
+		<label>fuel</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>EatingPathway</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Cart_WheelsL</defName>
+		<label>tread</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Cart_WheelsR</defName>
+		<label>tread</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- ===== Cart Body ===== -->
+
+	<BodyDef>
+		<defName>Cart_Hull</defName>
+		<label>Cart</label>
+
+		<corePart>
+			<def>Cart_Hull</def>
+			<height>Middle</height>
+			<depth>Outside</depth>			
+			<groups>
+				<li>HeadAttackTool</li>
+			</groups>	
+
+			<parts>
+				<li>
+					<def>Cart_Engine</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>Cart_Transmission</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>Exterior_Thermometer</def>
+					<coverage>0.01</coverage>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>Cart_Turret</def>
+					<coverage>0.3</coverage>
+					<height>Top</height>
+					<depth>Outside</depth>	
+
+					<parts>
+						<li>
+							<def>Cart_Cupola</def>
+							<coverage>0.05</coverage>
+							<height>Top</height>
+						</li>						
+						<li>
+							<def>Cart_Barrel</def>
+							<coverage>0.2</coverage>						
+							<parts>
+								<li>
+									<def>Cart_Mantlet</def>
+									<coverage>.3</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+
+				<li>
+					<def>Cart_WheelsL</def>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+				</li>
+
+				<li>
+					<def>Cart_WheelsR</def>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

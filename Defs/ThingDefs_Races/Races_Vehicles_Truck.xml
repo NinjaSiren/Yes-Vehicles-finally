@@ -7,7 +7,7 @@
 		<label>truck</label>
 		<description>An all purpose truck used to carry goods over large distances at a much quicker speed.</description>
 		
-		<statBases Inherit= "False">
+		<statBases>
 			<MarketValue>5000</MarketValue>
 			<MoveSpeed>7.5</MoveSpeed>
 			<CarryingCapacity>750</CarryingCapacity>
@@ -16,21 +16,17 @@
 			<MeatAmount>0</MeatAmount>
             <!--WorkToBuild>0</WorkToBuild-->
             <!--Beauty>0</Beauty-->		
-            <Mass>200</Mass>
-			<PsychicSensitivity>0</PsychicSensitivity>
-			<ToxicSensitivity>0</ToxicSensitivity>
-            <Flammability>0.1</Flammability>
-			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
-			<ComfyTemperatureMax>250</ComfyTemperatureMax> 			
-		</statBases>
+            <Mass>200</Mass>		
+		</statBases>		
 
-        <inspectorTabs Inherit="False">
+		<inspectorTabs Inherit="False">
             <li>ITab_Pawn_Health</li>
             <li>ITab_Pawn_Needs</li>
+            <li>ITab_Pawn_Character</li>
             <li>ITab_Pawn_FormingCaravan</li>
             <li>ITab_Pawn_Gear</li>
             <li>ITab_Pawn_Log</li>
-        </inspectorTabs>		
+		</inspectorTabs>
 		
 		<tools>
 			<li>

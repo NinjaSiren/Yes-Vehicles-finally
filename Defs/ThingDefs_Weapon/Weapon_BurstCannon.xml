@@ -48,9 +48,9 @@
 			<Mass>6.85</Mass>
 			<MarketValue>3200</MarketValue>
 			<AccuracyTouch>0.90</AccuracyTouch>
-			<AccuracyShort>0.73</AccuracyShort>
-			<AccuracyMedium>0.80</AccuracyMedium>
-			<AccuracyLong>0.67</AccuracyLong>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyLong>0.60</AccuracyLong>
 			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -68,7 +68,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Small_Bullet</defaultProjectile>				
 				<warmupTime>2.0</warmupTime>
-				<range>30</range>
+				<range>55</range>
+				<minRange>5.5</minRange>				
 				<soundCast>BurstCannon_Fire</soundCast>
 				<burstShotCount>38</burstShotCount>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>

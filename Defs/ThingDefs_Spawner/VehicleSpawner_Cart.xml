@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Vehicle_CartParts</defName>
+		<label>cart parts</label>
+		<description>A collection of all the essential parts to build one's own vehicle. This set of parts allows the assembly of a highly useful Cart.</description>
+		<graphicData>
+			<texPath>Box/CartBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2250</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<comps>
+			<li Class="O21VehicleFramework.CompProperties_VehicleSpawner">
+				<useVerb>Assemble {0}</useVerb>
+				<vehicleToSpawn>Vehicle_Cart</vehicleToSpawn>
+				<assemblyTime>100</assemblyTime>
+				<workEffect>ConstructMetal</workEffect>
+			</li>
+		</comps>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

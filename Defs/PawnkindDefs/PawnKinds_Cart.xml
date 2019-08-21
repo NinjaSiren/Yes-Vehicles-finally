@@ -2,11 +2,10 @@
 <Defs>
 
 	<PawnKindDef>
-		<defName>Vehicle_ATV</defName>
-		<label>atv</label>
-		<race>ATV</race>
-		<combatPower>100</combatPower>
-        <canBeSapper>true</canBeSapper>
+		<defName>Vehicle_Cart</defName>
+		<label>cart</label>
+		<race>Cart</race>
+		<combatPower>0</combatPower>
 		<defaultFactionType>PlayerColony</defaultFactionType>
         <!--backstoryCategories>
             <li>Civil</li>
@@ -15,9 +14,9 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Vehicles/ATV/ATV</texPath>
+					<texPath>Vehicles/Cart/Cart</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>1.57,1.57</drawSize>
+					<drawSize>4,4</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.8, 0.4)</volume>
 					</shadowData>

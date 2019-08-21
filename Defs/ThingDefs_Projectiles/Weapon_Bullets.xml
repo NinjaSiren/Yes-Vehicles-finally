@@ -14,6 +14,7 @@
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>250</damageAmountBase>
 			<speed>250</speed>
+            <stoppingPower>1.5</stoppingPower>						
 		</projectile>
 	</ThingDef>
 
@@ -30,6 +31,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>200</damageAmountBase>
 			<speed>350</speed>
+            <stoppingPower>3.0</stoppingPower>			
 		</projectile>
 	</ThingDef>
 
