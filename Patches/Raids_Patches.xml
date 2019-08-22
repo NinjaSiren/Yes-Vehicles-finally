@@ -107,7 +107,7 @@
 					    <xpath>Defs/FactionDef[defName="FPC"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 						<value>
 						    <Vehicle_Tank_Pirate>3</Vehicle_Tank_Pirate>
-							<Vehicle_APC_Pirate>3</Vehicle_APC_Piratel>
+							<Vehicle_APC_Pirate>3</Vehicle_APC_Pirate>
 							<!--Vehicle_ATV>4</Vehicle_ATV-->
 						</value>
 					</li>	
