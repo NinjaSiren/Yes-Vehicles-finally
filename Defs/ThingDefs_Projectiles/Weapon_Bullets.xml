@@ -2,6 +2,23 @@
 <Defs>
 
 	<ThingDef ParentName="BaseBullet">
+		<defName>Naval_Shell</defName>
+		<label>Naval shell</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Cannon_Shell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>500</damageAmountBase>
+			<speed>650</speed>
+            <stoppingPower>3.0</stoppingPower>						
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
 		<defName>Cannon_Shell</defName>
 		<label>Cannon shell</label>
 		<graphicData>
@@ -13,7 +30,7 @@
 			<flyOverhead>False</flyOverhead>
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>250</damageAmountBase>
-			<speed>250</speed>
+			<speed>325</speed>
             <stoppingPower>1.5</stoppingPower>						
 		</projectile>
 	</ThingDef>
