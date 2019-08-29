@@ -13,7 +13,7 @@
 			
                 <!-- Adds explosion and explosion damage on the tank projectile -->
                 <li Class="PatchOperationInsert">
-                    <xpath>Defs/ThingDef[defName="Bullet_20x110mmHispano_HE"]</xpath>
+                    <xpath>Defs/ThingDef[defName="Bullet_20x120mmMetalrain_HE"]</xpath>
                         <value>
 						    <comps>
                                 <li Class="CombatExtended.CompProperties_ExplosiveCE">
@@ -131,6 +131,82 @@
                             </tools>
                         </value>
                 </li>
+
+                <!-- Naval cannon CE Patch -->  
+                <li Class="PatchOperationReplace">
+				    <xpath>Defs/ThingDef[defName="Naval_Cannon"]</xpath>
+				    <value>
+                        <ThingDef ParentName="Naval_CannonBase">
+                            <defName>Naval_Cannon</defName>
+		                    <label>Naval cannon</label>
+		                    <description>A powerful cannon for use on a naval ship or possibly a tank, capable of sending exploding shells accurately at the enemy.</description>
+		                    <graphicData>
+		                    	<texPath>Box/Tank_Cannon</texPath>
+		                    	<graphicClass>Graphic_Single</graphicClass>
+		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		                    </graphicData>
+		                    <soundInteract>InteractPistol</soundInteract>
+		                    <statBases>
+            					<WorkToMake>18640</WorkToMake>
+								<Mass>18.29</Mass>
+								<MarketValue>9786</MarketValue>
+								<AccuracyTouch>0.98</AccuracyTouch>
+            					<AccuracyShort>0.74</AccuracyShort>
+            					<AccuracyMedium>0.76</AccuracyMedium>
+            					<AccuracyLong>0.78</AccuracyLong>
+								<RangedWeapon_Cooldown>5.83</RangedWeapon_Cooldown>
+								<SightsEfficiency>6.06</SightsEfficiency>
+      							<ShotSpread>0.02</ShotSpread>
+      							<SwayFactor>1.20</SwayFactor>
+      							<Bulk>35.77</Bulk>
+		                    </statBases>
+		                    <costList>
+									<Steel>350</Steel>
+									<Plasteel>93</Plasteel>
+									<ComponentIndustrial>12</ComponentIndustrial>
+		                    </costList>
+                            <recipeMaker>
+                                <skillRequirements>
+                                    <Crafting>14</Crafting>
+                                </skillRequirements>
+                            </recipeMaker>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>							
+                                <li>CE_AI_Rifle</li>
+                                <li>EliteGun</li>
+		                    </weaponTags>
+						    <verbs>
+						        <li Class="CombatExtended.VerbPropertiesCE">
+                                    <recoilAmount>3.02</recoilAmount>									
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_20x280mmYamato_HE</defaultProjectile>
+				                    <warmupTime>6.29</warmupTime>
+				                    <range>500</range>
+				                    <minRange>15</minRange>				
+				                    <soundCast>TankCannon_Fire</soundCast>
+				                    <soundCastTail>GunTail_Heavy</soundCastTail>
+				                    <muzzleFlashScale>72</muzzleFlashScale>	
+                                    <burstShotCount>2</burstShotCount>
+                                    <ticksBetweenBurstShots>4</ticksBetweenBurstShots>									
+						        </li>
+						    </verbs>
+						    <comps>
+                                <!-- Leaving this here in case of weapon ammo limits. -->
+							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>40</magazineSize>
+                                    <reloadTime>5</reloadTime>
+                                    <ammoSet>AmmoSet_20x120mmMetalrain</ammoSet>
+							    </li-->
+							    <li Class="CombatExtended.CompProperties_FireModes">
+                                    <aiUseBurstMode>TRUE</aiUseBurstMode>
+                                    <aiAimMode>AimedShot</aiAimMode>
+									<aimedBurstShotCount>2</aimedBurstShotCount>
+							    </li>
+						    </comps>	
+					    </ThingDef>
+				    </value>
+			    </li>
  
                 <!-- Rail Cannon CE Patch -->  
                 <li Class="PatchOperationReplace">
@@ -181,7 +257,7 @@
 				                    <warmupTime>3.1</warmupTime>									
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
-                                    <defaultProjectile>Bullet_20x110mmHispano_FMJ</defaultProjectile>
+                                    <defaultProjectile>Bullet_20x120mmMetalrain_FMJ</defaultProjectile>
                                     <range>100</range>
 									<minRange>10</minRange>
                                     <soundCast>RailCannon_Fire</soundCast>
@@ -194,7 +270,7 @@
 							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>40</magazineSize>
                                     <reloadTime>7</reloadTime>
-                                    <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+                                    <ammoSet>AmmoSet_20x120mmMetalrain</ammoSet>
 							    </li-->
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -204,7 +280,7 @@
 					    </ThingDef>
 				    </value>
 			    </li>
-           
+				
                 <!-- Tank Cannon CE Patch -->  
                 <li Class="PatchOperationReplace">
 				    <xpath>Defs/ThingDef[defName="Tank_Cannon"]</xpath>
@@ -254,7 +330,7 @@
 				                    <warmupTime>2.6</warmupTime>									
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
-                                    <defaultProjectile>Bullet_20x110mmHispano_HE</defaultProjectile>
+                                    <defaultProjectile>Bullet_20x120mmMetalrain_HE</defaultProjectile>
                                     <range>80</range>
 									<minRange>8</minRange>
                                     <soundCast>TankCannon_Fire</soundCast>
@@ -267,7 +343,7 @@
 							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>40</magazineSize>
                                     <reloadTime>5</reloadTime>
-                                    <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+                                    <ammoSet>AmmoSet_20x120mmMetalrain</ammoSet>
 							    </li-->
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -325,7 +401,7 @@
                                     <recoilAmount>1.51</recoilAmount>
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
-                                    <defaultProjectile>Bullet_20x82mmMauser_HE</defaultProjectile>         
+                                    <defaultProjectile>Bullet_20x88mmElephant_HE</defaultProjectile>         
                                     <warmupTime>0.56</warmupTime>
                                     <range>55</range>
 									<minRange>5.5</minRange>
@@ -341,7 +417,7 @@
 							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>60</magazineSize>
                                     <reloadTime>1</reloadTime>
-                                    <ammoSet>AmmoSet_20x82mmMauser</ammoSet>
+                                    <ammoSet>AmmoSet_20x88mmElephant</ammoSet>
 							    </li-->
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>TRUE</aiUseBurstMode>
