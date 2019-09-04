@@ -2,7 +2,7 @@
 
 I was searching for a mod of vehicles and it ended up me finding this old mod from B17 to B18. I ended up forking it from github and continuing the work of Mason J. Caboose's Yes, Vehicles mod.
 
-Thank You Jecrell for making JecTools, Neronix for forking the Vehicle code from JecsTools (-O21-Vehicle Framework), and Mason J. Caboose for making the original WIP 
+Thank You Jecrell for making JecTools, Neronix for forking the Vehicle code from JecsTools ([O21] Vehicle Framework), and Mason J. Caboose for making the original WIP 
 mod!
 
 Thank you for Hjkma for the Combat Extended patch Hotfix #2!
@@ -10,7 +10,7 @@ Thank you for Hjkma for the Combat Extended patch Hotfix #2!
 The mod requires the latest JecsTools by Jecrell:
 https://github.com/jecrell/JecsTools/releases/
 
-and -O21-Vehicle Framework by neronix17:
+and [O21] Vehicle Framework by neronix17:
 https://github.com/neronix17/-O21-Vehicle-Framework
 
 Optional mods:
