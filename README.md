@@ -1,29 +1,92 @@
-[1.0] Yes, Vehicles, Finally! - A somewhat* new way to travel the planet!
+[v0.8b] [1.0+] Yes, Vehicles, Finally! - A somewhat* new way to travel the planet!
+with Combat Extended & Run and Gun support, with Faction AI addition!
 
-I was searching for a mod of vehicles and it ended up me finding this old mod from B17 to B18. I ended up forking it from github and continuing the work of Mason J. Caboose's Yes, Vehicles mod.
+-------------------------------------------------------------------------------------------
 
-Thank You Jecrell for making JecTools, Neronix for forking the Vehicle code from JecsTools ([O21] Vehicle Framework), and Mason J. Caboose for making the original WIP 
-mod!
+I was searching for a mod of vehicles and it ended up me finding this old mod from B17 to 
+B18. I ended up forking it from github and continuing the work of Mason J. Caboose's Yes, 
+Vehicles mod.
 
+Thank You Jecrell for making JecsTools, Neronix for forking the Vehicle code from JecsTools 
+([O21] Vehicle Framework), and Mason J. Caboose for making the original WIP mod!
 Thank you for Hjkma for the Combat Extended patch Hotfix #2!
 
+Original mod [A17/18] video by BaRKy:
+https://www.youtube.com/watch?v=wnfeDeQAwEI
+
+-------------------------------------------------------------------------------------------
+
 The mod requires the latest JecsTools by Jecrell:
-https://github.com/jecrell/JecsTools/releases/
+- Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=932008009
+- Ludeon Forums: https://ludeon.com/forums/index.php?topic=32868.0
+- Github: https://github.com/jecrell/JecsTools/releases
 
 and [O21] Vehicle Framework by neronix17:
-https://github.com/neronix17/-O21-Vehicle-Framework
+- Github: https://github.com/neronix17/-O21-Vehicle-Framework/releases
+
+-------------------------------------------------------------------------------------------
+
+Latest Downloadable Version:
+- Github: https://github.com/NinjaSiren/Yes-Vehicles-finally/releases/download/v0.8b/Yes.Vehicles.Finally.v0.8b.zip
+- Nexus Mods: https://www.nexusmods.com/rimworld/mods/305?tab=files
+- Rimworld Base: https://rim-world.com/vehicles-mod/]Link[/url
+
+If you had the older versions of the mod, please delete the previous 
+version and download this new update, do not overwrite it. 
+If you got v0.7e and above, can overwrite it.
+
+-------------------------------------------------------------------------------------------
 
 Optional mods:
-Combat Extended - https://github.com/NoImageAvailable/CombatExtended/releases
-Run and Gun - https://github.com/rheirman/RunAndGun/releases
+RECOMMENDED - Combat Extended
+- Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=1631756268
+- Ludeon Forums: https://ludeon.com/forums/index.php?topic=33461.0
+- Github: https://github.com/NoImageAvailable/CombatExtended/releases
 
-Currently, Yes Vehicles Finally mod is at WIP, but will be always keep you posted if any
-new things arise!
+Run and Gun
+- Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=1204108550
+- Ludeon Forums: https://ludeon.com/forums/index.php?topic=36061.0
+- Github: https://github.com/rheirman/RunAndGun/releases
+
+Rimsenal Pack
+- Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=725950793
+- Ludeon Forums: https://ludeon.com/forums/index.php?topic=11160
+- Dropbox: https://www.dropbox.com/sh/fksj8i446o3szi1/AAA6osi1ZSee_Kw0a3_yLvfma?dl=0
+
+Rimsenal CE Patch Pack
+- Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=1794246151
+
+-------------------------------------------------------------------------------------------
+
+Optional without Combat Extended:
+Polarisbloc Pack
+- Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=1500329053
+- Github: https://github.com/VaniatD/Polarisbloc-Mods-Pack/releases
+
+
+Mod Github link: https://github.com/NinjaSiren/Yes-Vehicles-finally
+Original mod github: https://github.com/mason3ck/Yes-Vehicles
+Mod Wiki page: https://github.com/NinjaSiren/Yes-Vehicles-finally/wiki
+
+-------------------------------------------------------------------------------------------
+
+Additional Notes:
+- For Combat Extended users only, vehicles does not need to be loaded up with ammo to work.
+- For Polarisbloc users only, please disable Combat Extended.
+- If your goal is caravanning, load the driver into the vehicles first, then create the caravan.
+- The Vehicles Mod cannot be removed from a saved game.
+- AI factions may be able to use vehicles in raids, caravans, and bases.
+- This mod is compatible with existing saves, it does not require you to start a new game.
+- The Vehicles Mod requires the JecsTools Library and the [O21] Vehicle Framework in order to work.
+- Compatible with the latest Combat Extended and Run and Gun.
+
+-------------------------------------------------------------------------------------------
 
 Changelogs:
+
 v0.1
-- Updating some Verse and Core references from B17/18 to v1.0+ variants, to remove 
-  some errors on the log file. Though, there are still possible incompatibility issues.
+- Updating some Verse and Core references from B17/18 to v1.0+ variants, to remove. 
+- some errors on the log file. Though, there are still possible incompatibility issues.
 - Fixed some XML duplicate errors.
 - Fixed the 3 default vehicles. (Truck, APC, and Tank)
 
@@ -33,10 +96,10 @@ v0.3a
 - Weapons not operable yet while in vehicles.
 
 v0.3b
-- Added new vehicle (ATV)
+- Added new vehicle. (ATV)
 
 v0.6
-- Transferred vehicle code from JecsTools to -O21-Vehicle Framework by neronix17
+- Transferred vehicle code from JecsTools to -O21-Vehicle Framework by neronix17.
 - Working as intended, including weapons. YEAH!!!!
 - Some random non-critical bugs may occur, and some visual bugs.
 - ATV graphics changes.
@@ -57,7 +120,7 @@ v0.7c
 - Additional patch changes for Combat Extended.
 - Added AI enemy vehicles in raids, and defensive + cargo vehicles in AI caravans.
 
-v0.7d + Hotfix + Hotfix #2*
+v0.7d + Hotfix
 - Major update, New game is optional, but maybe needed. (Sorry for the inconvinence.)
 - Added vehicle flammability values. (Vehicles can now burn!)
 - Added exploding vehicles when damaged. (Boom! Vehicles, it kinda has a bug but non-critical.)
@@ -65,12 +128,12 @@ v0.7d + Hotfix + Hotfix #2*
 - Added different color schemes for different AI faction type. (Red = Bandits, Light Green = Outlanders)
 - Added support compatibility with Run and Gun.
 - Nerfed vehicle excessive movement speeds. (No more ultra-Blitzkrieg!)
-- Changed Combat Extended weapon and melee patches. (Fast firing guns galore and accuracy hotfix.)
+- Changed Combat Extended vehicle weapons and melee values. (Fast firing guns galore and accuracy hotfix.)
 - Changed Combat Extended 20x110mm Hispano projectile to explode on impact. (Fire in the hole, Boom!)
-- Non-critical bug found when clicking the info of a vehicle.
-- Non-critical bug found when vehicles die and explode.
-- Transferred and updated CE_patches.xml from CombatExtended/Patches folder to Yes, Vehicles, Finally!/Patches (Updated by Hjkma)*
-- Updated Combat Extended patch to run with or without Combat Extended, thanks to Hjkima.*
+- Non-critical bug found when clicking the info of a vehicle. (Not-fixed yet)
+- Non-critical bug found when vehicles die and explode. (Not-fixed yet)
+- Transferred and updated CE_patches.xml from CombatExtended/Patches folder to Yes, Vehicles, Finally!/Patches. (Updated by Hjkma)
+- Updated Combat Extended patch to run with or without Combat Extended, thanks to Hjkma.
 
 v0.7e
 - Added vehicle fuel gauge.
@@ -78,7 +141,7 @@ v0.7e
 - Added specialDisplayRadius for weapons.
 - Changed weapon ranges depending either CE is installed or not.
 - Patched some weaponTags.
-- Fixed bug: JobDriver error when building weapon above "good" quality.
+- Fixed bug: JobDriver error when building weapon above "good" quality.	
 - Vehicle repairs now possible, as updated by neronix17. (Repairs are automatic, no user control needed)
 
 v0.8
