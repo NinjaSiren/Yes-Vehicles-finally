@@ -85,7 +85,7 @@ v0.8
 - Added support for Rimsenal and Polarisbloc mods.
 - Added vehicle faction AI for Rimsenal and Polarisbloc mods. (Raids, Caravans, and Bases)
 - New vehicle: ATV with a Cart/Wagon. (on its back, I downloaded that old mod, Tools for Haul. Might revive it?)
-- Not recommended to use Combat Extended with Polarisbloc or Rimsenal. (No CE patches yet for Polarisbloc, and Rimsenal CE patch is kinda buggy yet.)
+- Not recommended to use Combat Extended with Polarisbloc. (No CE patches yet for Polarisbloc.)
 
 v0.8b
 - Added new tank weapon, Artillery Cannon.
