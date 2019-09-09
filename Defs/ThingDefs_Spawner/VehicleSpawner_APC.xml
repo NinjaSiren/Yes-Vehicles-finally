@@ -16,7 +16,7 @@
 		<stackLimit>1</stackLimit>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
-			<MarketValue>6000</MarketValue>
+			<MarketValue>197</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>4750</WorkToMake>
 			<Mass>4</Mass>

@@ -8,7 +8,7 @@
 		<description>A heavily armored machine designed for the art of modern war.</description>
 		
 		<statBases>
-			<MarketValue>7500</MarketValue>
+			<MarketValue>6210</MarketValue>
 			<MoveSpeed>5.0</MoveSpeed>
 			<CarryingCapacity>250</CarryingCapacity>
 			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
@@ -19,13 +19,8 @@
             <Mass>400</Mass> 
 		</statBases>	
 
-		<inspectorTabs Inherit="False">
-            <li>ITab_Pawn_Health</li>
-            <li>ITab_Pawn_Needs</li>
-            <li>ITab_Pawn_Character</li>
+		<inspectorTabs>
             <li>ITab_Pawn_FormingCaravan</li>
-            <li>ITab_Pawn_Gear</li>
-            <li>ITab_Pawn_Log</li>
 		</inspectorTabs>
 		
 		<tools>
@@ -78,8 +73,8 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>100.0</fuelConsumptionRate>
-				<fuelCapacity>200.0</fuelCapacity>
+				<fuelConsumptionRate>50.5</fuelConsumptionRate>
+				<fuelCapacity>505</fuelCapacity>	
 				<fuelFilter>
 					<thingDefs>
 						<li>Chemfuel</li>
@@ -172,6 +167,7 @@
 		
         <modExtensions>
 			<li Class="O21VehicleFramework.DefModExt_RenderWeaponExt">
+				<weaponCardinalDirection>True</weaponCardinalDirection> <!-- [O21] Vehicle Framework patchnotes update v0.4 -->			
 				<alwaysRender>True</alwaysRender>
 				<renderOverVehicle>True</renderOverVehicle>
 				<renderPosOffset>(0.0, 0.3)</renderPosOffset>

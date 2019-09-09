@@ -7,8 +7,8 @@
 	<!-- Adds additional vehicles -->
 	<Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="VehicleTable"]/recipes</xpath>
-		<value>
-            <li>MakeVehicleCart</li>
-		</value>
+		    <value>
+                <li>MakeVehicleCart</li>
+		    </value>
 	</Operation>
 </Patch>

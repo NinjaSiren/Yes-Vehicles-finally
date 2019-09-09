@@ -8,7 +8,7 @@
 		<description>An all purpose truck used to carry goods over large distances at a much quicker speed.</description>
 		
 		<statBases>
-			<MarketValue>5000</MarketValue>
+			<MarketValue>1066</MarketValue>
 			<MoveSpeed>7.5</MoveSpeed>
 			<CarryingCapacity>750</CarryingCapacity>
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
@@ -19,13 +19,8 @@
             <Mass>200</Mass>		
 		</statBases>		
 
-		<inspectorTabs Inherit="False">
-            <li>ITab_Pawn_Health</li>
-            <li>ITab_Pawn_Needs</li>
-            <li>ITab_Pawn_Character</li>
+		<inspectorTabs>
             <li>ITab_Pawn_FormingCaravan</li>
-            <li>ITab_Pawn_Gear</li>
-            <li>ITab_Pawn_Log</li>
 		</inspectorTabs>
 		
 		<tools>
@@ -78,8 +73,8 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>65.0</fuelConsumptionRate>
-				<fuelCapacity>150.0</fuelCapacity>
+				<fuelConsumptionRate>1</fuelConsumptionRate>
+				<fuelCapacity>21</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>Chemfuel</li>
@@ -167,11 +162,12 @@
 		        <sound>PJ_ATST_Step</sound>
                 <secondsPerStep>1.15</secondsPerStep>
 		        <secondsBetweenSteps>0.5</secondsBetweenSteps>
-            </li-->
+            </li-->			
 		</comps>
 		
         <modExtensions>
 			<li Class="O21VehicleFramework.DefModExt_RenderWeaponExt">
+				<weaponCardinalDirection>True</weaponCardinalDirection> <!-- [O21] Vehicle Framework patchnotes update v0.4 -->				
 				<alwaysRender>True</alwaysRender>
 				<renderOverVehicle>True</renderOverVehicle>
 				<renderPosOffset>(0.0, 1.75)</renderPosOffset>
