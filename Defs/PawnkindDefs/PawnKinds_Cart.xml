@@ -5,7 +5,7 @@
 		<defName>Vehicle_Cart</defName>
 		<label>cart</label>
 		<race>Cart</race>
-		<combatPower>0</combatPower>
+		<combatPower>50</combatPower>
 		<defaultFactionType>PlayerColony</defaultFactionType>
         <!--backstoryCategories>
             <li>Civil</li>
