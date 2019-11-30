@@ -8,7 +8,7 @@
 		<description>A heavily armored machine designed for the art of modern war and carrying goods around.</description>
 		
 		<statBases>
-			<MarketValue>1971</MarketValue>
+			<MarketValue>6250</MarketValue>
 			<MoveSpeed>8.0</MoveSpeed>
 			<CarryingCapacity>500</CarryingCapacity>
 			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
@@ -18,9 +18,14 @@
             <!--Beauty>0</Beauty-->
             <Mass>300</Mass>
 		</statBases>		
-		
-		<inspectorTabs>
+
+		<inspectorTabs Inherit="False">
+            <li>ITab_Pawn_Health</li>
+            <li>ITab_Pawn_Needs</li>
+            <li>ITab_Pawn_Character</li>
             <li>ITab_Pawn_FormingCaravan</li>
+            <li>ITab_Pawn_Gear</li>
+            <li>ITab_Pawn_Log</li>
 		</inspectorTabs>
 		
 		<tools>
@@ -74,8 +79,8 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>4.3</fuelConsumptionRate>
-				<fuelCapacity>56</fuelCapacity>
+				<fuelConsumptionRate>85.0</fuelConsumptionRate>
+				<fuelCapacity>150.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>Chemfuel</li>
@@ -88,6 +93,7 @@
                 <explosiveDamageType>Flame</explosiveDamageType>
                 <chanceNeverExplodeFromDamage>0.4</chanceNeverExplodeFromDamage>
             </li-->			
+			
 			<li Class="O21VehicleFramework.CompProperties_Vehicle">
 
 				<!--
@@ -168,12 +174,11 @@
 		        <sound>PJ_ATST_Step</sound>
                 <secondsPerStep>1.15</secondsPerStep>
 		        <secondsBetweenSteps>0.5</secondsBetweenSteps>
-            </li-->			
+            </li-->
 		</comps>
 		
         <modExtensions>
 			<li Class="O21VehicleFramework.DefModExt_RenderWeaponExt">
-			    <weaponCardinalDirection>True</weaponCardinalDirection> <!-- [O21] Vehicle Framework patchnotes update v0.4 -->
 				<alwaysRender>True</alwaysRender>
 				<renderOverVehicle>True</renderOverVehicle>
 				<renderPosOffset>(0.0, -0.75)</renderPosOffset>

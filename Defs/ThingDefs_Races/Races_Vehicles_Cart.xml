@@ -8,7 +8,7 @@
         <description>A cart is an old-fashioned wooden vehicle that is used for transporting goods or people.</description>
 		
         <statBases>
-			<MarketValue>160</MarketValue>
+			<MarketValue>200</MarketValue>
 			<MoveSpeed>4.5</MoveSpeed>
 			<CarryingCapacity>300</CarryingCapacity>
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
@@ -19,8 +19,13 @@
             <Mass>50</Mass>			
 		</statBases>		
 
-		<inspectorTabs>
+		<inspectorTabs Inherit="False">
+            <li>ITab_Pawn_Health</li>
+            <li>ITab_Pawn_Needs</li>
+            <li>ITab_Pawn_Character</li>
             <li>ITab_Pawn_FormingCaravan</li>
+            <li>ITab_Pawn_Gear</li>
+            <li>ITab_Pawn_Log</li>
 		</inspectorTabs>
 		
 		<tools>
@@ -74,8 +79,8 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>0.34</fuelConsumptionRate>
-				<fuelCapacity>6</fuelCapacity>
+				<fuelConsumptionRate>70.0</fuelConsumptionRate>
+				<fuelCapacity>100.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>Chemfuel</li>
@@ -169,7 +174,6 @@
 		
         <modExtensions>
 			<li Class="O21VehicleFramework.DefModExt_RenderWeaponExt">
-				<weaponCardinalDirection>True</weaponCardinalDirection> <!-- [O21] Vehicle Framework patchnotes update v0.4 -->				
 				<alwaysRender>True</alwaysRender>
 				<renderOverVehicle>True</renderOverVehicle>
 				<renderPosOffset>(0.0, 1.75)</renderPosOffset>

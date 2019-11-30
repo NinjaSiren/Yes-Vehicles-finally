@@ -9,11 +9,11 @@
 		
         <match Class="PatchOperationSequence">
             <success>Always</success>
-            <operations>             			
-							
+            <operations>             
+			
                 <!-- Adds explosion and explosion damage on the tank projectile -->
                 <li Class="PatchOperationInsert">
-                    <xpath>Defs/ThingDef[defName="Bullet_20x120mmMetalrain_HE"]</xpath>
+                    <xpath>Defs/ThingDef[defName="Bullet_20x110mmHispano_HE"]</xpath>
                         <value>
 						    <comps>
                                 <li Class="CombatExtended.CompProperties_ExplosiveCE">
@@ -29,8 +29,8 @@
                                 </li>
 						    </comps>
                         </value>
-                </li>				
- 
+                </li>
+           
                 <!-- Adds CE compatibility with vehicle melee -->
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="APC"]/tools</xpath>
@@ -131,86 +131,6 @@
                             </tools>
                         </value>
                 </li>
-
-                <!-- Naval cannon CE Patch -->  
-                <li Class="PatchOperationReplace">
-				    <xpath>Defs/ThingDef[defName="Naval_Cannon"]</xpath>
-				    <value>
-                        <ThingDef ParentName="Naval_CannonBase">
-                            <defName>Naval_Cannon</defName>
-		                    <label>Naval cannon</label>
-		                    <description>A powerful cannon for use on a naval ship or possibly a tank, capable of sending exploding shells accurately at the enemy.</description>		                    
-							<graphicData>
-		                    	<texPath>Box/Tank_Cannon</texPath>
-		                    	<graphicClass>Graphic_Single</graphicClass>
-		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
-		                    </graphicData>
-		                    <soundInteract>InteractPistol</soundInteract>
-		                    <statBases>
-            					<WorkToMake>18640</WorkToMake>
-								<Mass>18.29</Mass>
-								<MarketValue>9786</MarketValue>
-								<AccuracyTouch>0.98</AccuracyTouch>
-            					<AccuracyShort>0.74</AccuracyShort>
-            					<AccuracyMedium>0.76</AccuracyMedium>
-            					<AccuracyLong>0.78</AccuracyLong>
-								<RangedWeapon_Cooldown>5.83</RangedWeapon_Cooldown>
-								<SightsEfficiency>6.06</SightsEfficiency>
-      							<ShotSpread>0.02</ShotSpread>
-      							<SwayFactor>1.20</SwayFactor>
-      							<Bulk>35.77</Bulk>
-		                    </statBases>
-		                    <costList>
-									<Steel>350</Steel>
-									<Plasteel>93</Plasteel>
-									<ComponentIndustrial>12</ComponentIndustrial>
-		                    </costList>
-                            <recipeMaker>
-                                <skillRequirements>
-                                    <Crafting>14</Crafting>
-                                </skillRequirements>
-                            </recipeMaker>
-		                    <weaponTags>
-			                    <li>Heavy_Weps</li>							
-                                <li>CE_AI_Rifle</li>
-                                <li>EliteGun</li>
-								<li>TurretGun</li>
-		                    </weaponTags>
-						    <verbs>
-						        <li Class="CombatExtended.VerbPropertiesCE">
-                                    <recoilAmount>3.02</recoilAmount>									
-                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                                    <hasStandardCommand>true</hasStandardCommand>
-                                    <defaultProjectile>Bullet_20x280mmYamato_HE</defaultProjectile>
-				                    <warmupTime>6.29</warmupTime>
-				                    <range>500</range>
-				                    <minRange>15</minRange>				
-				                    <soundCast>TankCannon_Fire</soundCast>
-				                    <soundCastTail>GunTail_Heavy</soundCastTail>
-				                    <muzzleFlashScale>72</muzzleFlashScale>	
-                                    <burstShotCount>2</burstShotCount>
-                                    <ticksBetweenBurstShots>4</ticksBetweenBurstShots>									
-						        </li>
-						    </verbs>
-						    <comps>
-                                <!-- Leaving this here in case of weapon ammo limits. -->
-							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
-                                    <magazineSize>25</magazineSize>
-                                    <reloadTime>9</reloadTime>
-									<spawnUnloaded>false</spawnUnloaded>
-                                    <ammoSet>AmmoSet_20x280mmYamato</ammoSet>
-							    </li-->
-							    <li Class="CombatExtended.CompProperties_FireModes">
-                                    <aiUseBurstMode>TRUE</aiUseBurstMode>
-                                    <aiAimMode>AimedShot</aiAimMode>
-									<aimedBurstShotCount>2</aimedBurstShotCount>
-							    </li>										
-								<li Class="CompProperties_Forbiddable"/>
-						    </comps>
-                            <fillPercent>0.85</fillPercent>							
-					    </ThingDef>
-				    </value>
-			    </li>
  
                 <!-- Rail Cannon CE Patch -->  
                 <li Class="PatchOperationReplace">
@@ -219,8 +139,8 @@
                         <ThingDef ParentName="Rail_CannonBase">
                             <defName>Rail_Cannon</defName>
 		                    <label>Rail cannon</label>
-		                    <description>A pin point cannon capable of delivering a dense round down the battlefield quickly.</description>                   
-							<graphicData>
+		                    <description>A pin point cannon capable of delivering a dense round down the battlefield quickly.</description>
+		                    <graphicData>
 			                    <texPath>Box/Rail_Cannon</texPath>
 			                    <graphicClass>Graphic_Single</graphicClass>
 			                    <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
@@ -254,7 +174,6 @@
 			                    <li>Heavy_Weps</li>								
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
-								<li>TurretGun</li>
 		                    </weaponTags>
 						    <verbs>
 						        <li Class="CombatExtended.VerbPropertiesCE">
@@ -262,7 +181,7 @@
 				                    <warmupTime>3.1</warmupTime>									
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
-                                    <defaultProjectile>Bullet_20x120mmMetalrain_FMJ</defaultProjectile>
+                                    <defaultProjectile>Bullet_20x110mmHispano_FMJ</defaultProjectile>
                                     <range>100</range>
 									<minRange>10</minRange>
                                     <soundCast>RailCannon_Fire</soundCast>
@@ -273,22 +192,19 @@
 						    <comps>
                                 <!-- Leaving this here in case of weapon ammo limits. -->
 							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
-                                    <magazineSize>50</magazineSize>
+                                    <magazineSize>40</magazineSize>
                                     <reloadTime>7</reloadTime>
-									<spawnUnloaded>false</spawnUnloaded>
-                                    <ammoSet>AmmoSet_20x120mmMetalrain</ammoSet>
+                                    <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
 							    </li-->
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>FALSE</aiUseBurstMode>
                                     <aiAimMode>AimedShot</aiAimMode>
-							    </li>								
-								<li Class="CompProperties_Forbiddable"/>								
-						    </comps>
-                            <fillPercent>0.85</fillPercent>							
+							    </li>
+						    </comps>	
 					    </ThingDef>
 				    </value>
 			    </li>
-				
+           
                 <!-- Tank Cannon CE Patch -->  
                 <li Class="PatchOperationReplace">
 				    <xpath>Defs/ThingDef[defName="Tank_Cannon"]</xpath>
@@ -296,8 +212,8 @@
                         <ThingDef ParentName="Tank_CannonBase">
                             <defName>Tank_Cannon</defName>
 		                    <label>Tank cannon</label>
-		                    <description>A powerful cannon for use on a tank, capable of sending exploding shells accurately at the enemy.</description>		                    
-							<graphicData>
+		                    <description>A powerful cannon for use on a tank, capable of sending exploding shells accurately at the enemy.</description>
+		                    <graphicData>
 		                    	<texPath>Box/Tank_Cannon</texPath>
 		                    	<graphicClass>Graphic_Single</graphicClass>
 		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
@@ -331,7 +247,6 @@
 			                    <li>Heavy_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
-								<li>TurretGun</li>
 		                    </weaponTags>
 						    <verbs>
 						        <li Class="CombatExtended.VerbPropertiesCE">
@@ -339,7 +254,7 @@
 				                    <warmupTime>2.6</warmupTime>									
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
-                                    <defaultProjectile>Bullet_20x120mmMetalrain_HE</defaultProjectile>
+                                    <defaultProjectile>Bullet_20x110mmHispano_HE</defaultProjectile>
                                     <range>80</range>
 									<minRange>8</minRange>
                                     <soundCast>TankCannon_Fire</soundCast>
@@ -350,18 +265,15 @@
 						    <comps>
                                 <!-- Leaving this here in case of weapon ammo limits. -->
 							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
-                                    <magazineSize>50</magazineSize>
+                                    <magazineSize>40</magazineSize>
                                     <reloadTime>5</reloadTime>
-									<spawnUnloaded>false</spawnUnloaded>
-                                    <ammoSet>AmmoSet_20x120mmMetalrain</ammoSet>
+                                    <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
 							    </li-->
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>FALSE</aiUseBurstMode>
                                     <aiAimMode>AimedShot</aiAimMode>
-							    </li>									
-								<li Class="CompProperties_Forbiddable"/>								
-						    </comps>
-                            <fillPercent>0.85</fillPercent>							
+							    </li>
+						    </comps>	
 					    </ThingDef>
 				    </value>
 			    </li>
@@ -373,8 +285,8 @@
                         <ThingDef ParentName="Burst_CannonBase">
                             <defName>Burst_Cannon</defName>
 		                    <label>Burst cannon</label>
-		                    <description>A rapid fire cannon for light armor or infantry.</description>		                    
-							<graphicData>
+		                    <description>A rapid fire cannon for light armor or infantry.</description>
+		                    <graphicData>
 		                    	<texPath>Box/Burst_Cannon</texPath>
 		                    	<graphicClass>Graphic_Single</graphicClass>
 		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
@@ -407,14 +319,13 @@
 			                    <li>Light_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
-								<li>TurretGun</li>
 		                    </weaponTags>
 						    <verbs>
 						        <li Class="CombatExtended.VerbPropertiesCE">
                                     <recoilAmount>1.51</recoilAmount>
                                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                                     <hasStandardCommand>true</hasStandardCommand>
-                                    <defaultProjectile>Bullet_20x88mmElephant_HE</defaultProjectile>         
+                                    <defaultProjectile>Bullet_20x82mmMauser_HE</defaultProjectile>         
                                     <warmupTime>0.56</warmupTime>
                                     <range>55</range>
 									<minRange>5.5</minRange>
@@ -428,19 +339,16 @@
 						    <comps>
                                 <!-- Leaving this here in case of weapon ammo limits. -->
 							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
-                                    <magazineSize>125</magazineSize>
+                                    <magazineSize>60</magazineSize>
                                     <reloadTime>1</reloadTime>
-									<spawnUnloaded>false</spawnUnloaded>
-                                    <ammoSet>AmmoSet_20x88mmElephant</ammoSet>
+                                    <ammoSet>AmmoSet_20x82mmMauser</ammoSet>
 							    </li-->
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>TRUE</aiUseBurstMode>
                                     <noSingleShot>true</noSingleShot>
                                     <aimedBurstShotCount>75</aimedBurstShotCount> 
-							    </li>								
-								<li Class="CompProperties_Forbiddable"/>
-						    </comps>
-                            <fillPercent>0.85</fillPercent>							
+							    </li>
+						    </comps>	
 					    </ThingDef>
 				    </value>
 			    </li>
@@ -452,8 +360,8 @@
                         <ThingDef ParentName="Machine_CannonBase">
 		                    <defName>Machine_Cannon</defName>
 		                    <label>Machine cannon</label>
-		                    <description>An ultra rapid fire cannon for infantry and animal attacks.</description>		                    
-							<graphicData>
+		                    <description>An ultra rapid fire cannon for infantry and animal attacks.</description>
+		                    <graphicData>
 		                    	<texPath>Box/Burst_Cannon</texPath>
 		                    	<graphicClass>Graphic_Single</graphicClass>
 		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
@@ -486,7 +394,6 @@
 			                    <li>Light_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
-								<li>TurretGun</li>
 		                    </weaponTags>
 						    <verbs>
 						        <li Class="CombatExtended.VerbPropertiesCE">
@@ -506,19 +413,16 @@
 						    <comps>
                                 <!-- Leaving this here in case of weapon ammo limits. -->
 							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
-                                    <magazineSize>250</magazineSize>
+                                    <magazineSize>120</magazineSize>
                                     <reloadTime>0.75</reloadTime>
-									<spawnUnloaded>false</spawnUnloaded>
                                     <ammoSet>AmmoSet_127x55mmAR</ammoSet>
 							    </li-->
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>TRUE</aiUseBurstMode>
                                     <noSingleShot>true</noSingleShot>
                                     <aimedBurstShotCount>150</aimedBurstShotCount>
-							    </li>							
-								<li Class="CompProperties_Forbiddable"/>
-						    </comps>
-                            <fillPercent>0.85</fillPercent>							
+							    </li>
+						    </comps>	
 					    </ThingDef>
 				    </value>
 			    </li>				
@@ -530,8 +434,8 @@
                         <ThingDef ParentName="Machine_GunBase">
 		                    <defName>Machine_Gun</defName>
 		                    <label>Machine gun</label>
-		                    <description>An ultra rapid fire gun for infantry and animal attacks.</description>		                    
-							<graphicData>
+		                    <description>An ultra rapid fire gun for infantry and animal attacks.</description>
+		                    <graphicData>
 		                    	<texPath>Box/Burst_Cannon</texPath>
 		                    	<graphicClass>Graphic_Single</graphicClass>
 		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
@@ -564,7 +468,6 @@
 			                    <li>Light_Weps</li>							
                                 <li>CE_AI_Rifle</li>
                                 <li>EliteGun</li>
-								<li>TurretGun</li>
 		                    </weaponTags>
 						    <verbs>
 						        <li Class="CombatExtended.VerbPropertiesCE">
@@ -584,19 +487,16 @@
 						    <comps>
                                 <!-- Leaving this here in case of weapon ammo limits. -->
 							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
-                                    <magazineSize>500</magazineSize>
+                                    <magazineSize>220</magazineSize>
                                     <reloadTime>0.25</reloadTime>
-									<spawnUnloaded>false</spawnUnloaded>
                                     <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
 							    </li-->
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>TRUE</aiUseBurstMode>
                                     <noSingleShot>true</noSingleShot>  
                                     <aimedBurstShotCount>300</aimedBurstShotCount> 
-							    </li>										
-								<li Class="CompProperties_Forbiddable"/>
-						    </comps>
-                            <fillPercent>0.85</fillPercent>							
+							    </li>
+						    </comps>	
 					    </ThingDef>
 				    </value>
 			    </li>
@@ -609,7 +509,7 @@
 				        	<defName>Arty_Cannon</defName>
 				        	<label>Artillery cannon</label>
 				        	<description>A powerful cannon for use on a tank chassis, capable of sending exploding shells accurately at the enemy.</description>
-							<graphicData>
+				        	<graphicData>
 				        		<texPath>Box/Tank_Cannon</texPath>
 				        		<graphicClass>Graphic_Single</graphicClass>
 				        		<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
@@ -625,7 +525,6 @@
 				        		<AccuracyLong>0.90</AccuracyLong>
 				        		<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 								<SightsEfficiency>0.5</SightsEfficiency>
-    	                        <Bulk>23.45</Bulk>								
 				        	</statBases>
 				        	<costList>
 				        		<Steel>200</Steel>
@@ -660,11 +559,10 @@
 						    <comps>
                                 <!-- Leaving this here in case of weapon ammo limits. -->
 							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
-                                    <magazineSize>50</magazineSize>
+                                    <magazineSize>220</magazineSize>
                                     <reloadTime>0.25</reloadTime>
-									<spawnUnloaded>false</spawnUnloaded>
-                                    <ammoSet>AmmoSet_81mmMortarShell</ammoSet>
-							    </li-->
+                                    <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+							    </li-->	
 							    <li Class="CombatExtended.CompProperties_Charges">
 			    			        <chargeSpeeds>
 			    			            <li>30</li>
@@ -672,8 +570,7 @@
 			    			            <li>70</li>
 			    			            <li>90</li>
 			    			        </chargeSpeeds>
-						        </li>
-                                <li Class="CompProperties_Forbiddable"/>								
+						        </li>								
 						    </comps>		
 						    <weaponTags>
 							    <li>Artillery</li>
@@ -683,250 +580,9 @@
 								<li>TurretGun</li>
                                 <li>EliteGun</li>								
 						    </weaponTags>
-							<fillPercent>0.85</fillPercent>
 				        </ThingDef>
                     </value>
-                </li>
-				
-				<li Class="PatchOperationAddModExtension">
-		    	    <xpath>Defs/PawnKindDef[defName="Vehicle_APC" or defName="Vehicle_Tank" or defName="Vehicle_ATV" or defName="Vehicle_Truck" or defName="Vehicle_Cart"]</xpath>
-		     		    <value>
-							<li Class="CombatExtended.LoadoutPropertiesExtension">
-        						<primaryMagazineCount>
-        							<min>0</min>
-        							<max>500</max>
-        						</primaryMagazineCount>
-        					</li>
-		    	        </value>
-	        	</li>  						
-
- 				<li Class="PatchOperationAddModExtension">
-		    	    <xpath>Defs/PawnKindDef[defName="Vehicle_APC_Civil" or defName="Vehicle_APC_Pirate"]</xpath>
-		    	        <value>
-							<li Class="CombatExtended.LoadoutPropertiesExtension">
-        						<primaryMagazineCount>
-        							<min>250</min>
-        							<max>500</max>
-        						</primaryMagazineCount>
-        					</li>
-		    	        </value>
-	        	</li>
-
- 				<li Class="PatchOperationAddModExtension">
-		    	    <xpath>Defs/PawnKindDef[defName="Vehicle_Tank_Civil" or defName="Vehicle_Tank_Pirate"]</xpath>
-		    	        <value>
-							<li Class="CombatExtended.LoadoutPropertiesExtension">
-        						<primaryMagazineCount>
-        							<min>25</min>
-        							<max>50</max>
-        						</primaryMagazineCount>
-        					</li>
-		    	        </value>
-	        	</li>
-				
-				<li Class="PatchOperationFindMod">
-				    <mods>
-					    <li>[O21] Vehicle Framework</li>
-					</mods>
-					
-					<match Class="PatchOperationSequence">
-					    <success>Always</success>
-						<operations>						
-						
-							<li Class="PatchOperationAddModExtension">
-		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]</xpath>
-		    	        		    <value>
-				        		        <li Class="CombatExtended.RacePropertiesExtensionCE">
-				        		            <bodyShape>Humanoid</bodyShape>
-				        		        </li>
-		    	        		    </value>
-	        	    		</li>						
-							
-							<li Class="PatchOperationReplace">
-		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]/comps</xpath>
-		    	        		    <value>
-									    <comps>
-										    <li>
-										    	<compClass>CompAttachBase</compClass>
-										    </li>
-										    <li>
-												<compClass>CombatExtended.CompPawnGizmo</compClass>
-										    </li>											
-										</comps>
-		    	        		    </value>
-	        	    		</li>	
-
-							<li Class="PatchOperationReplace">
-		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]/inspectorTabs</xpath>
-		    	        		    <value>
-			    	        		    <inspectorTabs>
-				    	        		    <li>ITab_Pawn_Needs</li>
-				    	        		    <li>ITab_Pawn_Character</li>
-			    	        		    </inspectorTabs>
-		    	        		    </value>
-	        	    		</li>
-						</operations>
-					</match>	
-                </li>	
-
-				<li Class="PatchOperationFindMod">
-				    <mods>
-					    <li>JecsTools</li>
-					</mods>
-					
-					<match Class="PatchOperationSequence">
-					    <success>Always</success>
-						<operations>			
-
-							<!-- Adds ammo installation -->
-							<li Class="PatchOperationReplace">
-				    			<xpath>Defs/ThingDef[defName="SlotAmmoBox_ArtyCannon"]/slottableThingDefs</xpath>
-					    			<value>
-										<slottableThingDefs> 
-											<li>Shell_HighExplosive</li>
-											<li>Shell_Incendiary</li>
-											<li>Shell_EMP</li>
-											<li>Shell_Firefoam</li>
-											<li>Shell_AntigrainWarhead</li>
-										</slottableThingDefs>						    
-									</value>
-							</li>
-							
-							<li Class="PatchOperationReplace">
-				    			<xpath>Defs/ThingDef[defName="SlotAmmoBox_BurstCannon"]/slottableThingDefs</xpath>
-					    			<value>
-										<slottableThingDefs> 
-											<li>Ammo_20x88mmElephant_FMJ</li>
-											<li>Ammo_20x88mmElephant_HE</li>
-											<li>Ammo_20x88mmElephant_Incendiary</li>
-										</slottableThingDefs>						    
-									</value>
-							</li>
-							
-							<li Class="PatchOperationReplace">
-				    			<xpath>Defs/ThingDef[defName="SlotAmmoBox_MachineCannon"]/slottableThingDefs</xpath>
-					    			<value>
-										<slottableThingDefs> 
-											<li>Ammo_127x55mmAR_FMJ</li>
-											<li>Ammo_127x55mmAR_AP</li>
-											<li>Ammo_127x55mmAR_HP</li>
-										</slottableThingDefs>						    
-									</value>
-							</li>	
-
-							<li Class="PatchOperationReplace">
-				    			<xpath>Defs/ThingDef[defName="SlotAmmoBox_MachineGun"]/slottableThingDefs</xpath>
-					    			<value>
-										<slottableThingDefs> 
-											<li>Ammo_762x39mmSoviet_FMJ</li>
-											<li>Ammo_762x39mmSoviet_AP</li>
-											<li>Ammo_762x39mmSoviet_HP</li>
-										</slottableThingDefs>						    
-									</value>
-							</li>
-
-							<li Class="PatchOperationReplace">
-				    			<xpath>Defs/ThingDef[defName="SlotAmmoBox_NavalCannon"]/slottableThingDefs</xpath>
-					    			<value>
-										<slottableThingDefs> 
-											<li>Ammo_20x280mmYamato_FMJ</li>
-											<li>Ammo_20x280mmYamato_HE</li>
-											<li>Ammo_20x280mmYamato_Incendiary</li>
-										</slottableThingDefs>						    
-									</value>
-							</li>
-
-							<li Class="PatchOperationReplace">
-				    			<xpath>Defs/ThingDef[defName="SlotAmmoBox_TankRailCannon"]/slottableThingDefs</xpath>
-					    			<value>
-										<slottableThingDefs> 
-											<li>Ammo_20x120mmMetalrain_FMJ</li>
-											<li>Ammo_20x120mmMetalrain_HE</li>
-											<li>Ammo_20x120mmMetalrain_Incendiary</li>
-										</slottableThingDefs>						    
-									</value>
-							</li>
-
-                            <!-- -->
-							<li Class="PatchOperationAdd">
-				    			<xpath>Defs/ThingDef[@Name="Arty_CannonBase"]/comps</xpath>
-					    			<value>
-										<li Class="CompSlotLoadable.CompProperties_SlotLoadable">
-											<slots>										    
-												<li>SlotAmmoBox_ArtyCannon</li>
-											</slots>
-										</li>
-									</value>
-							</li>
-
-							<li Class="PatchOperationAdd">
-				    			<xpath>Defs/ThingDef[@Name="Burst_CannonBase"]/comps</xpath>
-					    			<value>
-										<li Class="CompSlotLoadable.CompProperties_SlotLoadable">
-											<slots>	
-												<li>SlotAmmoBox_BurstCannon</li>				
-											</slots>
-										</li>					    
-									</value>
-							</li>
-
-							<li Class="PatchOperationAdd">
-				    			<xpath>Defs/ThingDef[@Name="Machine_CannonBase"]/comps</xpath>
-					    			<value>
-										<li Class="CompSlotLoadable.CompProperties_SlotLoadable">
-											<slots>
-												<li>SlotAmmoBox_MachineCannon</li>												
-											</slots>
-										</li>					    
-									</value>
-							</li>	
-
-							<li Class="PatchOperationAdd">
-				    			<xpath>Defs/ThingDef[@Name="Machine_GunBase"]/comps</xpath>
-					    			<value>
-										<li Class="CompSlotLoadable.CompProperties_SlotLoadable">
-											<slots>								
-												<li>SlotAmmoBox_MachineGun</li>										    				
-											</slots>
-										</li>					    
-									</value>
-							</li>	
-
-							<li Class="PatchOperationAdd">
-				    			<xpath>Defs/ThingDef[@Name="Naval_CannonBase"]/comps</xpath>
-					    			<value>
-										<li Class="CompSlotLoadable.CompProperties_SlotLoadable">
-											<slots>
-												<li>SlotAmmoBox_NavalCannon</li>				
-											</slots>
-										</li>					    
-									</value>
-							</li>	
-
-							<li Class="PatchOperationAdd">
-				    			<xpath>Defs/ThingDef[@Name="Rail_CannonBase"]/comps</xpath>
-					    			<value>
-										<li Class="CompSlotLoadable.CompProperties_SlotLoadable">
-											<slots>
-												<li>SlotAmmoBox_TankRailCannon</li>					
-											</slots>
-										</li>					    
-									</value>
-							</li>	
-
-							<li Class="PatchOperationAdd">
-				    			<xpath>Defs/ThingDef[@Name="Tank_CannonBase"]/comps</xpath>
-					    			<value>
-										<li Class="CompSlotLoadable.CompProperties_SlotLoadable">
-											<slots>
-												<li>SlotAmmoBox_TankRailCannon</li>					
-											</slots>
-										</li>					    
-									</value>
-							</li>								
-						</operations>
-					</match>	
-                </li>
+                </li>					
             </operations>
         </match>
 	</Operation>			

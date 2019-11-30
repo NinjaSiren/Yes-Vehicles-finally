@@ -9,7 +9,7 @@
 	</supportedVersions>
     <url>https://ludeon.com/forums/index.php?topic=48126.0</url>
 	<description>
-	    [v0.8b2]
+	    [v0.8b]
         A true implementation of vehicles into RimWorld!
     
         First off, a big thank you to Jecrell and Neronix, without him none of you would have this!
@@ -38,12 +38,12 @@
 		
 		==Version changelog==
 		
-		- Added new weapon, Naval Cannon.
-        - Added new Combat Extended ammo. (88mm, 120mm, 280mm)
-	    - Added new vehicle, ATV with cart.
-		- Added new raid strategies with no drop pods for vehicles only.
-		- Fixed raids patches for the new strategies.
-		- ATV with carts can only appear with tribal peaceful, trader, and settlement events and locations.
+		- Added vehicle fuel gauge.
+		- Added variety of weapon quality.
+		- Added specialDisplayRadius for weapons.
+		- Changed weapon ranges depending either CE is installed or not.
+		- Patched some weaponTags.
+		- Fixed bug: JobDriver error when building weapon above "good" quality.		
 		
     </description>
 </ModMetaData>
