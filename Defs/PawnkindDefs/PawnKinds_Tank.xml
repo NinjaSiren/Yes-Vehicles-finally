@@ -6,7 +6,6 @@
 		<combatPower>400</combatPower>
 		<aiAvoidCover>true</aiAvoidCover>
 		<weaponTags>
-			<li>Light_Weps</li>
 			<li>Heavy_Weps</li>
 		</weaponTags>
 	</PawnKindDef>
@@ -56,8 +55,8 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>
-			<min>2400</min>
-			<max>9999</max>
+			<min>400</min>
+			<max>2500</max>
 		</weaponMoney>
 	</PawnKindDef>
 	
@@ -81,8 +80,8 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>
-			<min>2400</min>
-			<max>5000</max>
+			<min>400</min>
+			<max>2500</max>
 		</weaponMoney>
 	</PawnKindDef>
 </Defs>

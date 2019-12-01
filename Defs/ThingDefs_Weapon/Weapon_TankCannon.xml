@@ -49,11 +49,11 @@
 		<statBases>
             <WorkToMake>8000</WorkToMake>
 			<Mass>7.85</Mass>
-			<MarketValue>4200</MarketValue>
-			<AccuracyTouch>0.98</AccuracyTouch>
-            <AccuracyShort>0.70</AccuracyShort>
-            <AccuracyMedium>0.86</AccuracyMedium>
-            <AccuracyLong>0.88</AccuracyLong>
+		    <MarketValue>1200</MarketValue>
+		    <AccuracyTouch>0.98</AccuracyTouch>
+            <AccuracyShort>0.79</AccuracyShort>
+            <AccuracyMedium>0.74</AccuracyMedium>
+            <AccuracyLong>0.83</AccuracyLong>
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -71,7 +71,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cannon_Shell</defaultProjectile>
-				<warmupTime>2.7</warmupTime>
+				<warmupTime>2.6</warmupTime>
 				<range>80</range>
 				<minRange>8</minRange>				
 				<soundCast>TankCannon_Fire</soundCast>

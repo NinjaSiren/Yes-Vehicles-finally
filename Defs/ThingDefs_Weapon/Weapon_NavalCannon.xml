@@ -49,7 +49,7 @@
 		<statBases>
             <WorkToMake>18640</WorkToMake>
 			<Mass>18.29</Mass>
-			<MarketValue>9786</MarketValue>
+			<MarketValue>2400</MarketValue>
 			<AccuracyTouch>0.98</AccuracyTouch>
             <AccuracyShort>0.74</AccuracyShort>
             <AccuracyMedium>0.76</AccuracyMedium>
@@ -75,7 +75,7 @@
 				<range>500</range>
 				<minRange>15</minRange>	
 				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>				
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>				
 				<soundCast>TankCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>72</muzzleFlashScale>
