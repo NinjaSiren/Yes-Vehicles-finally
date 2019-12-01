@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>Yes-vehicles-finally</identifier>
-    <version>v0.8b</version>
+    <version>v0.8b2</version>
     <dependencies>
 	    <li>JecsTools</li> <!-- JecsTools -->
-	    <li>[O21]VehicleFramework</li> <!-- [O21] Vehicle Framework -->
+	    <!--li>[O21]VehicleFramework</li--> <!-- [O21] Vehicle Framework -->
     </dependencies>
     <incompatibleWith>
     </incompatibleWith>
@@ -12,7 +12,7 @@
     </loadBefore>
     <loadAfter>
 	    <li>JecsTools</li> <!-- JecsTools -->
-	    <li>[O21]VehicleFramework</li> <!-- [O21] Vehicle Framework -->
+	    <!--li>[O21]VehicleFramework</li--> <!-- [O21] Vehicle Framework -->
 		<li>CombatExtended</li> <!-- Combat Extended -->
 		<li>RunAndGun</li> <!-- Run And Gun -->	
     </loadAfter>

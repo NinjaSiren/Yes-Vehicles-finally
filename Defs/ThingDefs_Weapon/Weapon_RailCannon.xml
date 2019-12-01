@@ -49,11 +49,11 @@
 		<statBases>
             <WorkToMake>10000</WorkToMake>
 			<Mass>8.85</Mass>
-			<MarketValue>5200</MarketValue>
+			<MarketValue>1800</MarketValue>
 			<AccuracyTouch>0.98</AccuracyTouch>
-            <AccuracyShort>0.72</AccuracyShort>
-            <AccuracyMedium>0.88</AccuracyMedium>
-            <AccuracyLong>0.90</AccuracyLong>
+            <AccuracyShort>0.76</AccuracyShort>
+            <AccuracyMedium>0.80</AccuracyMedium>
+            <AccuracyLong>0.88</AccuracyLong>
 			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -71,7 +71,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Dense_Shell</defaultProjectile>
-				<warmupTime>3.2</warmupTime>
+				<warmupTime>3.1</warmupTime>
 				<range>100</range>
 				<minRange>10</minRange>				
 				<soundCast>RailCannon_Fire</soundCast>

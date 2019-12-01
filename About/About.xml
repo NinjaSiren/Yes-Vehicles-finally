@@ -9,7 +9,7 @@
 	</supportedVersions>
     <url>https://ludeon.com/forums/index.php?topic=48126.0</url>
 	<description>
-	    [v0.8b2]
+	    [v0.8b2 Patch #2]
         A true implementation of vehicles into RimWorld!
     
         First off, a big thank you to Jecrell and Neronix, without him none of you would have this!
@@ -26,7 +26,7 @@
         Just like any partially oiled machine, youll have to fill and power it with Chemfuel! (not included)
     
         Upon assigning a driver, you must instruct the vehicle to draft itself for glorious duty.
-    
+		
         ==Notes and Help==
     
         - If your goal is caravanning, please put a driver at least with good mood and no needs.
@@ -38,12 +38,9 @@
 		
 		==Version changelog==
 		
-		- Added new weapon, Naval Cannon.
-        - Added new Combat Extended ammo. (88mm, 120mm, 280mm)
-	    - Added new vehicle, ATV with cart.
-		- Added new raid strategies with no drop pods for vehicles only.
-		- Fixed raids patches for the new strategies.
-		- ATV with carts can only appear with tribal peaceful, trader, and settlement events and locations.
+		- Readded Combat Extended compatibility.
+		- Removed custom ammos for Combat Extended compatibility.
+		- Readded Combat Extended original ammos for shells.
 		
     </description>
 </ModMetaData>

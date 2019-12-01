@@ -49,11 +49,11 @@
 		<statBases>
             <WorkToMake>9000</WorkToMake>
 			<Mass>8.85</Mass>
-			<MarketValue>5000</MarketValue>
+			<MarketValue>2000</MarketValue>
 			<AccuracyTouch>0.98</AccuracyTouch>
-            <AccuracyShort>0.50</AccuracyShort>
-            <AccuracyMedium>0.70</AccuracyMedium>
-            <AccuracyLong>0.90</AccuracyLong>
+			<AccuracyShort>0.42</AccuracyShort>
+			<AccuracyMedium>0.62</AccuracyMedium>
+			<AccuracyLong>0.82</AccuracyLong>
 			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -75,8 +75,8 @@
 				<defaultProjectile>Bullet_Shell_HighExplosive</defaultProjectile>
 				<forcedMissRadius>13</forcedMissRadius>
 				<warmupTime>3.4</warmupTime>
-				<range>480</range>
-				<minRange>30</minRange>			
+			    <minRange>30</minRange>
+			    <range>680</range>			
 				<soundCast>TankCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>51</muzzleFlashScale>
@@ -87,8 +87,6 @@
 			</li>
 		</verbs>
 		<weaponTags>
-		    <li>Artillery</li>
-			<li>Artillery_BaseDestroyer</li>
 			<li>Heavy_Weps</li>
 		</weaponTags>
 	</ThingDef>

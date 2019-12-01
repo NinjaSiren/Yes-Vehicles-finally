@@ -8,7 +8,7 @@
 		<description>A heavily armored machine designed for the art of modern war.</description>
 		
 		<statBases>
-			<MarketValue>6210</MarketValue>
+			<MarketValue>1552</MarketValue>
 			<MoveSpeed>5.0</MoveSpeed>
 			<CarryingCapacity>250</CarryingCapacity>
 			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>

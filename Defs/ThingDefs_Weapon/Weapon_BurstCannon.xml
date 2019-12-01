@@ -46,11 +46,11 @@
 		<statBases>
             <WorkToMake>6000</WorkToMake>
 			<Mass>6.85</Mass>
-			<MarketValue>3200</MarketValue>
+			<MarketValue>800</MarketValue>
 			<AccuracyTouch>0.90</AccuracyTouch>
-            <AccuracyShort>0.70</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.60</AccuracyLong>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
 			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -67,7 +67,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Small_Bullet</defaultProjectile>				
-				<warmupTime>2.0</warmupTime>
+				<warmupTime>0.56</warmupTime>
 				<range>55</range>
 				<minRange>5.5</minRange>				
 				<soundCast>BurstCannon_Fire</soundCast>
@@ -78,7 +78,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>Light_Weps</li>
+			<li>Heavy_Weps</li>
 		</weaponTags>
 	</ThingDef>
 </Defs>
