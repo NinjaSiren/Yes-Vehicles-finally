@@ -15,14 +15,6 @@
 		</value>
 	</Operation>
 
-	<!-- Adds all weapons with the weaponTags Gun value -->
-	<Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="Rail_Cannon" or defName="Tank_Cannon" or defName="Burst_Cannon" or defName="Machine_Cannon" or defName="Machine_Gun" or defName="Arty_Cannon"]/weaponTags</xpath>
-		<value>
-	        <li>Gun</li>
-		</value>
-	</Operation>	
-
 	<!-- Adds all weapons with specialDisplayRadius -->
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
