@@ -114,6 +114,7 @@
 
 				<!-- Unloads all passengers when health percent reaches below this percentage. -->
 				<ejectIfBelowHealthPercent>0.30</ejectIfBelowHealthPercent>
+				<ejectIfBelowNeedPercent>0.01</ejectIfBelowNeedPercent>
 
 				<!-- If a bullet hits a seat, the passenger is injured by this factor of damage. -->
 				<seatHitDamageFactor>1.75</seatHitDamageFactor>
@@ -129,7 +130,6 @@
 				<labelDamaged>Damaged</labelDamaged>
 				<labelInoperable>Inoperable</labelInoperable>
 				<labelBroken>Broken</labelBroken>
-
 				<roles>
 					<li>
 						<label>driver</label>
@@ -145,6 +145,13 @@
 						<handlingTypes>Weapons</handlingTypes>
 						<slots>10</slots>
 						<slotTag>PassengerSeat</slotTag>
+					</li>
+					<li>
+						<label>gunner</label>
+						<labelPlural>gunners</labelPlural>
+						<handlingTypes>Weapons</handlingTypes>
+						<slots>1</slots>
+						<slotTag>GunnerSeat</slotTag>
 					</li>
 				</roles>
 			</li>

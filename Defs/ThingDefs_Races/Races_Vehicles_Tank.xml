@@ -6,7 +6,6 @@
 		<defName>Tank</defName>
 		<label>tank</label>
 		<description>A heavily armored machine designed for the art of modern war.</description>
-		
 		<statBases>
 			<MarketValue>1552</MarketValue>
 			<MoveSpeed>5.0</MoveSpeed>
@@ -114,6 +113,7 @@
 
 				<!-- Unloads all passengers when health percent reaches below this percentage. -->
 				<ejectIfBelowHealthPercent>0.20</ejectIfBelowHealthPercent>
+				<ejectIfBelowNeedPercent>0.01</ejectIfBelowNeedPercent>
 
 				<!-- If a bullet hits a seat, the passenger is injured by this factor of damage. -->
 				<seatHitDamageFactor>1.75</seatHitDamageFactor>

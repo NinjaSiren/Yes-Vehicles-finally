@@ -63,8 +63,8 @@
 		<projectile>
 			<flyOverhead>False</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>150</damageAmountBase>
-			<speed>300</speed>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>100</speed>
 		</projectile>
 	</ThingDef>
 </Defs>

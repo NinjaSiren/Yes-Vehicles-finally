@@ -52,7 +52,7 @@
 			<AccuracyShort>0.48</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.26</AccuracyLong>
-			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>100</Steel>
@@ -68,10 +68,10 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Small_Bullet</defaultProjectile>				
-				<warmupTime>0.36</warmupTime>
-                <burstShotCount>300</burstShotCount>
-                <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-				<range>30</range>
+				<warmupTime>1.36</warmupTime>
+				<burstShotCount>60</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<range>42</range>
 				<soundCast>BurstCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
