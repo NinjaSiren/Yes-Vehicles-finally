@@ -442,10 +442,10 @@
 		                    	<Mass>2.65</Mass>
 			                    <MarketValue>400</MarketValue>
 			                    <AccuracyTouch>0.97</AccuracyTouch>
-			                    <AccuracyShort>0.48</AccuracyShort>
-			                    <AccuracyMedium>0.35</AccuracyMedium>
+			                    <AccuracyShort>0.80</AccuracyShort>
+			                    <AccuracyMedium>0.60</AccuracyMedium>
 			                    <AccuracyLong>0.26</AccuracyLong>
-			                    <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+			                    <RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
     	                        <SightsEfficiency>1.20</SightsEfficiency>
     	                        <ShotSpread>0.05</ShotSpread>
     	                        <SwayFactor>1.53</SwayFactor>
@@ -471,9 +471,9 @@
                                     <hasStandardCommand>true</hasStandardCommand>
                                     <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>           
                                     <warmupTime>0.36</warmupTime>
-                                    <range>30</range>
-                                    <burstShotCount>300</burstShotCount>
-                                    <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                                    <range>42</range>
+                                    <burstShotCount>60</burstShotCount>
+                                    <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
                                     <soundCast>BurstCannon_Fire</soundCast>
                                     <soundCastTail>GunTail_Heavy</soundCastTail>
                                     <muzzleFlashScale>10</muzzleFlashScale>
@@ -664,7 +664,7 @@
 		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]</xpath>
 		    	        		    <value>
 				        		        <li Class="CombatExtended.RacePropertiesExtensionCE">
-				        		            <bodyShape>Humanoid</bodyShape>
+				        		            <bodyShape>Vehicle</bodyShape>
 				        		        </li>
 		    	        		    </value>
 	        	    		</li>						
