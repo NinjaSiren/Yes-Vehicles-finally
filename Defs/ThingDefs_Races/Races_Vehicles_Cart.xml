@@ -115,6 +115,7 @@
 
 				<!-- Unloads all passengers when health percent reaches below this percentage. -->
 				<ejectIfBelowHealthPercent>0.30</ejectIfBelowHealthPercent>
+				<ejectIfBelowNeedPercent>0.01</ejectIfBelowNeedPercent>
 
 				<!-- If a bullet hits a seat, the passenger is injured by this factor of damage. -->
 				<seatHitDamageFactor>1.75</seatHitDamageFactor>
