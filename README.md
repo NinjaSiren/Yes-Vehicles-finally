@@ -9,7 +9,7 @@ Vehicles mod.
 
 Thank You Jecrell for making JecsTools, Neronix for forking the Vehicle code from JecsTools 
 ([O21] Vehicle Framework), and Mason J. Caboose for making the original WIP mod!
-Thank you for Hjkma (@Taranchuk) for the Combat Extended patch Hotfix #2!
+Thank you for Hjkma (#Taranchuk) for the Combat Extended patch Hotfix #2!
 
 Original mod [A17/18] video by BaRKy:
 https://www.youtube.com/watch?v=wnfeDeQAwEI
