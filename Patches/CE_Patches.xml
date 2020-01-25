@@ -189,12 +189,11 @@
 						        </li>
 						    </verbs>
 						    <comps>
-                                <!-- Leaving this here in case of weapon ammo limits. -->
-							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>40</magazineSize>
                                     <reloadTime>7</reloadTime>
                                     <ammoSet>AmmoSet_90mmCannonShell</ammoSet>
-							    </li-->
+							    </li>
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>FALSE</aiUseBurstMode>
                                     <aiAimMode>AimedShot</aiAimMode>
@@ -261,12 +260,11 @@
 						        </li>
 						    </verbs>
 						    <comps>
-                                <!-- Leaving this here in case of weapon ammo limits. -->
-							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>40</magazineSize>
                                     <reloadTime>5</reloadTime>
                                     <ammoSet>AmmoSet_90mmCannonShell</ammoSet>
-							    </li-->
+							    </li>
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>FALSE</aiUseBurstMode>
                                     <aiAimMode>AimedShot</aiAimMode>
@@ -334,12 +332,11 @@
 						        </li>
 						    </verbs>
 						    <comps>
-                                <!-- Leaving this here in case of weapon ammo limits. -->
-							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>60</magazineSize>
                                     <reloadTime>1</reloadTime>
                                     <ammoSet>AmmoSet_20x82mmMauser</ammoSet>
-							    </li-->
+							    </li>
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>TRUE</aiUseBurstMode>
                                     <noSingleShot>true</noSingleShot>
@@ -407,12 +404,11 @@
 						        </li>
 						    </verbs>
 						    <comps>
-                                <!-- Leaving this here in case of weapon ammo limits. -->
-							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>120</magazineSize>
                                     <reloadTime>0.75</reloadTime>
                                     <ammoSet>AmmoSet_127x55mmAR</ammoSet>
-							    </li-->
+							    </li>
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>TRUE</aiUseBurstMode>
                                     <noSingleShot>true</noSingleShot>
@@ -480,12 +476,11 @@
 						        </li>
 						    </verbs>
 						    <comps>
-                                <!-- Leaving this here in case of weapon ammo limits. -->
-							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>220</magazineSize>
                                     <reloadTime>0.25</reloadTime>
                                     <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
-							    </li-->
+							    </li>
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>TRUE</aiUseBurstMode>
                                     <noSingleShot>true</noSingleShot>  
@@ -555,13 +550,12 @@
 						        </li>
 						    </verbs>
 						    <comps>
-                                <!-- Leaving this here in case of weapon ammo limits. -->
-							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>25</magazineSize>
                                     <reloadTime>9</reloadTime>
 									<spawnUnloaded>false</spawnUnloaded>
                                     <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
-							    </li-->
+							    </li>
 							    <li Class="CombatExtended.CompProperties_FireModes">
                                     <aiUseBurstMode>TRUE</aiUseBurstMode>
                                     <aiAimMode>AimedShot</aiAimMode>
@@ -631,12 +625,11 @@
 						    	</li>
 						    </verbs>
 						    <comps>
-                                <!-- Leaving this here in case of weapon ammo limits. -->
-							    <!--li Class="CombatExtended.CompProperties_AmmoUser">
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
                                     <magazineSize>220</magazineSize>
                                     <reloadTime>0.25</reloadTime>
                                     <ammoSet>AmmoSet_81mmMortarShell</ammoSet>
-							    </li-->	
+							    </li>	
 							    <li Class="CombatExtended.CompProperties_Charges">
 			    			        <chargeSpeeds>
 			    			            <li>30</li>
