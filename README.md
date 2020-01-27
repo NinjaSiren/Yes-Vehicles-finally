@@ -28,9 +28,9 @@ and [O21] Vehicle Framework by neronix17:
 -------------------------------------------------------------------------------------------
 
 Latest Downloadable Version:
-- Github: https://github.com/NinjaSiren/Yes-Vehicles-finally/releases/download/v0.8b/Yes.Vehicles.Finally.v0.8b.zip
+- Github: https://github.com/NinjaSiren/Yes-Vehicles-finally/releases
 - Nexus Mods: https://www.nexusmods.com/rimworld/mods/305?tab=files
-- Rimworld Base: https://rim-world.com/vehicles-mod/]Link[/url
+- Rimworld Base: https://rim-world.com/vehicles-mod/
 
 If you had the older versions of the mod, please delete the previous 
 version and download this new update, do not overwrite it. 
@@ -40,30 +40,95 @@ If you got v0.7e and above, can overwrite it.
 
 Optional mods:
 RECOMMENDED - Combat Extended
-- Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=1631756268
-- Ludeon Forums: https://ludeon.com/forums/index.php?topic=33461.0
-- Github: https://github.com/NoImageAvailable/CombatExtended/releases
+Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=1631756268
+Ludeon Forums: https://ludeon.com/forums/index.php?topic=33461.0
+Github: https://github.com/NoImageAvailable/CombatExtended/releases
+
+RECOMMENDED - Combat Extended Fast Track
+Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=1865597143
+Rimworld Base: https://rimworldbase.com/combat-extended-fasttrack-edition/
+Github: https://github.com/AthenaSulisMinerva/CombatExtendedFastTrack/releases
 
 Run and Gun
-- Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=1204108550
-- Ludeon Forums: https://ludeon.com/forums/index.php?topic=36061.0
-- Github: https://github.com/rheirman/RunAndGun/releases
-
-Rimsenal Pack
-- Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=725950793
-- Ludeon Forums: https://ludeon.com/forums/index.php?topic=11160
-- Dropbox: https://www.dropbox.com/sh/fksj8i446o3szi1/AAA6osi1ZSee_Kw0a3_yLvfma?dl=0
+Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=1204108550
+Ludeon Forums: https://ludeon.com/forums/index.php?topic=36061.0
+Github: https://github.com/rheirman/RunAndGun/releases
 
 Rimsenal CE Patch Pack
-- Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=1794246151
+Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=1794246151
+
+Rimsenal Pack
+Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=725950793
+Ludeon Forums: https://ludeon.com/forums/index.php?topic=11160
+Dropbox: https://www.dropbox.com/sh/fksj8i446o3szi1/AAA6osi1ZSee_Kw0a3_yLvfma?dl=0
+
+Project Red Horse Pack
+Ludeon Forums: https://ludeon.com/forums/index.php?topic=40519.0
+Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=1836963709
+Github: https://drive.google.com/open?id=1PaTMHLh80d64bK8O6qGAwvRYTDuvWN7L
+
+Haineko's Tinkering (If you want to use Polarisbloc mod pack with CE)
+Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=1794940350
+
+Polarisbloc Pack
+Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=1500329053
+Github: https://github.com/VaniatD/Polarisbloc-Mods-Pack/releases
 
 -------------------------------------------------------------------------------------------
 
-Optional without Combat Extended:
-Polarisbloc Pack
-- Steam Workshop: https://steamcommunity.com/workshop/filedetails/?id=1500329053
-- Github: https://github.com/VaniatD/Polarisbloc-Mods-Pack/releases
+How does it work?
 
+To acquire a vehicle you need to research Machining and Smithing and then you will be able to build the Vehicle Table. With it you can construct a box filled with vehicular pieces, and vehicle weapons.
+
+To assemble the vehicle, instruct a pawn to follow the included manual in the box (right-click the box). Upon following guides 1-Z on your Ikea manual and throwing away the last 5 screws, your pawn will have successfully assembled a working scrap heap!
+
+Upon assigning a driver, you must instruct the vehicle to draft itself for glorious duty. Just like any partially oiled machine, you’ll have to fill and power it with chemfuel!
+
+You will need both a driver and a gunner to shoot from the vehicle. Only the burst cannon, and machine cannon fits on the APC, and Machine Gun fits only with the Truck and ATV. (visually buggy yet, but works)
+
+Reloading/loading CE ammo to your vehicle weapon of choice is done by:
+First knowing what ammo the weapon, then install the weapon on to your vehicle of choice.
+Right click the vehicle then select reload.
+Make sure you got enough ammo for it.
+
+When doing a caravan with a vehicle, make sure you include one colonist outside the vehicle to not get the "Downed Colonist" feature/issue from the Vehicle Framework[/size]
+
+You got 5 vehicles currently in the mod:
+Tank
+APC
+Truck
+ATV
+Cart
+
+With 7 types of vehicular weapons:
+Rail Cannon
+Tank Cannon
+Artillery Cannon
+Naval Cannon
+Burst Cannon
+Machine Cannon
+Machine Gun
+
+And make sure you got alot of Steel, Component, and Plasteel in your inventory to craft the vehicles and weapons.
+
+-------------------------------------------------------------------------------------------
+
+Installation:
+Make sure that you have JecsTools and -O21-Vehicle Framework installed.
+Extract and copy the contents in the Mods folder.
+Enjoy!
+
+Mod Load Order (follow this):
+Core
+JecsTools
+-O21-Vehicle Framework
+Combat Extended
+Other mods...
+Yes, Vehicles, Finally!
+
+Make sure that Yes, Vehicles, Finally! is the last mod loaded or the last mod from Combat Extended, or other optional mods.
+
+-------------------------------------------------------------------------------------------
 
 Mod Github link: https://github.com/NinjaSiren/Yes-Vehicles-finally
 Original mod github: https://github.com/mason3ck/Yes-Vehicles
@@ -72,14 +137,19 @@ Mod Wiki page: https://github.com/NinjaSiren/Yes-Vehicles-finally/wiki
 -------------------------------------------------------------------------------------------
 
 Additional Notes:
-- For Combat Extended users only, vehicles does not need to be loaded up with ammo to work.
-- For Polarisbloc users only, please disable Combat Extended.
-- If your goal is caravanning, load the driver into the vehicles first, then create the caravan.
-- The Vehicles Mod cannot be removed from a saved game.
-- AI factions may be able to use vehicles in raids, caravans, and bases.
-- This mod is compatible with existing saves, it does not require you to start a new game.
-- The Vehicles Mod requires the JecsTools Library and the [O21] Vehicle Framework in order to work.
-- Compatible with the latest Combat Extended and Run and Gun.
+If your goal is caravanning, load the driver into the vehicles first, then create the caravan with one colonist outside the vehicle.
+The Vehicles Mod cannot be removed from a saved game.
+AI factions may be able to use vehicles in raids, caravans, and bases.
+This mod is compatible with existing saves, it does not require you to start a new game.
+The Vehicles Mod requires the JecsTools Library and the [O21] Vehicle Framework in order to work.
+Compatible with the latest Combat Extended and Run and Gun.
+
+-------------------------------------------------------------------------------------------
+
+Incompatible Mods (until further notice):
+Tenants - Causes compatibility bugs with Vehicle Framework when tenants spawn in with vehicles.
+Achtung! - Causes conflict with Vehicle Framework if Hospitality is also installed.
+Rimworld of Magic - Conflict with Vehicle Framework where there are stats or needed information by Rimworld of Magic that vehicles don't have.
 
 -------------------------------------------------------------------------------------------
 
@@ -169,3 +239,6 @@ v0.8b2
 - Buffed fuel consumption of all vehicles.
 - Added weaponCardinalDirection as stated for v0.4 of [O21] Vehicle Framework for weapon facing fix from sideward to forward when not in use.
 
+v0.83
+- Added automated / manual loading of weapon ammo to vehicles.
+- Weapon balances.
