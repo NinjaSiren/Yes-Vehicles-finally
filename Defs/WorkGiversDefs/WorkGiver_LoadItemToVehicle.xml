@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WorkGiverDef>
+		<defName>LoadItemToVehicle</defName>
+		<label>load item to vehicles</label>
+		<giverClass>LoadItems.WorkGiver_LoadItemToVehicle</giverClass>
+		<workType>Hauling</workType>
+		<verb>load</verb>
+		<gerund>loading</gerund>
+		<priorityInType>107</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+</Defs>
