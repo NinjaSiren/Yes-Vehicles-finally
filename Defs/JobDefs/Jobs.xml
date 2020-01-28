@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JobDef>
+		<defName>LoadItemToVehicle</defName>
+		<driverClass>LoadItems.JobDriver_LoadItemToVehicle</driverClass>
+		<reportString>Load TargetA into TargetB.</reportString>
+	</JobDef>
+</Defs>
