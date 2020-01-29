@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    
+	<!-- Patch operation for CE Compatibility -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>             				
+			
+                <!-- Adds armor coverage -->
+                <li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName = "Tank_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName = "APC_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName = "Truck_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName = "ATV_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName = "Cart_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
+				
+        </match>
+	</Operation>			
+</Patch>

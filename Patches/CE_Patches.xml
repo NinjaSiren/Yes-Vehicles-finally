@@ -51,7 +51,22 @@
                             </tools>
                         </value>
                 </li>
-           
+				
+				<!-- Adds CE compatibility with vehicle armor ratings -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="APC"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Blunt>45</ArmorRating_Blunt>
+                        </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="APC"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Sharp>8</ArmorRating_Sharp>
+                        </value>
+                </li>
+				
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ATV"]/tools</xpath>
                         <value>
@@ -69,6 +84,21 @@
                                     <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                                 </li>
                             </tools>
+                        </value>
+                </li>
+				
+				<!-- Adds CE compatibility with vehicle armor ratings -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ATV"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Blunt>4</ArmorRating_Blunt>
+                        </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ATV"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Sharp>2</ArmorRating_Sharp>
                         </value>
                 </li>
            
@@ -91,6 +121,21 @@
                             </tools>
                         </value>
                 </li>
+				
+				<!-- Adds CE compatibility with vehicle armor ratings -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Tank"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Blunt>57</ArmorRating_Blunt>
+                        </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Tank"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Sharp>120</ArmorRating_Sharp>
+                        </value>
+                </li>
            
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="Truck"]/tools</xpath>
@@ -111,6 +156,21 @@
                             </tools>
                         </value>
                 </li>
+				
+				<!-- Adds CE compatibility with vehicle armor ratings -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Truck"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Blunt>12</ArmorRating_Blunt>
+                        </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Truck"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Sharp>30</ArmorRating_Sharp>
+                        </value>
+                </li>
  
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="Cart"]/tools</xpath>
@@ -129,6 +189,21 @@
                                     <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                                 </li>
                             </tools>
+                        </value>
+                </li>
+				
+				<!-- Adds CE compatibility with vehicle armor ratings -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Cart"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Blunt>4</ArmorRating_Blunt>
+                        </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Cart"]/statBases/ArmorRating_Blunt</xpath>
+                        <value>
+                            <ArmorRating_Sharp>2</ArmorRating_Sharp>
                         </value>
                 </li>
  
