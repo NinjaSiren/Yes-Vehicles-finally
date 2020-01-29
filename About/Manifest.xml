@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>Yes-vehicles-finally</identifier>
-    <version>v0.8b2</version>
+    <version>0.83.2</version>
     <dependencies>
 	    <li>JecsTools</li> <!-- JecsTools -->
 	    <!--li>[O21]VehicleFramework</li--> <!-- [O21] Vehicle Framework -->
