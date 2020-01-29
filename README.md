@@ -229,16 +229,28 @@ v0.8b
 - Changed some details on the CE patch.
 - Nerfed abit of weapon accuracy percentages.
 
-v0.8b2
-- Added Naval Cannon. (Dual 280mm cannon!)
-- Added new Combat Extended only ammo types. (88mm, 120mm, and 280mm Only a one patch forever over the Combat Extended folder)
-- Added new raid strategies with no drop pods for vehicles only. (Fixes enemy raids with vehicles with no driver/passenger/gunner when its on drop pods.)
-- Fixed raids patches for the new strategies.
-- Added compatibility with Allow Tool and Ignite Everything mods. ([O21] Vehicle Framework compatibility fixed.)
-- Nerfed vehicle and vehicle parts box market values.
-- Buffed fuel consumption of all vehicles.
-- Added weaponCardinalDirection as stated for v0.4 of [O21] Vehicle Framework for weapon facing fix from sideward to forward when not in use.
+v0.8b.2
+-Added Naval Cannon. (Dual 280mm cannon!)
+-Added new Combat Extended only ammo types. (88mm, 120mm, and 280mm)
+-Added new raid strategies with no drop pods for vehicles only. (Fixes enemy raids with vehicles with no driver/passenger/gunner when its on drop pods.)
+-Fixed raids patches for the new strategies.
+-Added compatibility with Allow Tool and Ignite Everything mods. ([O21] Vehicle Framework compatibility fixed.)
+-Nerfed vehicle and vehicle parts box market values.
+-Buffed fuel consumption of all vehicles.
+-Added weaponCardinalDirection as stated for v0.4 of [O21] Vehicle Framework for weapon facing fix from sideward to forward when not in use.
+
+v0.8b.2 Patch #1
+- Fixes the Hospitality Bug where guests cannot spawn.
+
+v0.8b.2 Patch #2
+- Readded Combat Extended compatibility.
+- Removed custom ammos for Combat Extended compatibility.
+- Readded Combat Extended original ammos for shells.
 
 v0.83
 - Added automated / manual loading of weapon ammo to vehicles.
 - Weapon balances.
+
+v0.83.1 (Patch #1)
+- Vehicle item inventory selector.
+- Automated loading of items into the vehicle.
