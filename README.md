@@ -230,14 +230,14 @@ v0.8b
 - Nerfed abit of weapon accuracy percentages.
 
 v0.8b.2
--Added Naval Cannon. (Dual 280mm cannon!)
--Added new Combat Extended only ammo types. (88mm, 120mm, and 280mm)
--Added new raid strategies with no drop pods for vehicles only. (Fixes enemy raids with vehicles with no driver/passenger/gunner when its on drop pods.)
--Fixed raids patches for the new strategies.
--Added compatibility with Allow Tool and Ignite Everything mods. ([O21] Vehicle Framework compatibility fixed.)
--Nerfed vehicle and vehicle parts box market values.
--Buffed fuel consumption of all vehicles.
--Added weaponCardinalDirection as stated for v0.4 of [O21] Vehicle Framework for weapon facing fix from sideward to forward when not in use.
+- Added Naval Cannon. (Dual 280mm cannon!)
+- Added new Combat Extended only ammo types. (88mm, 120mm, and 280mm)
+- Added new raid strategies with no drop pods for vehicles only. (Fixes enemy raids with vehicles with no driver/passenger/gunner when its on drop pods.)
+- Fixed raids patches for the new strategies.
+- Added compatibility with Allow Tool and Ignite Everything mods. ([O21] Vehicle Framework compatibility fixed.)
+- Nerfed vehicle and vehicle parts box market values.
+- Buffed fuel consumption of all vehicles.
+- Added weaponCardinalDirection as stated for v0.4 of [O21] Vehicle Framework for weapon facing fix from sideward to forward when not in use.
 
 v0.8b.2 Patch #1
 - Fixes the Hospitality Bug where guests cannot spawn.
