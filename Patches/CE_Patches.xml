@@ -61,7 +61,7 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="APC"]/statBases/ArmorRating_Blunt</xpath>
+                    <xpath>Defs/ThingDef[defName="APC"]/statBases/ArmorRating_Sharp</xpath>
                         <value>
                             <ArmorRating_Sharp>8</ArmorRating_Sharp>
                         </value>
@@ -96,7 +96,7 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ATV"]/statBases/ArmorRating_Blunt</xpath>
+                    <xpath>Defs/ThingDef[defName="ATV"]/statBases/ArmorRating_Sharp</xpath>
                         <value>
                             <ArmorRating_Sharp>2</ArmorRating_Sharp>
                         </value>
@@ -131,7 +131,7 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="Tank"]/statBases/ArmorRating_Blunt</xpath>
+                    <xpath>Defs/ThingDef[defName="Tank"]/statBases/ArmorRating_Sharp</xpath>
                         <value>
                             <ArmorRating_Sharp>120</ArmorRating_Sharp>
                         </value>
@@ -166,7 +166,7 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="Truck"]/statBases/ArmorRating_Blunt</xpath>
+                    <xpath>Defs/ThingDef[defName="Truck"]/statBases/ArmorRating_Sharp</xpath>
                         <value>
                             <ArmorRating_Sharp>30</ArmorRating_Sharp>
                         </value>
@@ -201,11 +201,47 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="Cart"]/statBases/ArmorRating_Blunt</xpath>
+                    <xpath>Defs/ThingDef[defName="Cart"]/statBases/ArmorRating_Sharp</xpath>
                         <value>
                             <ArmorRating_Sharp>2</ArmorRating_Sharp>
                         </value>
                 </li>
+				
+				<!-- Adds armor coverage -->
+                <li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName="Tank_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName="APC_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName="Truck_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName="ATV_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName="Cart_Hull"]/corePart/groups</xpath>
+						<value>
+							<li>CoveredByNaturalArmor</li>
+						</value>
+			    </li>
  
                 <!-- Rail Cannon CE Patch -->  
                 <li Class="PatchOperationReplace">
