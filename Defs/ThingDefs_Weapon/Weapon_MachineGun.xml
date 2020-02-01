@@ -21,7 +21,7 @@
 					<li>Truck</li>
 				</allowedToInstallOn>
 				<installedWeaponGraphic>
-					<texPath>Weps/Turrets/Infantry_Small_Turret</texPath>
+					<texPath>Weps/Turrets/Infantry_Gun</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>6</drawSize>
 					<shaderType>TransparentPostLight</shaderType>
