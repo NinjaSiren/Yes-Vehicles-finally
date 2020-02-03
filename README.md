@@ -1,4 +1,4 @@
-[v0.83.2] [1.0+] Yes, Vehicles, Finally! - A somewhat* new way to travel the planet!
+[v0.83.3] [1.0+] Yes, Vehicles, Finally! - A somewhat* new way to travel the planet!
 with Combat Extended & Run and Gun support, with Faction AI addition!
 
 -------------------------------------------------------------------------------------------
@@ -251,6 +251,15 @@ v0.83
 - Added automated / manual loading of weapon ammo to vehicles.
 - Weapon balances.
 
-v0.83.1 (Patch #1)
+v0.83.1
 - Vehicle item inventory selector.
 - Automated loading of items into the vehicle.
+
+v0.83.2
+- Vehicle item inventory selector.
+- Automated/manual loading of items into the vehicle.
+- Fixed some texture errors with lost textures found and fixed xml files.
+- Patched CE Armor ratings.
+
+v0.83.3
+- Reverting patched CE Armor ratings. For current bug fix on CE errors.
