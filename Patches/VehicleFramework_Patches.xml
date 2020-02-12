@@ -3,7 +3,7 @@
 	
 	<Operation Class="PatchOperationFindMod">
 	    <mods>
-		    <li>[O21] Vehicle Framework</li>
+		    <li>Yes Vehicles Framework</li>
 		</mods>
 		
 		<match Class="PatchOperationSequence">

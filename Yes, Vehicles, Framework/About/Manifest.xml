@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-    <identifier>Yes-vehicles-finally</identifier>
-    <version>0.83.4</version>
+    <identifier>Yes Vehicles Framework</identifier>
+    <version>0.1</version>
     <dependencies>
-	    <li>JecsTools</li> <!-- JecsTools -->
-	    <!--li>[O21]VehicleFramework</li--> <!-- [O21] Vehicle Framework -->
     </dependencies>
     <incompatibleWith>
     </incompatibleWith>
     <loadBefore>
     </loadBefore>
     <loadAfter>
-	    <li>JecsTools</li> <!-- JecsTools -->
-	    <!--li>[O21]VehicleFramework</li--> <!-- [O21] Vehicle Framework -->
-		<li>CombatExtended</li> <!-- Combat Extended -->
-		<li>RunAndGun</li> <!-- Run And Gun -->	
     </loadAfter>
     <suggests>
-        <li>CombatExtended</li> <!-- Combat Extended -->
-		<li>RunAndGun</li> <!-- Run And Gun -->
     </suggests>
     <showCrossPromotions>true</showCrossPromotions>
     <manifestUri>https://raw.githubusercontent.com/NoImageAvailable/Yes-vehicles-finally/master/About/Manifest.xml</manifestUri>

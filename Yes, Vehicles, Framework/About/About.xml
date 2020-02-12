@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Yes Vehicles Framework</name>
+	<author>Originally Jecrell, modified and updated by Neronix17, forked by NinjaSiren for Yes, Vehicles, Finally!</author>
+	<url></url>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<description>Vehicle Framework from Jecstools, updated and made standalone for custom tweaks to be made under the MIT license. Full credit to Jecrell and the others who helped make it possible in the first place, all I've done is make a few tweaks and added custom functionality for my own needs. </description>
+</ModMetaData>
