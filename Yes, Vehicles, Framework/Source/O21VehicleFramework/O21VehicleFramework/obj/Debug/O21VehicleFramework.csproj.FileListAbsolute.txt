@@ -1,0 +1,8 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Halo - Vehicle Addon\Source\O21VehicleFramework\O21VehicleFramework\obj\Debug\O21VehicleFramework.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Halo - Vehicle Addon\Assemblies\O21VehicleFramework.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Halo - Vehicle Addon\Source\O21VehicleFramework\O21VehicleFramework\obj\Debug\O21VehicleFramework.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Halo - Vehicle Addon\Source\O21VehicleFramework\O21VehicleFramework\obj\Debug\O21VehicleFramework.csprojAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Vehicle Framework\Assemblies\O21VehicleFramework.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Vehicle Framework\Source\O21VehicleFramework\O21VehicleFramework\obj\Debug\O21VehicleFramework.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Vehicle Framework\Source\O21VehicleFramework\O21VehicleFramework\obj\Debug\O21VehicleFramework.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Vehicle Framework\Source\O21VehicleFramework\O21VehicleFramework\obj\Debug\O21VehicleFramework.csprojAssemblyReference.cache

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A66112F8-3B1F-4E10-94DE-4E0D039C80B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>O21VehicleFramework</RootNamespace>
+    <AssemblyName>O21VehicleFramework</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JobDefOf_Vehicle.cs" />
+    <Compile Include="JobDriver_RepairVehicle.cs" />
+    <Compile Include="TexCommandVehicle.cs" />
+    <Compile Include="WorkGiver_RepairVehicle.cs" />
+    <None Include="AbandonedVehicleContentsComp.cs" />
+    <Compile Include="Bill_LoadVehicle.cs" />
+    <Compile Include="Command_VehicleHandler.cs" />
+    <Compile Include="CompProperties_Vehicle.cs" />
+    <Compile Include="CompProperties_VehicleSpawner.cs" />
+    <Compile Include="CompVehicle.cs" />
+    <Compile Include="CompVehicleSpawner.cs" />
+    <Compile Include="CompVehicleUtility.cs" />
+    <None Include="CVPathFinder.cs" />
+    <Compile Include="DeathActionWorker_NoCorpse.cs" />
+    <Compile Include="DefModExt_RenderWeaponExt.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="HandlingTypeFlags.cs" />
+    <Compile Include="Harmony.cs" />
+    <Compile Include="ITab_Passengers.cs" />
+    <Compile Include="ITab_Passengers2.cs" />
+    <Compile Include="JobDriver_AssembleVehicle.cs" />
+    <Compile Include="JobDriver_LoadPassenger.cs" />
+    <None Include="Recipe_RepairVehicle.cs" />
+    <None Include="SiteDefOfVehicle.cs" />
+    <None Include="SitePartWorker_AbandonedVehicles.cs" />
+    <Compile Include="StringOf.cs" />
+    <Compile Include="ThinkNode_ConditionalCanManipulate.cs" />
+    <Compile Include="ThinkNode_ConditionalPawnInside.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VehicleHandlerGroup.cs" />
+    <Compile Include="VehicleHandlerTemp.cs" />
+    <Compile Include="VehicleRole.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
