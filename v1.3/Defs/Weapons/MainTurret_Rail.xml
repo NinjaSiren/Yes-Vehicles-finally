@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef ParentName="TankMainTurret">
+		<defName>YVFTankMainTurret_Rail</defName>
+		<label>Main Turret</label>
+		
+		<projectileSpeed>300</projectileSpeed>
+		<reloadTimer>5</reloadTimer>
+		<warmUpTimer>3.3</warmUpTimer>
+		<magazineCapacity>1</magazineCapacity>
+		
+		<recoil>
+			<distanceTotal>0.35</distanceTotal>
+			<distancePerTick>0.075</distancePerTick>
+			<speedMultiplierPostRecoil>0.175</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<vehicleRecoil>
+			<distanceTotal>0.175</distanceTotal>
+			<distancePerTick>0.075</distancePerTick>
+			<speedMultiplierPostRecoil>0.375</speedMultiplierPostRecoil>
+		</vehicleRecoil>
+
+		<graphicData>
+			<texPath>Weps/Turrets/Rail_Cannon</texPath>
+		</graphicData>
+		
+		<projectileOffset>4.75</projectileOffset>
+		<hitFlags>IntendedTarget</hitFlags>
+		<maxRange>-1</maxRange>
+		<minRange>65</minRange>
+	</Vehicles.VehicleTurretDef>
+</Defs>
