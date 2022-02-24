@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef ParentName="TankMainTurret">
+		<defName>YVFTankMainTurret_Artillery</defName>
+		<label>Main Turret</label>
+		
+		<projectileSpeed>200</projectileSpeed>
+		<reloadTimer>5</reloadTimer>
+		<warmUpTimer>2.48</warmUpTimer>
+		<magazineCapacity>1</magazineCapacity>
+		
+		<rotationSpeed>0.4</rotationSpeed>
+
+		<graphicData>
+			<texPath>Weps/Turrets/Tank_Cannon</texPath>
+		</graphicData>
+		
+		<projectileOffset>4.5</projectileOffset>
+
+		<maxRange>-1</maxRange>
+		<minRange>0</minRange>
+	</Vehicles.VehicleTurretDef>
+</Defs>
