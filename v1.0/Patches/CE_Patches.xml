@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    
+	<!-- Patch operation for CE Compatibility -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>             				
+			
+                <!-- Adds explosion and explosion damage on the tank projectile -->
+                <li Class="PatchOperationInsert">
+                    <xpath>Defs/ThingDef[defName="Bullet_20x110mmHispano_HE"]</xpath>
+                        <value>
+						    <comps>
+                                <li Class="CombatExtended.CompProperties_ExplosiveCE">
+                                    <explosionDamage>62.5</explosionDamage>
+                                    <explosionDamageDef>Bomb</explosionDamageDef>
+                                    <explosionRadius>2.5</explosionRadius>
+                                    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                                    <chanceToStartFire>0.2</chanceToStartFire>
+									<fragRange>3.0</fragRange>
+						    		<fragments>
+                                        <Fragment_Shell>60</Fragment_Shell>
+                                    </fragments>
+                                </li>
+						    </comps>
+                        </value>
+                </li>
+           
+                <!-- Adds CE compatibility with vehicle melee -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="APC"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>25</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+           
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ATV"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>25</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+           
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Tank"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>25</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+           
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Truck"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>25</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+ 
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Cart"]/tools</xpath>
+                        <value>
+                            <tools>
+                                <li Class="CombatExtended.ToolCE">
+                                    <label>body</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>15</power>
+                                    <cooldownTime>2.6</cooldownTime>
+                                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                    <chanceFactor>1.5</chanceFactor>
+                                    <armorPenetration>1.0</armorPenetration>
+                                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                            </tools>
+                        </value>
+                </li>
+ 
+                <!-- Rail Cannon CE Patch -->  
+                <li Class="PatchOperationReplace">
+				    <xpath>Defs/ThingDef[defName="Rail_Cannon"]</xpath>
+				    <value>
+                        <ThingDef ParentName="Rail_CannonBase">
+                            <defName>Rail_Cannon</defName>
+		                    <label>Rail cannon</label>
+		                    <description>A pin point cannon capable of delivering a dense round down the battlefield quickly.</description>
+		                    <graphicData>
+			                    <texPath>Box/Rail_Cannon</texPath>
+			                    <graphicClass>Graphic_Single</graphicClass>
+			                    <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		                    </graphicData>
+		                    <soundInteract>InteractPistol</soundInteract>
+		                    <statBases>
+                                <WorkToMake>10000</WorkToMake>
+			                    <Mass>8.85</Mass>
+			                    <MarketValue>1800</MarketValue>
+			                    <AccuracyTouch>0.98</AccuracyTouch>
+                                <AccuracyShort>0.76</AccuracyShort>
+                                <AccuracyMedium>0.80</AccuracyMedium>
+                                <AccuracyLong>0.88</AccuracyLong>
+			                    <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+        	                    <SightsEfficiency>3.7</SightsEfficiency>
+        	                    <ShotSpread>0.01</ShotSpread>
+        	                    <SwayFactor>1.30</SwayFactor>
+        	                    <Bulk>19.00</Bulk>								
+		                    </statBases>
+		                    <costList>
+			                    <Steel>150</Steel>
+			                    <Plasteel>80</Plasteel>
+			                    <ComponentIndustrial>15</ComponentIndustrial>
+		                    </costList>
+                            <recipeMaker>
+                                <skillRequirements>
+                                    <Crafting>9</Crafting>
+                                </skillRequirements>
+                            </recipeMaker>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>					
+                                <li>CE_Cannon</li>
+		                    </weaponTags>
+						    <verbs>
+						        <li Class="CombatExtended.VerbPropertiesCE">
+                                    <recoilAmount>2.15</recoilAmount>
+				                    <warmupTime>3.1</warmupTime>									
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_90mmCannonShell_HE</defaultProjectile>
+                                    <range>100</range>
+									<minRange>10</minRange>
+                                    <soundCast>RailCannon_Fire</soundCast>
+                                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                                    <muzzleFlashScale>40</muzzleFlashScale>
+						        </li>
+						    </verbs>
+						    <comps>
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>40</magazineSize>
+                                    <reloadTime>7</reloadTime>
+                                    <ammoSet>AmmoSet_90mmCannonShell</ammoSet>
+							    </li>
+							    <li Class="CombatExtended.CompProperties_FireModes">
+                                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                                    <aiAimMode>AimedShot</aiAimMode>
+							    </li>
+						    </comps>	
+					    </ThingDef>
+				    </value>
+			    </li>
+           
+                <!-- Tank Cannon CE Patch -->  
+                <li Class="PatchOperationReplace">
+				    <xpath>Defs/ThingDef[defName="Tank_Cannon"]</xpath>
+				    <value>
+                        <ThingDef ParentName="Tank_CannonBase">
+                            <defName>Tank_Cannon</defName>
+		                    <label>Tank cannon</label>
+		                    <description>A powerful cannon for use on a tank, capable of sending exploding shells accurately at the enemy.</description>
+		                    <graphicData>
+		                    	<texPath>Box/Tank_Cannon</texPath>
+		                    	<graphicClass>Graphic_Single</graphicClass>
+		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		                    </graphicData>
+		                    <soundInteract>InteractPistol</soundInteract>
+		                    <statBases>
+                                <WorkToMake>8000</WorkToMake>
+		                    	<Mass>7.85</Mass>
+		                    	<MarketValue>1200</MarketValue>
+		                    	<AccuracyTouch>0.98</AccuracyTouch>
+                            	<AccuracyShort>0.79</AccuracyShort>
+                            	<AccuracyMedium>0.74</AccuracyMedium>
+                            	<AccuracyLong>0.83</AccuracyLong>
+		                    	<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+								<SightsEfficiency>2.6</SightsEfficiency>
+      							<ShotSpread>0.02</ShotSpread>
+      							<SwayFactor>1.20</SwayFactor>
+      							<Bulk>15.35</Bulk>
+		                    </statBases>
+		                    <costList>
+		                    	<Steel>150</Steel>
+		                    	<Plasteel>40</Plasteel>
+		                    	<ComponentIndustrial>5</ComponentIndustrial>
+		                    </costList>
+                            <recipeMaker>
+                                <skillRequirements>
+                                    <Crafting>7</Crafting>
+                                </skillRequirements>
+                            </recipeMaker>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>					
+                                <li>CE_Cannon</li>
+		                    </weaponTags>
+						    <verbs>
+						        <li Class="CombatExtended.VerbPropertiesCE">
+                                    <recoilAmount>3.02</recoilAmount>
+				                    <warmupTime>2.6</warmupTime>									
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_90mmCannonShell_HEAT</defaultProjectile>
+                                    <range>80</range>
+									<minRange>8</minRange>
+                                    <soundCast>TankCannon_Fire</soundCast>
+                                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                                    <muzzleFlashScale>50</muzzleFlashScale>
+						        </li>
+						    </verbs>
+						    <comps>
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>40</magazineSize>
+                                    <reloadTime>5</reloadTime>
+                                    <ammoSet>AmmoSet_90mmCannonShell</ammoSet>
+							    </li>
+							    <li Class="CombatExtended.CompProperties_FireModes">
+                                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                                    <aiAimMode>AimedShot</aiAimMode>
+							    </li>
+						    </comps>	
+					    </ThingDef>
+				    </value>
+			    </li>
+ 
+                <!-- Burst Cannon CE Patch -->
+                <li Class="PatchOperationReplace">
+				    <xpath>Defs/ThingDef[defName="Burst_Cannon"]</xpath>
+				    <value>
+                        <ThingDef ParentName="Burst_CannonBase">
+                            <defName>Burst_Cannon</defName>
+		                    <label>Burst cannon</label>
+		                    <description>A rapid fire cannon for light armor or infantry.</description>
+		                    <graphicData>
+		                    	<texPath>Box/Burst_Cannon</texPath>
+		                    	<graphicClass>Graphic_Single</graphicClass>
+		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		                    </graphicData>
+		                    <soundInteract>InteractPistol</soundInteract>
+		                    <statBases>
+                            	<WorkToMake>6000</WorkToMake>
+			                	<Mass>6.85</Mass>
+			                	<MarketValue>800</MarketValue>
+			                	<AccuracyTouch>0.90</AccuracyTouch>
+			                	<AccuracyShort>0.70</AccuracyShort>
+			                	<AccuracyMedium>0.65</AccuracyMedium>
+			                	<AccuracyLong>0.60</AccuracyLong>
+			                	<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    	                	    <SightsEfficiency>1.60</SightsEfficiency>
+    	                        <ShotSpread>0.08</ShotSpread>
+    	                        <SwayFactor>1.10</SwayFactor>
+    	                	    <Bulk>12.56</Bulk>								
+		                    </statBases>
+		                    <costList>
+		                    	<Steel>100</Steel>
+		                    	<ComponentIndustrial>5</ComponentIndustrial>
+		                    </costList>
+                            <recipeMaker>
+                                <skillRequirements>
+                                    <Crafting>5</Crafting>
+                                </skillRequirements>
+                            </recipeMaker>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>					
+                                <li>CE_Cannon</li>
+		                    </weaponTags>
+						    <verbs>
+						        <li Class="CombatExtended.VerbPropertiesCE">
+                                    <recoilAmount>1.51</recoilAmount>
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_20x82mmMauser_HE</defaultProjectile>         
+                                    <warmupTime>0.56</warmupTime>
+                                    <range>55</range>
+									<minRange>5.5</minRange>
+                                    <soundCast>BurstCannon_Fire</soundCast>
+                                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                                    <muzzleFlashScale>20</muzzleFlashScale>
+                                    <burstShotCount>75</burstShotCount>
+                                    <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+						        </li>
+						    </verbs>
+						    <comps>
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>60</magazineSize>
+                                    <reloadTime>1</reloadTime>
+                                    <ammoSet>AmmoSet_20x82mmMauser</ammoSet>
+							    </li>
+							    <li Class="CombatExtended.CompProperties_FireModes">
+                                    <aiUseBurstMode>TRUE</aiUseBurstMode>
+                                    <noSingleShot>true</noSingleShot>
+                                    <aimedBurstShotCount>75</aimedBurstShotCount> 
+							    </li>
+						    </comps>	
+					    </ThingDef>
+				    </value>
+			    </li>
+				
+                <!-- Machine Cannon CE Patch -->
+                <li Class="PatchOperationReplace">
+				    <xpath>Defs/ThingDef[defName="Machine_Cannon"]</xpath>
+				    <value>
+                        <ThingDef ParentName="Machine_CannonBase">
+		                    <defName>Machine_Cannon</defName>
+		                    <label>Machine cannon</label>
+		                    <description>An ultra rapid fire cannon for infantry and animal attacks.</description>
+		                    <graphicData>
+		                    	<texPath>Box/Burst_Cannon</texPath>
+		                    	<graphicClass>Graphic_Single</graphicClass>
+		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		                    </graphicData>
+		                    <soundInteract>InteractPistol</soundInteract>
+		                    <statBases>
+                                <WorkToMake>4000</WorkToMake>
+		                    	<Mass>5.65</Mass>
+		                    	<MarketValue>600</MarketValue>
+		                    	<AccuracyTouch>0.97</AccuracyTouch>
+			                	<AccuracyShort>0.52</AccuracyShort>
+			                	<AccuracyMedium>0.39</AccuracyMedium>
+			                	<AccuracyLong>0.30</AccuracyLong>
+		                    	<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    	                	    <SightsEfficiency>1.40</SightsEfficiency>
+    	                        <ShotSpread>0.05</ShotSpread>
+    	                        <SwayFactor>1.33</SwayFactor>
+    	                	    <Bulk>11.35</Bulk>								
+		                    </statBases>
+		                    <costList>
+		                    	<Steel>100</Steel>
+		                    	<ComponentIndustrial>5</ComponentIndustrial>
+		                    </costList>
+                            <recipeMaker>
+                                <skillRequirements>
+                                    <Crafting>3</Crafting>
+                                </skillRequirements>
+                            </recipeMaker>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>							
+                                <li>CE_Cannon</li>
+		                    </weaponTags>
+						    <verbs>
+						        <li Class="CombatExtended.VerbPropertiesCE">
+                                    <recoilAmount>1.58</recoilAmount>
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_127x55mmAR_FMJ</defaultProjectile>               
+                                    <warmupTime>0.72</warmupTime>
+                                    <range>35</range>
+                                    <soundCast>BurstCannon_Fire</soundCast>
+                                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                                    <muzzleFlashScale>20</muzzleFlashScale>
+                                    <burstShotCount>150</burstShotCount>
+                                    <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+						        </li>
+						    </verbs>
+						    <comps>
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>120</magazineSize>
+                                    <reloadTime>0.75</reloadTime>
+                                    <ammoSet>AmmoSet_127x55mmAR</ammoSet>
+							    </li>
+							    <li Class="CombatExtended.CompProperties_FireModes">
+                                    <aiUseBurstMode>TRUE</aiUseBurstMode>
+                                    <noSingleShot>true</noSingleShot>
+                                    <aimedBurstShotCount>150</aimedBurstShotCount>
+							    </li>
+						    </comps>	
+					    </ThingDef>
+				    </value>
+			    </li>				
+				
+                <!-- Machine Gun CE Patch -->
+                <li Class="PatchOperationReplace">
+				    <xpath>Defs/ThingDef[defName="Machine_Gun"]</xpath>
+				    <value>
+                        <ThingDef ParentName="Machine_GunBase">
+		                    <defName>Machine_Gun</defName>
+		                    <label>Machine gun</label>
+		                    <description>An ultra rapid fire gun for infantry and animal attacks.</description>
+		                    <graphicData>
+		                    	<texPath>Box/Burst_Cannon</texPath>
+		                    	<graphicClass>Graphic_Single</graphicClass>
+		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		                    </graphicData>
+		                    <soundInteract>InteractPistol</soundInteract>
+		                    <statBases>
+                                <WorkToMake>2000</WorkToMake>
+		                    	<Mass>2.65</Mass>
+			                    <MarketValue>400</MarketValue>
+			                    <AccuracyTouch>0.97</AccuracyTouch>
+			                    <AccuracyShort>0.80</AccuracyShort>
+			                    <AccuracyMedium>0.60</AccuracyMedium>
+			                    <AccuracyLong>0.26</AccuracyLong>
+			                    <RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+    	                        <SightsEfficiency>1.20</SightsEfficiency>
+    	                        <ShotSpread>0.05</ShotSpread>
+    	                        <SwayFactor>1.53</SwayFactor>
+    	                        <Bulk>9.15</Bulk>								
+		                    </statBases>
+		                    <costList>
+		                    	<Steel>100</Steel>
+		                    	<ComponentIndustrial>5</ComponentIndustrial>
+		                    </costList>
+                            <recipeMaker>
+                                <skillRequirements>
+                                    <Crafting>2</Crafting>
+                                </skillRequirements>
+                            </recipeMaker>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>							
+                                <li>CE_Cannon</li>
+		                    </weaponTags>
+						    <verbs>
+						        <li Class="CombatExtended.VerbPropertiesCE">
+                                    <recoilAmount>1.32</recoilAmount>
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>           
+                                    <warmupTime>0.36</warmupTime>
+                                    <range>42</range>
+                                    <burstShotCount>60</burstShotCount>
+                                    <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                                    <soundCast>BurstCannon_Fire</soundCast>
+                                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                                    <muzzleFlashScale>10</muzzleFlashScale>
+						        </li>
+						    </verbs>
+						    <comps>
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>220</magazineSize>
+                                    <reloadTime>0.25</reloadTime>
+                                    <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+							    </li>
+							    <li Class="CombatExtended.CompProperties_FireModes">
+                                    <aiUseBurstMode>TRUE</aiUseBurstMode>
+                                    <noSingleShot>true</noSingleShot>  
+                                    <aimedBurstShotCount>300</aimedBurstShotCount> 
+							    </li>
+						    </comps>	
+					    </ThingDef>
+				    </value>
+			    </li>
+
+                <!-- Naval cannon CE Patch -->  
+                <li Class="PatchOperationReplace">
+				    <xpath>Defs/ThingDef[defName="Naval_Cannon"]</xpath>
+				    <value>
+                        <ThingDef ParentName="Naval_CannonBase">
+                            <defName>Naval_Cannon</defName>
+		                    <label>Naval cannon</label>
+		                    <description>A powerful cannon for use on a naval ship or possibly a tank, capable of sending exploding shells accurately at the enemy.</description>		                    
+							<graphicData>
+		                    	<texPath>Box/Tank_Cannon</texPath>
+		                    	<graphicClass>Graphic_Single</graphicClass>
+		                    	<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		                    </graphicData>
+		                    <soundInteract>InteractPistol</soundInteract>
+		                    <statBases>
+            					<WorkToMake>18640</WorkToMake>
+								<Mass>18.29</Mass>
+								<MarketValue>2400</MarketValue>
+								<AccuracyTouch>0.98</AccuracyTouch>
+            					<AccuracyShort>0.74</AccuracyShort>
+            					<AccuracyMedium>0.76</AccuracyMedium>
+            					<AccuracyLong>0.78</AccuracyLong>
+								<RangedWeapon_Cooldown>5.83</RangedWeapon_Cooldown>
+								<SightsEfficiency>6.06</SightsEfficiency>
+      							<ShotSpread>0.02</ShotSpread>
+      							<SwayFactor>1.20</SwayFactor>
+      							<Bulk>35.77</Bulk>
+		                    </statBases>
+		                    <costList>
+									<Steel>350</Steel>
+									<Plasteel>93</Plasteel>
+									<ComponentIndustrial>12</ComponentIndustrial>
+		                    </costList>
+                            <recipeMaker>
+                                <skillRequirements>
+                                    <Crafting>14</Crafting>
+                                </skillRequirements>
+                            </recipeMaker>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>							
+                                <li>CE_Cannon</li>
+		                    </weaponTags>
+						    <verbs>
+						        <li Class="CombatExtended.VerbPropertiesCE">
+                                    <recoilAmount>3.02</recoilAmount>									
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_20x110mmHispano_HE</defaultProjectile>
+				                    <warmupTime>6.29</warmupTime>
+				                    <range>500</range>
+				                    <minRange>15</minRange>				
+				                    <soundCast>TankCannon_Fire</soundCast>
+				                    <soundCastTail>GunTail_Heavy</soundCastTail>
+				                    <muzzleFlashScale>72</muzzleFlashScale>	
+                                    <burstShotCount>2</burstShotCount>
+                                    <ticksBetweenBurstShots>4</ticksBetweenBurstShots>									
+						        </li>
+						    </verbs>
+						    <comps>
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>25</magazineSize>
+                                    <reloadTime>9</reloadTime>
+									<spawnUnloaded>false</spawnUnloaded>
+                                    <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+							    </li>
+							    <li Class="CombatExtended.CompProperties_FireModes">
+                                    <aiUseBurstMode>TRUE</aiUseBurstMode>
+                                    <aiAimMode>AimedShot</aiAimMode>
+									<aimedBurstShotCount>2</aimedBurstShotCount>
+							    </li>										
+								<li Class="CompProperties_Forbiddable"/>
+						    </comps>						
+					    </ThingDef>
+				    </value>
+			    </li>
+				
+                <!-- Artillery Cannon CE Patch -->
+                <li Class="PatchOperationReplace">
+				    <xpath>Defs/ThingDef[defName="Arty_Cannon"]</xpath>
+				    <value>
+				        <ThingDef ParentName="Arty_CannonBase">
+				        	<defName>Arty_Cannon</defName>
+				        	<label>Artillery cannon</label>
+				        	<description>A powerful cannon for use on a tank chassis, capable of sending exploding shells accurately at the enemy.</description>
+				        	<graphicData>
+				        		<texPath>Box/Tank_Cannon</texPath>
+				        		<graphicClass>Graphic_Single</graphicClass>
+				        		<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+				        	</graphicData>
+				        	<soundInteract>InteractPistol</soundInteract>
+				        	<statBases>
+        		        	    <WorkToMake>9000</WorkToMake>
+				        		<Mass>8.85</Mass>
+				        		<MarketValue>2000</MarketValue>
+				        		<AccuracyTouch>0.98</AccuracyTouch>
+				        		<AccuracyShort>0.42</AccuracyShort>
+				        		<AccuracyMedium>0.62</AccuracyMedium>
+				        		<AccuracyLong>0.82</AccuracyLong>
+				        		<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+								<SightsEfficiency>0.5</SightsEfficiency>
+				        	</statBases>
+				        	<costList>
+				        		<Steel>200</Steel>
+				        		<Plasteel>50</Plasteel>
+				        		<ComponentIndustrial>6</ComponentIndustrial>
+				        	</costList>
+        		        	<recipeMaker>
+        		        	    <skillRequirements>
+        		        	        <Crafting>8</Crafting>
+        		        	    </skillRequirements>
+        		        	</recipeMaker>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>							
+                                <li>CE_Cannon</li>
+		                    </weaponTags>							
+				        	<verbs>					
+				        		<li Class="CombatExtended.VerbPropertiesCE">
+			    	        		<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+			    	        		<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			    	        		<hasStandardCommand>true</hasStandardCommand>								
+			    	        		<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
+			    	        		<warmupTime>3.4</warmupTime>
+			    	        		<minRange>30</minRange>
+			    	        		<range>680</range>
+			    	        		<burstShotCount>1</burstShotCount>
+			    	        		<soundCast>TankCannon_Fire</soundCast>
+									<soundCastTail>GunTail_Heavy</soundCastTail>
+			    	        		<muzzleFlashScale>51</muzzleFlashScale>
+			    	        		<targetParams>
+			    	        		    <canTargetLocations>true</canTargetLocations>
+			    	        		</targetParams>		
+						    	</li>
+						    </verbs>
+						    <comps>
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>220</magazineSize>
+                                    <reloadTime>0.25</reloadTime>
+                                    <ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+							    </li>	
+							    <li Class="CombatExtended.CompProperties_Charges">
+			    			        <chargeSpeeds>
+			    			            <li>30</li>
+			    			            <li>50</li>
+			    			            <li>70</li>
+			    			            <li>90</li>
+			    			        </chargeSpeeds>
+						        </li>								
+						    </comps>		
+				        </ThingDef>
+                    </value>
+                </li>	
+
+                <!-- Enables patches -->
+				<li Class="PatchOperationFindMod">
+				    <mods>
+					    <li>[O21] Vehicle Framework</li>
+					</mods>
+					
+					<match Class="PatchOperationSequence">
+					    <success>Always</success>
+						<operations>						
+						
+							<li Class="PatchOperationAddModExtension">
+		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]</xpath>
+		    	        		    <value>
+				        		        <li Class="CombatExtended.RacePropertiesExtensionCE">
+				        		            <bodyShape>Vehicle</bodyShape>
+				        		        </li>
+		    	        		    </value>
+	        	    		</li>						
+							
+							<li Class="PatchOperationReplace">
+		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]/comps</xpath>
+		    	        		    <value>
+									    <comps>
+										    <li>
+										    	<compClass>CompAttachBase</compClass>
+										    </li>
+										    <li>
+												<compClass>CombatExtended.CompPawnGizmo</compClass>
+										    </li>											
+										</comps>
+		    	        		    </value>
+	        	    		</li>	
+
+							<li Class="PatchOperationReplace">
+		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]/inspectorTabs</xpath>
+		    	        		    <value>
+			    	        		    <inspectorTabs>
+				    	        		    <li>ITab_Pawn_Needs</li>
+				    	        		    <li>ITab_Pawn_Character</li>
+			    	        		    </inspectorTabs>
+		    	        		    </value>
+	        	    		</li>
+						</operations>
+					</match>	
+                </li>				
+            </operations>
+        </match>
+	</Operation>			
+</Patch>

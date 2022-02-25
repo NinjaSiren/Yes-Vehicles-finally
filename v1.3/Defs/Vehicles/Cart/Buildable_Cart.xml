@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>YVFCart_Blueprint</defName>
+		<label>Cart</label>
+		<description>A fast and light cargo vehicle.</description>
+		<graphicData>
+			<texPath>Vehicles/Cart/Cart</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,7)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<WorkToBuild>30</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		<size>(3,5)</size>
+		
+		<researchPrerequisites/>
+		
+		<costList>
+			<ComponentIndustrial>9</ComponentIndustrial>
+			<Steel>750</Steel>
+			<WoodLog>375</WoodLog>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>YVFCart</thingToSpawn>
+		<soundBuilt>ShipBigConstruction</soundBuilt>
+	</Vehicles.VehicleBuildDef>
+</Defs>

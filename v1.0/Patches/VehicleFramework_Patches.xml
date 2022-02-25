@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+	    <mods>
+		    <li>[O21] Vehicle Framework</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+		    <success>Always</success>
+			    <operations>
+
+					<!-- Fixes the weapon quality JobDriver error and adds more quality for weapons -->
+                    <li Class="PatchOperationReplace">
+				        <xpath>Defs/ThingDef[@Name="O21Vehicle_GunBase"]/comps</xpath>
+					        <value>
+					    	    <comps>
+					    			<li>
+				            	        <compClass>CompQuality</compClass>
+			                	    </li>
+			                	    <li Class="CompProperties_Art">
+				            	        <nameMaker>NamerArtWeaponGun</nameMaker>
+				            	        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				            	        <minQualityForArtistic>Excellent</minQualityForArtistic>
+			                	    </li>
+					    		</comps>
+					    	</value>
+				    </li>									
+				</operations>			
+		</match>
+	</Operation>
+</Patch>

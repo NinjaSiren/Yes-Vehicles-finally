@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CE_ReloadingVehicleMote>Перезаряжает оружие на {0}.</CE_ReloadingVehicleMote>
+  <YouAlreadyOrderedToLoadThing>Вы уже приказали загрузить {0} в машину.</YouAlreadyOrderedToLoadThing>
+  <LoadItemToVehicle.reportString>Загружает TargetA в TargetB.</LoadItemToVehicle.reportString>
+
+</LanguageData>

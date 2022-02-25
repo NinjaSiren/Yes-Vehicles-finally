@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>YVFAPC_Blueprint</defName>
+		<label>APC</label>
+		<description>A lightly armored combat vehicle.</description>
+		<graphicData>
+			<texPath>Vehicles/APC/APC</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>8.0</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>20000</MaxHitPoints>
+			<WorkToBuild>20</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		<size>(3,5)</size>
+		
+		<researchPrerequisites/>
+		
+		<costList>
+			<ComponentIndustrial>30</ComponentIndustrial>
+			<Steel>2000</Steel>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>YVFAPC</thingToSpawn>
+		<soundBuilt>ShipBigConstruction</soundBuilt>
+	</Vehicles.VehicleBuildDef>
+</Defs>

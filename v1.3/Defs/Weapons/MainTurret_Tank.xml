@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
 	<Vehicles.VehicleTurretDef Name="TankMainTurret" ParentName="TurretBase">
 		<defName>YVFTankMainTurret_Base</defName>

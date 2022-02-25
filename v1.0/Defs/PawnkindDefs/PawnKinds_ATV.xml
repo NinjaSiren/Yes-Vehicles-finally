@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef>
+		<defName>Vehicle_ATV</defName>
+		<label>atv</label>
+		<race>ATV</race>
+		<combatPower>100</combatPower>
+        <canBeSapper>true</canBeSapper>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+        <!--backstoryCategories>
+            <li>Civil</li>
+        </backstoryCategories-->
+		<aiAvoidCover>true</aiAvoidCover>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Vehicles/ATV/ATV</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.57,1.57</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+	</PawnKindDef>
+</Defs>

@@ -21,7 +21,7 @@
 		
 		<nameable>true</nameable>
 		<buildDef>YVFTank_Blueprint</buildDef>
-		<repairRate>1.5</repairRate>
+		<repairRate>975</repairRate>
 		
 		<armor>50</armor>
 		<cargoCapacity>300</cargoCapacity>
@@ -285,9 +285,6 @@
 							<north>
 								<offset>(0, 0)</offset>
 							</north>
-							<east>
-								<offset>(-4, 0)</offset>
-							</east>
 						</renderProperties>
 
 						<gizmoLabel>Main Turret</gizmoLabel>

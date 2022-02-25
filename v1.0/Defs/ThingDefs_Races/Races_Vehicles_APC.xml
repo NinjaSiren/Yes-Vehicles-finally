@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- APC-->
+	<ThingDef ParentName="O21BaseVehicle">
+		<defName>APC</defName>
+		<label>apc</label>
+		<description>A heavily armored machine designed for the art of modern war and carrying goods around.</description>
+		
+		<statBases>
+			<MarketValue>1256</MarketValue>
+			<MoveSpeed>8.0</MoveSpeed>
+			<CarryingCapacity>500</CarryingCapacity>
+			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<MeatAmount>0</MeatAmount>
+            <!--WorkToBuild>0</WorkToBuild-->
+            <!--Beauty>0</Beauty-->
+            <Mass>300</Mass>
+		</statBases>		
+		
+		<inspectorTabs>
+            <li>ITab_Pawn_FormingCaravan</li>
+		</inspectorTabs>
+		
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+
+		<race>
+			<body>APC_Hull</body>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>17.0</baseHealthScale>
+            <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+            <packAnimal>true</packAnimal>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>ArtilleryHitThickRoof</soundWounded>
+					<soundDeath>Explosion_Bomb</soundDeath>
+					<soundCall>Vehicle_Idle</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>50</min>
+				<max>50</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+		</race>
+
+		<recipes>
+			<!--li>Vehicle_RepairsAPC</li-->
+		</recipes>
+
+		<butcherProducts>
+			<Steel>100</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>20</ComponentIndustrial>
+		</butcherProducts>
+		
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>4.3</fuelConsumptionRate>
+				<fuelCapacity>56</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+            <!--li Class="CompProperties_Explosive">
+                <explosiveRadius>3.2</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.4</chanceNeverExplodeFromDamage>
+            </li-->			
+			<li Class="O21VehicleFramework.CompProperties_Vehicle">
+
+				<!--
+                Vehicle Type determines how movements are calculated.
+                Vehicle Types :
+                Aircraft, AircraftAmphibious, AircraftSpace,
+                Amphibious, LandWheeled, LandHover, LandWalker,
+                Sea, SeaSubmarine, SpaceOuter
+                -->
+				<vehicleType>LandWheeled</vehicleType>
+
+				<!--
+                Handler types determine if vehicles require a person to
+                handle various aspects of the vehicle's functions.
+                Handling Types :
+                Incapable, HandlerRequired, NoHandlerRequired
+                -->
+				<movementHandling>HandlerRequired</movementHandling>
+				<weaponHandling>HandlerRequired</weaponHandling>
+				<manipulationHandling>NoHandlerRequired</manipulationHandling>
+
+				<!-- Determines how much a vehicle can carry -->
+				<cargoCapacity>500</cargoCapacity>
+
+				<!-- Unloads all passengers when health percent reaches below this percentage. -->
+				<ejectIfBelowHealthPercent>0.20</ejectIfBelowHealthPercent>
+				<ejectIfBelowNeedPercent>0.01</ejectIfBelowNeedPercent>
+
+				<!-- If a bullet hits a seat, the passenger is injured by this factor of damage. -->
+				<seatHitDamageFactor>1.75</seatHitDamageFactor>
+
+				<!-- Chance of doubling that damage. -->
+				<seatHitCriticalHitChance>0.04</seatHitCriticalHitChance>
+				<canBeDowned>true</canBeDowned>
+				<canWiggleWhenDowned>false</canWiggleWhenDowned>
+				<soundEntry>Vehicle_Close</soundEntry>
+				<soundMoving>APC_Moving</soundMoving>
+				<soundEject>Vehicle_Open</soundEject>
+				<labelUndamaged>Undamaged</labelUndamaged>
+				<labelDamaged>Damaged</labelDamaged>
+				<labelInoperable>Inoperable</labelInoperable>
+				<labelBroken>Broken</labelBroken>
+
+				<roles>
+					<li>
+						<label>driver</label>
+						<labelPlural>drivers</labelPlural>
+						<handlingTypes>Movement</handlingTypes>
+						<slotsToOperate>1</slotsToOperate>
+						<slotTag>DriverSeat</slotTag>
+					</li>
+					<li>
+						<label>gunner</label>
+						<labelPlural>gunners</labelPlural>
+						<handlingTypes>Weapons</handlingTypes>
+						<slots>1</slots>
+						<slotTag>GunnerSeat</slotTag>
+					</li>
+					<li>
+						<label>passenger</label>
+						<labelPlural>passengers</labelPlural>
+						<handlingTypes>Weapons</handlingTypes>
+						<slots>4</slots>
+						<slotTag>PassengerSeat</slotTag>
+					</li>
+				</roles>
+			</li>
+			<!--Keeping this here for future turning wheel animation>
+
+	        <li Class="CompLumbering.CompProperties_Lumbering">
+	            <cycledGraphic>
+			        <texPath>Imp/Walkers/ATSTCycle/ATST</texPath>
+			        <graphicClass>Graphic_Multi</graphicClass>
+			        <drawSize>4.3</drawSize>
+			        <shadowData>
+				        <volume>(0.4, 0.8, 0.4)</volume>
+			        </shadowData>
+		        </cycledGraphic>
+		        <sound>PJ_ATST_Step</sound>
+                <secondsPerStep>1.15</secondsPerStep>
+		        <secondsBetweenSteps>0.5</secondsBetweenSteps>
+            </li-->			
+		</comps>
+		
+        <modExtensions>
+			<li Class="O21VehicleFramework.DefModExt_RenderWeaponExt">
+			    <weaponCardinalDirection>True</weaponCardinalDirection> <!-- [O21] Vehicle Framework patchnotes update v0.4 -->
+				<alwaysRender>True</alwaysRender>
+				<renderOverVehicle>True</renderOverVehicle>
+				<renderPosOffset>(0.0, -0.75)</renderPosOffset>
+			</li>
+		</modExtensions>		
+	</ThingDef>
+</Defs>

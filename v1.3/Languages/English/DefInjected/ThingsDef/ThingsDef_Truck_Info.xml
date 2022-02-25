@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- Truck info -->
+	<Truck.label>Truck</Truck.label>
+	<Truck.description>An all purpose truck used to carry goods over large distances at a much quicker speed.</Truck.description>
+	<Truck.ArmorRating_Blunt>Armor Rating (Blunt):</Truck.ArmorRating_Blunt>
+	<Truck.ArmorRating_Sharp>Armor Rating (Sharp):</Truck.ArmorRating_Sharp>
+	<Truck.Flammability>Flammability:</Truck.Flammability>
+	<Truck.statBases.MarketValue>Market Price:</Truck.statBases.MarketValue>
+	<Truck.statBases.MoveSpeed>Movement Speed:</Truck.statBases.MoveSpeed>
+	<Truck.comps.3.fuelConsumptionRate>Fuel Rate:</Truck.comps.3.fuelConsumptionRate>
+	<Truck.comps.3.fuelCapacity>Fuel Amount:</Truck.comps.3.fuelCapacity>	
+	<Truck.comps.3.fuelFilter>Fuel Type:</Truck.comps.3.fuelFilter>		
+	<Truck.comps.4.vehicleType>Vehicle Type:</Truck.comps.4.vehicleType>
+	<Truck.comps.4.cargoCapacity>Cargo Capacity:</Truck.comps.4.cargoCapacity>
+	<Truck.comps.4.ejectIfBelowHealthPercent>Eject Pawn Percent:</Truck.comps.4.ejectIfBelowHealthPercent>
+	<Truck.comps.4.seatHitDamageFactor>Seat Hit Damage Percent:</Truck.comps.4.seatHitDamageFactor>
+</LanguageData>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <LoadItemToVehicle.label>загружает item в vehicles</LoadItemToVehicle.label>
+  <LoadItemToVehicle.verb>загрузка</LoadItemToVehicle.verb>
+  <LoadItemToVehicle.gerund>загружает</LoadItemToVehicle.gerund>
+
+
+</LanguageData>

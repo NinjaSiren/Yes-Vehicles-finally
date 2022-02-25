@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CE_ReloadingVehicleMote>Reloading weapon on {0}.</CE_ReloadingVehicleMote>
+  <YouAlreadyOrderedToLoadThing>You already ordered to load {0} into vehicle.</YouAlreadyOrderedToLoadThing>
+  <LoadItems>Load items</LoadItems>
+  <LoadItemsToVehicle>Load items to vehicle.</LoadItemsToVehicle>
+</LanguageData>

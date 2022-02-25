@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Specific gun bases, important to alocate graphics -->
+	<ThingDef Name="Machine_GunBase" ParentName="O21Vehicle_GunBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>VehicleTable</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+        <techLevel>Industrial</techLevel>
+		<comps>
+			<li Class="CompInstalledPart.CompProperties_InstalledPart">
+				<allowedToInstallOn>
+				    <li>ATV</li>
+					<li>Truck</li>
+				</allowedToInstallOn>
+				<installedWeaponGraphic>
+					<texPath>Weps/Turrets/Infantry_Gun</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>6</drawSize>
+					<shaderType>TransparentPostLight</shaderType>
+				</installedWeaponGraphic>
+				<workToInstall>500</workToInstall>
+				<workToUninstall>500</workToUninstall>
+				<workEffect>Repair</workEffect>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- actual Gun defs -->
+	<ThingDef ParentName="Machine_GunBase">
+		<defName>Machine_Gun</defName>
+		<label>Machine gun</label>
+		<description>An ultra rapid fire gun for infantry and animal attacks.</description>
+		<graphicData>
+			<texPath>Box/Burst_Cannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+            <WorkToMake>2000</WorkToMake>
+			<Mass>2.65</Mass>
+			<MarketValue>400</MarketValue>
+			<AccuracyTouch>0.97</AccuracyTouch>
+			<AccuracyShort>0.48</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.26</AccuracyLong>
+			<RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Small_Bullet</defaultProjectile>				
+				<warmupTime>1.36</warmupTime>
+				<burstShotCount>60</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<range>42</range>
+				<soundCast>BurstCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>Heavy_Weps</li>
+		</weaponTags>
+	</ThingDef>
+</Defs>

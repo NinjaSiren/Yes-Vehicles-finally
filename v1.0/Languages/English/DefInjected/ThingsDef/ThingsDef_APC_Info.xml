@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- APC info -->
+	<APC.label>APC</APC.label>
+	<APC.description>A heavily armored machine designed for the art of modern war and carrying goods around.</APC.description>
+	<APC.ArmorRating_Blunt>Armor Rating (Blunt):</APC.ArmorRating_Blunt>
+	<APC.ArmorRating_Sharp>Armor Rating (Sharp):</APC.ArmorRating_Sharp>
+	<APC.Flammability>Flammability:</APC.Flammability>
+	<APC.statBases.MarketValue>Market Price:</APC.statBases.MarketValue>
+	<APC.statBases.MoveSpeed>Movement Speed:</APC.statBases.MoveSpeed>
+	<APC.comps.3.fuelConsumptionRate>Fuel Rate:</APC.comps.3.fuelConsumptionRate>
+	<APC.comps.3.fuelCapacity>Fuel Amount:</APC.comps.3.fuelCapacity>	
+	<APC.comps.3.fuelFilter>Fuel Type:</APC.comps.3.fuelFilter>		
+	<APC.comps.4.vehicleType>Vehicle Type:</APC.comps.4.vehicleType>
+	<APC.comps.4.cargoCapacity>Cargo Capacity:</APC.comps.4.cargoCapacity>
+	<APC.comps.4.ejectIfBelowHealthPercent>Eject Pawn Percent:</APC.comps.4.ejectIfBelowHealthPercent>
+	<APC.comps.4.seatHitDamageFactor>Seat Hit Damage Percent:</APC.comps.4.seatHitDamageFactor>
+</LanguageData>

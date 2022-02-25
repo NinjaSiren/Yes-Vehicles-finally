@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<WorkGiverDef>
+							<defName>ReloadWeaponOnVehicle</defName>
+							<label>reload weapons on vehicles</label>
+							<giverClass>ReloadWeaponOnVehicle.WorkGiver_ReloadWeaponOnVehicle</giverClass>
+							<workType>Hauling</workType>
+							<verb>reload</verb>
+							<gerund>reloading</gerund>
+							<priorityInType>106</priorityInType>
+							<requiredCapacities>
+								<li>Manipulation</li>
+							</requiredCapacities>
+						</WorkGiverDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

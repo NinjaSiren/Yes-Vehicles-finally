@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef ParentName="APCMainTurret">
+		<defName>YVFAPCMainTurret_Machine</defName>
+		<label>Main Turret</label>
+		
+		<projectileSpeed>275</projectileSpeed>
+		<reloadTimer>5</reloadTimer>
+		<warmUpTimer>0.42</warmUpTimer>
+		
+		<recoil>
+			<distanceTotal>0.18</distanceTotal>
+			<distancePerTick>0.04</distancePerTick>
+			<speedMultiplierPostRecoil>0.09</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<vehicleRecoil>
+			<distanceTotal>0.09</distanceTotal>
+			<distancePerTick>0.04</distancePerTick>
+			<speedMultiplierPostRecoil>0.19</speedMultiplierPostRecoil>
+		</vehicleRecoil>
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>8</shotsPerBurst>
+				<ticksBetweenBursts>1</ticksBetweenBursts>
+				<spreadRadius>6</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		
+		<rotationSpeed>0.9</rotationSpeed>
+
+		<graphicData>
+			<texPath>Weps/Turrets/Infantry_Turret</texPath>
+		</graphicData>
+		
+		<projectileOffset>4.75</projectileOffset>
+		<hitFlags>IntendedTarget</hitFlags>
+		<maxRange>-1</maxRange>
+		<minRange>13</minRange>
+	</Vehicles.VehicleTurretDef>
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>             				
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<JobDef>
+							<defName>ReloadWeaponOnVehicle</defName>
+							<driverClass>ReloadWeaponOnVehicle.JobDriver_ReloadWeaponOnVehicle</driverClass>
+							<reportString>Reloading FlagSource TargetB with AmmoType.</reportString>
+							<modExtensions>
+								<li Class="CombatExtended.JobDefExtensionCE">
+									<isCrouchJob>true</isCrouchJob>
+								</li>
+							</modExtensions>
+						</JobDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
