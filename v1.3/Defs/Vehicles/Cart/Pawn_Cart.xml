@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Vehicles/Cart/Cart</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<drawSize>8.0</drawSize>
+			<drawSize>4.75</drawSize>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<color>(120, 120, 120)</color>
 			<colorTwo>(0, 80, 0)</colorTwo>
@@ -97,6 +97,16 @@
 				<label>Body</label>
 				<health>100</health>
 				<armor>.25</armor>
+				
+				<hitbox>
+					<side>Body</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>Cart</key>
+				<label>Cart</label>
+				<health>100</health>
+				<armor>.13</armor>
 				
 				<hitbox>
 					<side>Body</side>

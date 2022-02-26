@@ -4,12 +4,12 @@
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>YVFATV</defName>
 		<label>ATV</label>
-		<description>A fast and light vehicle for rapid movement, great for caravans.</description>
+		<description>A fast and light vehicle for rapid movement, great for caravans and fast deployment.</description>
 		
 		<graphicData>
 			<texPath>Vehicles/ATV/ATV</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<drawSize>8.0</drawSize>
+			<drawSize>2.5</drawSize>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<color>(120, 120, 120)</color>
 			<colorTwo>(0, 80, 0)</colorTwo>

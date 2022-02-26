@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Base Shells -->
+
+	<ThingDef Name="NavalShellBase" ParentName="ShellBase" Abstract="True">
+		<thingCategories>
+			<li>NavalShells</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>1200</workAmount>
+			<targetCountAdjustment>5</targetCountAdjustment>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="TankShellBase" ParentName="ShellBase" Abstract="True">
+		<thingCategories>
+			<li>TankShells</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>800</workAmount>
+			<targetCountAdjustment>5</targetCountAdjustment>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="RailgunShellBase" ParentName="ShellBase" Abstract="True">
+		<thingCategories>
+			<li>RailgunShells</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>550</workAmount>
+			<targetCountAdjustment>5</targetCountAdjustment>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="APCShellBase" ParentName="ShellBase" Abstract="True">
+		<thingCategories>
+			<li>AutocannonShells</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>400</workAmount>
+			<targetCountAdjustment>5</targetCountAdjustment>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="MachineGunShellBase" ParentName="ShellBase" Abstract="True">
+		<thingCategories>
+			<li>MachineGunShells</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>200</workAmount>
+			<targetCountAdjustment>5</targetCountAdjustment>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- Naval Shell -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Naval_Shell</defName>
+		<label>280mm Naval Shell</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Cannon_Shell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>500</damageAmountBase>
+			<speed>400</speed>
+            <stoppingPower>3.0</stoppingPower>						
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="NavalShellBase">
+		<defName>Shell_Naval</defName>
+		<label>280mm Naval Shell</label>
+		<description>A standard-sized ship cannon shell filled with high explosives. Can be fired from large caliber cannons or installed as a trap. Explodes when damaged.</description>
+		<graphicData>
+			<texPath>Ammo/Naval/NavalAmmo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+		<li Class="CompProperties_Explosive">
+			<explosiveRadius>4.35</explosiveRadius>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+			<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+			<wickTicks>30~60</wickTicks>
+		</li>
+		</comps>
+		<projectileWhenLoaded>Naval_Shell</projectileWhenLoaded>
+		<costList>
+			<Steel>25</Steel>
+			<Chemfuel>25</Chemfuel>
+		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<costList>
+				<Steel>40</Steel>
+				<Chemfuel>25</Chemfuel>
+			</costList>
+		</costListForDifficulty>
+		<recipeMaker>
+			<researchPrerequisite>Mortars</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!-- Tank Shell -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Tank_Shell</defName>
+		<label>120mm Tank Shell</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Cannon_Shell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>250</damageAmountBase>
+			<speed>350</speed>
+            <stoppingPower>1.5</stoppingPower>						
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="TankShellBase">
+		<defName>Shell_Tank</defName>
+		<label>120mm Tank Shell</label>
+		<description>A standard-sized tank shell filled with high explosives. Can be fired from large caliber cannons or installed as a trap. Explodes when damaged.</description>
+		<graphicData>
+			<texPath>Ammo/Tank/TankAmmo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+		<li Class="CompProperties_Explosive">
+			<explosiveRadius>2.9</explosiveRadius>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+			<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+			<wickTicks>30~60</wickTicks>
+		</li>
+		</comps>
+		<projectileWhenLoaded>Tank_Shell</projectileWhenLoaded>
+		<costList>
+			<Steel>15</Steel>
+			<Chemfuel>15</Chemfuel>
+		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<costList>
+				<Steel>25</Steel>
+				<Chemfuel>15</Chemfuel>
+			</costList>
+		</costListForDifficulty>
+		<recipeMaker>
+			<researchPrerequisite>Mortars</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!-- Railgun Shell -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Railgun_Shell</defName>
+		<label>155mm Railgun Round</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Dense_Shell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>300</damageAmountBase>
+			<speed>650</speed>
+            <stoppingPower>6.0</stoppingPower>			
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="RailgunShellBase">
+		<defName>Shell_Railgun</defName>
+		<label>155mm Railgun Round</label>
+		<description>A standard-sized railgun round filled with depleted uranium. Can be fired from large caliber railguns only.</description>
+		<graphicData>
+			<texPath>Ammo/Tank/Sabot</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<projectileWhenLoaded>Railgun_Shell</projectileWhenLoaded>
+		<costList>
+			<Steel>15</Steel>
+			<Uranium>15</Uranium>
+		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<costList>
+				<Steel>25</Steel>
+				<Uranium>15</Uranium>
+			</costList>
+		</costListForDifficulty>
+		<recipeMaker>
+			<researchPrerequisite>Mortars</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- Autocannon Shell -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>APC_Shell</defName>
+		<label>40mm Autocannon Shell</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Cannon_Shell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>175</damageAmountBase>
+			<speed>300</speed>
+            <stoppingPower>1.0</stoppingPower>						
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="APCShellBase">
+		<defName>Shell_APC</defName>
+		<label>40mm Autocannon Shell</label>
+		<description>A standard-sized autocannon shell filled with high explosives. Can be fired from small caliber cannons or installed as a trap. Explodes when damaged.</description>
+		<graphicData>
+			<texPath>Ammo/APC/Autocannon</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+		<li Class="CompProperties_Explosive">
+			<explosiveRadius>1.5</explosiveRadius>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+			<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+			<wickTicks>30~60</wickTicks>
+		</li>
+		</comps>
+		<projectileWhenLoaded>APC_Shell</projectileWhenLoaded>
+		<costList>
+			<Steel>10</Steel>
+			<Chemfuel>10</Chemfuel>
+		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<costList>
+				<Steel>20</Steel>
+				<Chemfuel>10</Chemfuel>
+			</costList>
+		</costListForDifficulty>
+		<recipeMaker>
+			<researchPrerequisite>Mortars</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- Machine Gun Shell -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Small_Bullet</defName>
+		<label>Machine Gun Round</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<speed>250</speed>
+			<stoppingPower>0.1</stoppingPower>	
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="MachineGunShellBase">
+		<defName>Bullet_Small</defName>
+		<label>Machine Gun Round</label>
+		<description>A standard-sized machine gun rounds. Can be fired from small caliber machine guns only.</description>
+		<graphicData>
+			<texPath>Ammo/MachineGun/Bullet</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<projectileWhenLoaded>Small_Bullet</projectileWhenLoaded>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<costList>
+				<Steel>15</Steel>
+			</costList>
+		</costListForDifficulty>
+		<recipeMaker>
+			<researchPrerequisite>Mortars</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

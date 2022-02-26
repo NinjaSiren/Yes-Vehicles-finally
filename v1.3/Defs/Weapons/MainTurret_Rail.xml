@@ -26,6 +26,12 @@
 			<texPath>Weps/Turrets/Rail_Cannon</texPath>
 		</graphicData>
 		
+		<ammunition>
+			<categories>
+				<li>RailgunShells</li>
+			</categories>
+		</ammunition>
+		
 		<projectileOffset>4.75</projectileOffset>
 		<hitFlags>IntendedTarget</hitFlags>
 		<maxRange>-1</maxRange>

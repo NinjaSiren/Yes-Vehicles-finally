@@ -17,6 +17,12 @@
 			<texPath>Weps/Turrets/Naval_Cannon</texPath>
 		</graphicData>
 		
+		<ammunition>
+			<categories>
+				<li>NavalShells</li>
+			</categories>
+		</ammunition>
+		
 		<projectileOffset>4.5</projectileOffset>
 		<projectileShifting>
 			<li>1.5</li>

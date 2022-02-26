@@ -8,7 +8,7 @@
 		<graphicData>
 			<texPath>Vehicles/Tank/Tank</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>8.0</drawSize>
+			<drawSize>8.5</drawSize>
 		</graphicData>
 		
 		<statBases>

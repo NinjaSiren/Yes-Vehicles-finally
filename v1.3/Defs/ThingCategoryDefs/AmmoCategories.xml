@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>    
+	<ThingCategoryDef>
+		<defName>NavalShells</defName>
+		<label>naval shells</label>
+		<parent>Manufactured</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberLargeCannon</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>TankShells</defName>
+		<label>tank shells</label>
+		<parent>Manufactured</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberCannon</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RailgunShells</defName>
+		<label>railgun shells</label>
+		<parent>Manufactured</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRailgunHighCaliber</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>AutocannonShells</defName>
+		<label>autocannon shells</label>
+		<parent>Manufactured</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberAutocannon</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>MachineGunShells</defName>
+		<label>machine gun bullets</label>
+		<parent>Manufactured</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
+    </ThingCategoryDef>
+</Defs>

@@ -8,12 +8,12 @@
 		<graphicData>
 			<texPath>Vehicles/APC/APC</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>8.0</drawSize>
+			<drawSize>8.5</drawSize>
 		</graphicData>
 		
 		<statBases>
 			<MaxHitPoints>20000</MaxHitPoints>
-			<WorkToBuild>20</WorkToBuild>
+			<WorkToBuild>30</WorkToBuild>
 			<Flammability>0.05</Flammability>
 		</statBases>
 		<size>(3,5)</size>

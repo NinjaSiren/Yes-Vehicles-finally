@@ -16,8 +16,14 @@
 			<texPath>Weps/Turrets/Tank_Cannon</texPath>
 		</graphicData>
 		
+		<ammunition>
+			<categories>
+				<li>MortarShells</li>
+			</categories>
+		</ammunition>
+		
 		<projectileOffset>4.5</projectileOffset>
-
+		
 		<maxRange>-1</maxRange>
 		<minRange>0</minRange>
 	</Vehicles.VehicleTurretDef>

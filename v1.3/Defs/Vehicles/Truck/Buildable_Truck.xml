@@ -8,12 +8,12 @@
 		<graphicData>
 			<texPath>Vehicles/Truck/Truck</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,7)</drawSize>
+			<drawSize>8.0</drawSize>
 		</graphicData>
 		
 		<statBases>
 			<MaxHitPoints>10000</MaxHitPoints>
-			<WorkToBuild>30</WorkToBuild>
+			<WorkToBuild>23</WorkToBuild>
 			<Flammability>0.05</Flammability>
 		</statBases>
 		<size>(3,5)</size>

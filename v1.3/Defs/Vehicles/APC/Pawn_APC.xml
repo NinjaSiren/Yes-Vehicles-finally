@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Vehicles/APC/APC</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<drawSize>8.0</drawSize>
+			<drawSize>8.5</drawSize>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<color>(0, 80, 30)</color>
 			<colorTwo>(0, 45, 10)</colorTwo>
@@ -293,11 +293,11 @@
 						<turretDef>YVFAPCMainTurret_Main</turretDef>
 						<renderProperties>
 							<north>
-								<offset>(0, 0)</offset>
+								<offset>(-5, 0)</offset>
 							</north>
 						</renderProperties>
 
-						<gizmoLabel>Main Turret</gizmoLabel>
+						<gizmoLabel>40mm Autocannon</gizmoLabel>
 						<autoTargeting>true</autoTargeting>
 						
 						<angleRestricted/>

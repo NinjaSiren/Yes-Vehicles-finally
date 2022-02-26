@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef ParentName="APCMainTurret">
+		<defName>YVFAPCMainTurret_MachineLight</defName>
+		<label>7.62mm Machine Gun</label>
+		<weaponType>Rotatable</weaponType>
+		<cannonSound>Shot_Minigun</cannonSound>
+		
+		<projectileSpeed>290</projectileSpeed>
+		<reloadTimer>8</reloadTimer>
+		<warmUpTimer>1</warmUpTimer>
+		<magazineCapacity>50</magazineCapacity>
+		
+		<recoil>
+			<distanceTotal>0.1</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.75</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<vehicleRecoil>
+			<distanceTotal>0.05</distanceTotal>
+			<distancePerTick>0.02</distancePerTick>
+			<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+		</vehicleRecoil>
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>20</ticksBetweenBursts>
+				<spreadRadius>1.25</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>6</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<spreadRadius>1.6</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>6</ticksBetweenShots>
+				<ticksBetweenBursts>6</ticksBetweenBursts>
+				<spreadRadius>2.5</spreadRadius>
+				<label>Full-Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		
+		<gizmoIconScale>1</gizmoIconScale>
+		<rotationSpeed>1.5</rotationSpeed>
+
+		<graphicData>
+			<texPath>Weps/Turrets/Infantry_Gun</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<categories>
+				<li>MachineGunShells</li>
+			</categories>
+		</ammunition>
+		
+		<projectileOffset>1</projectileOffset>
+		<hitFlags>All</hitFlags>
+		<maxRange>40</maxRange>
+		<minRange>7</minRange>
+	</Vehicles.VehicleTurretDef>
+</Defs>
