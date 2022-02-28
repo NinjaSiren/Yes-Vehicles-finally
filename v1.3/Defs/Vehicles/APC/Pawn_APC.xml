@@ -293,16 +293,16 @@
 						<turretDef>YVFAPCMainTurret_Main</turretDef>
 						<renderProperties>
 							<north>
-								<offset>(0,50)</offset>
+								<offset>(0, 50)</offset>
 							</north>
 							<south>
-								<offset>(0,-50)</offset>
+								<offset>(0, -50)</offset>
 							</south>
 							<east>
-								<offset>(50,0)</offset>
+								<offset>(50, 0)</offset>
 							</east>
 							<west>
-								<offset>(-50,0)</offset>
+								<offset>(-50, 0)</offset>
 							</west>
 						</renderProperties>
 
@@ -310,7 +310,7 @@
 						<autoTargeting>true</autoTargeting>
 						
 						<angleRestricted/>
-						<aimPieOffset>(0,0)</aimPieOffset>
+						<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 						<drawLayer>1</drawLayer>
 						
 						<key>mainTurret</key>

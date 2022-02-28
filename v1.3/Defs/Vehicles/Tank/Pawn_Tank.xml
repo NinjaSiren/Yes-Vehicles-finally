@@ -283,16 +283,16 @@
 						<turretDef>YVFTankMainTurret_Base</turretDef>
 						<renderProperties>
 							<north>
-								<offset>(0,20)</offset>
+								<offset>(0, 20)</offset>
 							</north>
 							<south>
-								<offset>(0,-20)</offset>
+								<offset>(0, -20)</offset>
 							</south>
 							<east>
-								<offset>(20,0)</offset>
+								<offset>(20, 0)</offset>
 							</east>
 							<west>
-								<offset>(-20,0)</offset>
+								<offset>(-20, 0)</offset>
 							</west>
 						</renderProperties>
 
@@ -300,7 +300,7 @@
 						<autoTargeting>true</autoTargeting>
 						
 						<angleRestricted/>
-						<aimPieOffset>(0,0)</aimPieOffset>
+						<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 						<drawLayer>1</drawLayer>
 						
 						<key>mainTurret</key>
