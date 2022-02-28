@@ -1,4 +1,4 @@
-[v0.9] [1.3] Yes, Vehicles, Finally! - A somewhat* new way to travel the planet!
+[v0.9] [1.3.xx] Yes, Vehicles, Finally! - A somewhat* new way to travel the planet!
 with Combat Extended & Run and Gun support, with Faction AI addition!
 
 -------------------------------------------------------------------------------------------
