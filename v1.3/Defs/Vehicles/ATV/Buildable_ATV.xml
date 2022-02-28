@@ -8,7 +8,7 @@
 		<graphicData>
 			<texPath>Vehicles/ATV/ATV</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>2.5</drawSize>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		
 		<statBases>

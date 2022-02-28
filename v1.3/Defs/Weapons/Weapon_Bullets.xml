@@ -213,7 +213,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Railgun_Shell</defName>
-		<label>155mm Railgun Round</label>
+		<label>40mm Railgun Round</label>
 		<graphicData>
 			<texPath>Weps/Projectiles/Dense_Shell</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -222,7 +222,7 @@
 		<projectile>
 			<flyOverhead>False</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>300</damageAmountBase>
+			<damageAmountBase>400</damageAmountBase>
 			<speed>650</speed>
             <stoppingPower>6.0</stoppingPower>			
 		</projectile>
@@ -230,7 +230,7 @@
 
 	<ThingDef ParentName="RailgunShellBase">
 		<defName>Shell_Railgun</defName>
-		<label>155mm Railgun Round</label>
+		<label>40mm Railgun Round</label>
 		<description>A standard-sized railgun round filled with depleted uranium. Can be fired from large caliber railguns only.</description>
 		<graphicData>
 			<texPath>Ammo/Tank/Sabot</texPath>

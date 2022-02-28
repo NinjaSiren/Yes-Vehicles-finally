@@ -3,7 +3,7 @@
 <Defs>
 	<Vehicles.VehicleTurretDef ParentName="TankMainTurret">
 		<defName>YVFTankMainTurret_Artillery</defName>
-		<label>Main Turret</label>
+		<label>155mm Howitzer</label>
 		
 		<projectileSpeed>200</projectileSpeed>
 		<reloadTimer>5</reloadTimer>

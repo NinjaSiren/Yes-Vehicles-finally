@@ -8,7 +8,7 @@
 		<graphicData>
 			<texPath>Vehicles/APC/APC</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>8.5</drawSize>
+			<drawSize>(8,8)</drawSize>
 		</graphicData>
 		
 		<statBases>

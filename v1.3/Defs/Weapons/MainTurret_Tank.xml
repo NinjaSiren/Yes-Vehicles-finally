@@ -2,7 +2,7 @@
 <Defs>
 	<Vehicles.VehicleTurretDef Name="TankMainTurret" ParentName="TurretBase">
 		<defName>YVFTankMainTurret_Base</defName>
-		<label>Main Turret</label>
+		<label>120mm Smoothbore</label>
 		<weaponType>Rotatable</weaponType>
 		<cannonSound>Explosion_PirateCannon</cannonSound>
 		<reloadSound>Artillery_ShellLoaded</reloadSound>
@@ -43,7 +43,7 @@
 			<texPath>Weps/Turrets/Tank_Cannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>8.0</drawSize>
+			<drawSize>(1.25,3)</drawSize>
 		</graphicData>
 		
 		<ammunition>

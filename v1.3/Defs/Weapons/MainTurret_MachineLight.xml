@@ -57,7 +57,6 @@
 		<graphicData>
 			<texPath>Weps/Turrets/Infantry_Gun</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
-			<drawSize>1.25</drawSize>
 		</graphicData>
 		
 		<ammunition>

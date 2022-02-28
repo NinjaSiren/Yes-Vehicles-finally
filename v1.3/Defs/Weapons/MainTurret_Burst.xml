@@ -3,7 +3,7 @@
 <Defs>
 	<Vehicles.VehicleTurretDef Name="APCMainTurret" ParentName="TurretBase">
 		<defName>YVFAPCMainTurret_Main</defName>
-		<label>Main Turret</label>
+		<label>40mm Autocannon</label>
 		<weaponType>Rotatable</weaponType>
 		<cannonSound>Explosion_PirateCannon</cannonSound>
 		<reloadSound>Artillery_ShellLoaded</reloadSound>
@@ -11,7 +11,7 @@
 		<projectileSpeed>225</projectileSpeed>
 		<reloadTimer>5</reloadTimer>
 		<warmUpTimer>0.83</warmUpTimer>
-		<magazineCapacity>8</magazineCapacity>
+		<magazineCapacity>4</magazineCapacity>
 		
 		<recoil>
 			<distanceTotal>0.35</distanceTotal>
@@ -29,11 +29,19 @@
 		
 		<fireModes>
 			<li>
-				<shotsPerBurst>8</shotsPerBurst>
+				<shotsPerBurst>1</shotsPerBurst>
 				<ticksBetweenBursts>1</ticksBetweenBursts>
-				<spreadRadius>6</spreadRadius>
+				<spreadRadius>5.4</spreadRadius>
 				<label>Single</label>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>4</shotsPerBurst>
+				<ticksBetweenShots>7</ticksBetweenShots>
+				<ticksBetweenBursts>50</ticksBetweenBursts>
+				<spreadRadius>7</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
 		</fireModes>
 		
@@ -44,7 +52,7 @@
 			<texPath>Weps/Turrets/Burst_Cannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>8.0</drawSize>
+			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		
 		<ammunition>

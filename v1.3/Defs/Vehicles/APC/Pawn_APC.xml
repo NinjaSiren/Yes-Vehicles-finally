@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Vehicles/APC/APC</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<drawSize>8.5</drawSize>
+			<drawSize>(8,8)</drawSize>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<color>(0, 80, 30)</color>
 			<colorTwo>(0, 45, 10)</colorTwo>
@@ -115,7 +115,7 @@
 					</turretIds>
 					<hitbox>
 						<cells>
-							<li>(0,0)</li>
+							<li>(1,0)</li>
 						</cells>
 					</hitbox>
 				</li>
@@ -132,7 +132,7 @@
 					</turretIds>
 					<hitbox>
 						<cells>
-							<li>(0,0)</li>
+							<li>(1,0)</li>
 						</cells>
 					</hitbox>
 				</li>
@@ -142,7 +142,7 @@
 					<slots>4</slots>
 					<hitbox>
 						<cells>
-							<li>(0,1)</li>
+							<li>(0,0)</li>
 						</cells>
 					</hitbox>
 				</li>
@@ -293,15 +293,24 @@
 						<turretDef>YVFAPCMainTurret_Main</turretDef>
 						<renderProperties>
 							<north>
-								<offset>(-5, 0)</offset>
+								<offset>(0,50)</offset>
 							</north>
+							<south>
+								<offset>(0,-50)</offset>
+							</south>
+							<east>
+								<offset>(50,0)</offset>
+							</east>
+							<west>
+								<offset>(-50,0)</offset>
+							</west>
 						</renderProperties>
 
 						<gizmoLabel>40mm Autocannon</gizmoLabel>
 						<autoTargeting>true</autoTargeting>
 						
 						<angleRestricted/>
-						<aimPieOffset>(.075, 2.75)</aimPieOffset>
+						<aimPieOffset>(0,0)</aimPieOffset>
 						<drawLayer>1</drawLayer>
 						
 						<key>mainTurret</key>

@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Vehicles/Cart/Cart</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<drawSize>4.75</drawSize>
+			<drawSize>(4.5,4.5)</drawSize>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<color>(120, 120, 120)</color>
 			<colorTwo>(0, 80, 0)</colorTwo>

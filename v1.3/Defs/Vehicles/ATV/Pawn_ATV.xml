@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Vehicles/ATV/ATV</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<drawSize>2.5</drawSize>
+			<drawSize>(1.75,1.75)</drawSize>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<color>(120, 120, 120)</color>
 			<colorTwo>(0, 80, 0)</colorTwo>
@@ -30,7 +30,7 @@
 		<cargoCapacity>200</cargoCapacity>
 		<speed>6.8</speed>
 
-		<size>(3,5)</size>
+		<size>(2,3)</size>
 		
 		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
 		<vehicleCategory>Transport</vehicleCategory>
@@ -63,7 +63,7 @@
 					<slotsToOperate>1</slotsToOperate>
 					<hitbox>
 						<cells>
-							<li>(-1, 1)</li>
+							<li>(0, 1)</li>
 						</cells>
 					</hitbox>
 				</li>
@@ -73,7 +73,7 @@
 					<slots>1</slots>
 					<hitbox>
 						<cells>
-							<li>(1, 1)</li>
+							<li>(0, -1)</li>
 						</cells>
 					</hitbox>
 				</li>
@@ -112,8 +112,8 @@
 					<cells>
 						<li>(-1, 1)</li>
 						<li>(1, 1)</li>
-						<li>(-1, -2)</li>
-						<li>(1, -2)</li>
+						<li>(-1, -1)</li>
+						<li>(1, -1)</li>
 					</cells>
 				</hitbox>
 			</li>
@@ -130,7 +130,7 @@
 				</explosionProperties>
 				<hitbox>
 					<cells>
-						<li>(0, 2)</li>
+						<li>(0, -1)</li>
 					</cells>
 				</hitbox>
 				<categories>
