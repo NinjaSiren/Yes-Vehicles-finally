@@ -7,7 +7,7 @@
 		<cannonSound>Explosion_PirateCannon</cannonSound>
 		<reloadSound>Artillery_ShellLoaded</reloadSound>
 		
-		<projectileSpeed>150</projectileSpeed>
+		<projectileSpeed>350</projectileSpeed>
 		<reloadTimer>5</reloadTimer>
 		<warmUpTimer>1.65</warmUpTimer>
 		<magazineCapacity>1</magazineCapacity>

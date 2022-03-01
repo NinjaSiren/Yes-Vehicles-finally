@@ -102,6 +102,26 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+	
+	<ThingDef Name="LaserChargeBase" ParentName="ShellBase" Abstract="True">
+		<thingCategories>
+			<li>LaserCharge</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>200</workAmount>
+			<targetCountAdjustment>5</targetCountAdjustment>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
 
 	<!-- Naval Shell -->
 
@@ -202,6 +222,59 @@
 			<costList>
 				<Steel>25</Steel>
 				<Chemfuel>15</Chemfuel>
+			</costList>
+		</costListForDifficulty>
+		<recipeMaker>
+			<researchPrerequisite>Mortars</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!-- Laser Charge -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Laser_Charge</defName>
+		<label>20 Megawatt Laser Charge</label>
+		<graphicData>
+			<texPath>Weps/Projectiles/Laser_Shot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<flyOverhead>False</flyOverhead>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>1000</damageAmountBase>
+			<speed>1250</speed>
+            <stoppingPower>0.5</stoppingPower>						
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="LaserChargeBase">
+		<defName>Charge_Laser</defName>
+		<label>20 Megawatt Laser Charge</label>
+		<description>A standard-sized laser battery charge. Can be fired from laser cannons or installed as a trap. Explodes when damaged.</description>
+		<graphicData>
+			<texPath>Ammo/Tank/LaserCharge</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<li Class="CompProperties_Explosive">
+			<explosiveRadius>6.53</explosiveRadius>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+			<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+			<wickTicks>30~60</wickTicks>
+		</li>
+		<projectileWhenLoaded>Tank_Shell</projectileWhenLoaded>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>20</ComponentIndustrial>
+			<Uranium>15</Uranium>
+		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<costList>
+				<Steel>25</Steel>
+				<ComponentIndustrial>30</ComponentIndustrial>
+				<Uranium>25</Uranium>
 			</costList>
 		</costListForDifficulty>
 		<recipeMaker>

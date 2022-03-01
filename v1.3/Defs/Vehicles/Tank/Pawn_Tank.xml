@@ -283,16 +283,16 @@
 						<turretDef>YVFTankMainTurret_Base</turretDef>
 						<renderProperties>
 							<north>
-								<offset>(0, 20)</offset>
+								<offset>(0, 0)</offset>
 							</north>
 							<south>
-								<offset>(0, -20)</offset>
+								<offset>(0, 0)</offset>
 							</south>
 							<east>
-								<offset>(20, 0)</offset>
+								<offset>(0, 0)</offset>
 							</east>
 							<west>
-								<offset>(-20, 0)</offset>
+								<offset>(0, 0)</offset>
 							</west>
 						</renderProperties>
 
@@ -895,6 +895,426 @@
 						<researchPrerequisites/>
 						<prerequisiteNodes>
 							<li>Cannons_I</li>
+						</prerequisiteNodes>
+					</li>
+					
+					<!-- Main weapon upgrades: 120mm Smoothbore -->
+					
+					<li Class="Vehicles.TurretUpgrade">
+						<upgradeID>Tank_Original</upgradeID>
+						<label>120mm Smoothbore</label>
+						<icon>UI/UpgradeTree/WeaponBG</icon>
+						<gridCoordinate>(16,7)</gridCoordinate>
+						<informationHighlighted>Change main turret to 120mm Smoothbore.</informationHighlighted>
+						<replaces>
+							<li>Tank_Rail</li>
+							<li>Tank_Artillery</li>
+							<li>Tank_Naval</li>
+							<li>Tank_Laser</li>
+						</replaces>
+						<work>450</work>
+						<turretUpgrades>
+							<li>
+								<key>
+									<turretDef>YVFTankMainTurret_Base</turretDef>
+									<renderProperties>
+										<north>
+											<offset>(0, 0)</offset>
+										</north>
+										<south>
+											<offset>(0, 0)</offset>
+										</south>
+										<east>
+											<offset>(0, 0)</offset>
+										</east>
+										<west>
+											<offset>(0, 0)</offset>
+										</west>
+									</renderProperties>
+									
+									<gizmoLabel>120mm Smoothbore</gizmoLabel>
+									<autoTargeting>true</autoTargeting>
+									<manualTargeting>true</manualTargeting>
+									
+									<angleRestricted/>
+									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
+									<drawLayer>1</drawLayer>
+									
+									<key>mainTurretA</key>
+									<parentKey>mainTurret</parentKey>
+								</key>
+								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								<value>
+									<key>gunner</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+								<value>
+									<key>loader</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+							</li>
+						</turretUpgrades>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Steel</li>
+									</thingDefs>
+								</filter>
+								<count>1800</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>ComponentIndustrial</li>
+									</thingDefs>
+								</filter>
+								<count>12</count>
+							</li>
+						</ingredients>
+						<researchPrerequisites/>
+						<prerequisiteNodes>
+							<li>Cannons_II</li>
+						</prerequisiteNodes>
+					</li>
+					
+					<!-- Railgun Upgrade -->
+					
+					<li Class="Vehicles.TurretUpgrade">
+						<upgradeID>Tank_Rail</upgradeID>
+						<label>40mm Railgun</label>
+						<icon>UI/UpgradeTree/WeaponBG</icon>
+						<gridCoordinate>(16,9)</gridCoordinate>
+						<informationHighlighted>Change main turret to 40mm Railgun.</informationHighlighted>
+						<replaces>
+							<li>Tank_Original</li>
+							<li>Tank_Artillery</li>
+							<li>Tank_Naval</li>
+							<li>Tank_Laser</li>
+						</replaces>
+						<work>450</work>
+						<turretUpgrades>
+							<li>
+								<key>
+									<turretDef>YVFTankMainTurret_Rail</turretDef>
+									<renderProperties>
+										<north>
+											<offset>(0, 0)</offset>
+										</north>
+										<south>
+											<offset>(0, 0)</offset>
+										</south>
+										<east>
+											<offset>(0, 0)</offset>
+										</east>
+										<west>
+											<offset>(0, 0)</offset>
+										</west>
+									</renderProperties>
+									
+									<gizmoLabel>40mm Railgun</gizmoLabel>
+									<autoTargeting>true</autoTargeting>
+									<manualTargeting>true</manualTargeting>
+									
+									<angleRestricted/>
+									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
+									<drawLayer>1</drawLayer>
+									
+									<key>mainTurretA</key>
+									<parentKey>mainTurret</parentKey>
+								</key>
+								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								<value>
+									<key>gunner</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+								<value>
+									<key>loader</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+							</li>
+						</turretUpgrades>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Steel</li>
+									</thingDefs>
+								</filter>
+								<count>1800</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>ComponentIndustrial</li>
+									</thingDefs>
+								</filter>
+								<count>12</count>
+							</li>
+						</ingredients>
+						<researchPrerequisites/>
+						<prerequisiteNodes>
+							<li>Cannons_II</li>
+						</prerequisiteNodes>
+					</li>
+					
+					<!-- Laser Upgrade -->
+					
+					<li Class="Vehicles.TurretUpgrade">
+						<upgradeID>Tank_Laser</upgradeID>
+						<label>100MW Laser Cannon</label>
+						<icon>UI/UpgradeTree/WeaponBG</icon>
+						<gridCoordinate>(16,11)</gridCoordinate>
+						<informationHighlighted>Change main turret to 100MW Laser Cannon.</informationHighlighted>
+						<replaces>
+							<li>Tank_Original</li>
+							<li>Tank_Artillery</li>
+							<li>Tank_Naval</li>
+							<li>Tank_Rail</li>
+						</replaces>
+						<work>450</work>
+						<turretUpgrades>
+							<li>
+								<key>
+									<turretDef>YVFTankMainTurret_Laser</turretDef>
+									<renderProperties>
+										<north>
+											<offset>(0, 0)</offset>
+										</north>
+										<south>
+											<offset>(0, 0)</offset>
+										</south>
+										<east>
+											<offset>(0, 0)</offset>
+										</east>
+										<west>
+											<offset>(0, 0)</offset>
+										</west>
+									</renderProperties>
+									
+									<gizmoLabel>100MW Laser</gizmoLabel>
+									<autoTargeting>true</autoTargeting>
+									<manualTargeting>true</manualTargeting>
+									
+									<angleRestricted/>
+									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
+									<drawLayer>1</drawLayer>
+									
+									<key>mainTurretA</key>
+									<parentKey>mainTurret</parentKey>
+								</key>
+								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								<value>
+									<key>gunner</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+								<value>
+									<key>loader</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+							</li>
+						</turretUpgrades>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Steel</li>
+									</thingDefs>
+								</filter>
+								<count>1800</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>ComponentIndustrial</li>
+									</thingDefs>
+								</filter>
+								<count>12</count>
+							</li>
+						</ingredients>
+						<researchPrerequisites/>
+						<prerequisiteNodes>
+							<li>Cannons_II</li>
+						</prerequisiteNodes>
+					</li>
+					
+					<!-- Naval Upgrade -->
+					
+					<li Class="Vehicles.TurretUpgrade">
+						<upgradeID>Tank_Naval</upgradeID>
+						<label>280mm Naval Cannon</label>
+						<icon>UI/UpgradeTree/WeaponBG</icon>
+						<gridCoordinate>(16,13)</gridCoordinate>
+						<informationHighlighted>Change main turret to dual 280mm Naval Cannon.</informationHighlighted>
+						<replaces>
+							<li>Tank_Original</li>
+							<li>Tank_Artillery</li>
+							<li>Tank_Rail</li>
+							<li>Tank_Laser</li>
+						</replaces>
+						<work>450</work>
+						<turretUpgrades>
+							<li>
+								<key>
+									<turretDef>YVFTankMainTurret_Naval</turretDef>
+									<renderProperties>
+										<north>
+											<offset>(0, 0)</offset>
+										</north>
+										<south>
+											<offset>(0, 0)</offset>
+										</south>
+										<east>
+											<offset>(0, 0)</offset>
+										</east>
+										<west>
+											<offset>(0, 0)</offset>
+										</west>
+									</renderProperties>
+									
+									<gizmoLabel>280mm Dual Naval</gizmoLabel>
+									<autoTargeting>true</autoTargeting>
+									<manualTargeting>true</manualTargeting>
+									
+									<angleRestricted/>
+									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
+									<drawLayer>1</drawLayer>
+									
+									<key>mainTurretA</key>
+									<parentKey>mainTurret</parentKey>
+								</key>
+								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								<value>
+									<key>gunner</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+								<value>
+									<key>loader</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+							</li>
+						</turretUpgrades>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Steel</li>
+									</thingDefs>
+								</filter>
+								<count>1800</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>ComponentIndustrial</li>
+									</thingDefs>
+								</filter>
+								<count>12</count>
+							</li>
+						</ingredients>
+						<researchPrerequisites/>
+						<prerequisiteNodes>
+							<li>Cannons_II</li>
+						</prerequisiteNodes>
+					</li>
+					
+					<!-- Artillery Upgrade -->
+					
+					<li Class="Vehicles.TurretUpgrade">
+						<upgradeID>Tank_Artillery</upgradeID>
+						<label>155mm Howitzer</label>
+						<icon>UI/UpgradeTree/WeaponBG</icon>
+						<gridCoordinate>(16,15)</gridCoordinate>
+						<informationHighlighted>Change main turret to 155mm Howitzer.</informationHighlighted>
+						<replaces>
+							<li>Tank_Original</li>
+							<li>Tank_Rail</li>
+							<li>Tank_Naval</li>
+							<li>Tank_Laser</li>
+						</replaces>
+						<work>450</work>
+						<turretUpgrades>
+							<li>
+								<key>
+									<turretDef>YVFTankMainTurret_Artillery</turretDef>
+									<renderProperties>
+										<north>
+											<offset>(0, 0)</offset>
+										</north>
+										<south>
+											<offset>(0, 0)</offset>
+										</south>
+										<east>
+											<offset>(0, 0)</offset>
+										</east>
+										<west>
+											<offset>(0, 0)</offset>
+										</west>
+									</renderProperties>
+									
+									<gizmoLabel>155mm Howitzer</gizmoLabel>
+									<autoTargeting>true</autoTargeting>
+									<manualTargeting>true</manualTargeting>
+									
+									<angleRestricted/>
+									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
+									<drawLayer>1</drawLayer>
+									
+									<key>mainTurretA</key>
+									<parentKey>mainTurret</parentKey>
+								</key>
+								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								<value>
+									<key>gunner</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+								<value>
+									<key>loader</key>
+									<turretIds>
+										<li>mainTurretA</li>
+									</turretIds>
+								</value>
+							</li>
+						</turretUpgrades>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Steel</li>
+									</thingDefs>
+								</filter>
+								<count>1800</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>ComponentIndustrial</li>
+									</thingDefs>
+								</filter>
+								<count>12</count>
+							</li>
+						</ingredients>
+						<researchPrerequisites/>
+						<prerequisiteNodes>
+							<li>Cannons_II</li>
 						</prerequisiteNodes>
 					</li>
 				</upgrades>

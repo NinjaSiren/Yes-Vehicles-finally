@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef ParentName="TankMainTurret">
+		<defName>YVFTankMainTurret_Laser</defName>
+		<label>100MW Laser Cannon</label>
+		
+		<projectileSpeed>1250</projectileSpeed>
+		<reloadTimer>2</reloadTimer>
+		<warmUpTimer>4.95</warmUpTimer>
+		<magazineCapacity>10</magazineCapacity>
+		
+		<recoil>
+			<distanceTotal>0.04</distanceTotal>
+			<distancePerTick>0.01</distancePerTick>
+			<speedMultiplierPostRecoil>0.02</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<vehicleRecoil>
+			<distanceTotal>0.02</distanceTotal>
+			<distancePerTick>0.01</distancePerTick>
+			<speedMultiplierPostRecoil>0.04</speedMultiplierPostRecoil>
+		</vehicleRecoil>
+
+		<fireModes>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenBursts>1</ticksBetweenBursts>
+				<spreadRadius>2</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>1</ticksBetweenShots>
+				<ticksBetweenBursts>3</ticksBetweenBursts>
+				<spreadRadius>2.5</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>1</ticksBetweenShots>
+				<ticksBetweenBursts>7</ticksBetweenBursts>
+				<spreadRadius>3</spreadRadius>
+				<label>Full-Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>Weps/Turrets/Laser_Cannon</texPath>
+		</graphicData>
+		
+		<ammunition>
+			<categories>
+				<li>LaserCharge</li>
+			</categories>
+		</ammunition>
+		
+		<projectileOffset>4.75</projectileOffset>
+		<hitFlags>IntendedTarget</hitFlags>
+		<maxRange>-1</maxRange>
+		<minRange>325</minRange>
+	</Vehicles.VehicleTurretDef>
+</Defs>

@@ -34,4 +34,11 @@
 		<parent>Manufactured</parent>
 		<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
     </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>LaserCharge</defName>
+		<label>laser cannon charge</label>
+		<parent>Manufactured</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRailgunHighCaliber</iconPath>
+    </ThingCategoryDef>
 </Defs>
