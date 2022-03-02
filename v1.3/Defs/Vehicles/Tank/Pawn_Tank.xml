@@ -283,21 +283,22 @@
 						<turretDef>YVFTankMainTurret_Base</turretDef>
 						<renderProperties>
 							<north>
-								<offset>(0, 0)</offset>
+								<offset>(0, 0.1)</offset>
 							</north>
 							<south>
-								<offset>(0, 0)</offset>
+								<offset>(0, 0.1)</offset>
 							</south>
 							<east>
-								<offset>(0, 0)</offset>
+								<offset>(0.1, 0)</offset>
 							</east>
 							<west>
-								<offset>(0, 0)</offset>
+								<offset>(-0.1, 0)</offset>
 							</west>
 						</renderProperties>
 
 						<gizmoLabel>120mm Smoothbore</gizmoLabel>
 						<autoTargeting>true</autoTargeting>
+						<manualTargeting>true</manualTargeting>
 						
 						<angleRestricted/>
 						<aimPieOffset>(0.075, 2.75)</aimPieOffset>
@@ -919,16 +920,16 @@
 									<turretDef>YVFTankMainTurret_Base</turretDef>
 									<renderProperties>
 										<north>
-											<offset>(0, 0)</offset>
+											<offset>(0, 0.3)</offset>
 										</north>
 										<south>
-											<offset>(0, 0)</offset>
+											<offset>(0, -0.3)</offset>
 										</south>
 										<east>
-											<offset>(0, 0)</offset>
+											<offset>(0.3, 0)</offset>
 										</east>
 										<west>
-											<offset>(0, 0)</offset>
+											<offset>(-0.3, 0)</offset>
 										</west>
 									</renderProperties>
 									
@@ -940,20 +941,16 @@
 									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 									<drawLayer>1</drawLayer>
 									
-									<key>mainTurretA</key>
+									<key>mainTurret</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
+								
 								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								
 								<value>
 									<key>gunner</key>
 									<turretIds>
-										<li>mainTurretA</li>
-									</turretIds>
-								</value>
-								<value>
-									<key>loader</key>
-									<turretIds>
-										<li>mainTurretA</li>
+										<li>mainTurret</li>
 									</turretIds>
 								</value>
 							</li>
@@ -1003,16 +1000,16 @@
 									<turretDef>YVFTankMainTurret_Rail</turretDef>
 									<renderProperties>
 										<north>
-											<offset>(0, 0)</offset>
+											<offset>(0, 0.3)</offset>
 										</north>
 										<south>
-											<offset>(0, 0)</offset>
+											<offset>(0, -0.3)</offset>
 										</south>
 										<east>
-											<offset>(0, 0)</offset>
+											<offset>(0.3, 0)</offset>
 										</east>
 										<west>
-											<offset>(0, 0)</offset>
+											<offset>(-0.3, 0)</offset>
 										</west>
 									</renderProperties>
 									
@@ -1024,20 +1021,16 @@
 									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 									<drawLayer>1</drawLayer>
 									
-									<key>mainTurretA</key>
+									<key>mainTurret</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
+								
 								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								
 								<value>
 									<key>gunner</key>
 									<turretIds>
-										<li>mainTurretA</li>
-									</turretIds>
-								</value>
-								<value>
-									<key>loader</key>
-									<turretIds>
-										<li>mainTurretA</li>
+										<li>mainTurret</li>
 									</turretIds>
 								</value>
 							</li>
@@ -1087,16 +1080,16 @@
 									<turretDef>YVFTankMainTurret_Laser</turretDef>
 									<renderProperties>
 										<north>
-											<offset>(0, 0)</offset>
+											<offset>(0, 0.3)</offset>
 										</north>
 										<south>
-											<offset>(0, 0)</offset>
+											<offset>(0, -0.3)</offset>
 										</south>
 										<east>
-											<offset>(0, 0)</offset>
+											<offset>(0.3, 0)</offset>
 										</east>
 										<west>
-											<offset>(0, 0)</offset>
+											<offset>(-0.3, 0)</offset>
 										</west>
 									</renderProperties>
 									
@@ -1108,20 +1101,16 @@
 									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 									<drawLayer>1</drawLayer>
 									
-									<key>mainTurretA</key>
+									<key>mainTurret</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
+								
 								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								
 								<value>
 									<key>gunner</key>
 									<turretIds>
-										<li>mainTurretA</li>
-									</turretIds>
-								</value>
-								<value>
-									<key>loader</key>
-									<turretIds>
-										<li>mainTurretA</li>
+										<li>mainTurret</li>
 									</turretIds>
 								</value>
 							</li>
@@ -1171,16 +1160,16 @@
 									<turretDef>YVFTankMainTurret_Naval</turretDef>
 									<renderProperties>
 										<north>
-											<offset>(0, 0)</offset>
+											<offset>(0, 0.3)</offset>
 										</north>
 										<south>
-											<offset>(0, 0)</offset>
+											<offset>(0, -0.3)</offset>
 										</south>
 										<east>
-											<offset>(0, 0)</offset>
+											<offset>(0.3, 0)</offset>
 										</east>
 										<west>
-											<offset>(0, 0)</offset>
+											<offset>(-0.3, 0)</offset>
 										</west>
 									</renderProperties>
 									
@@ -1192,20 +1181,16 @@
 									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 									<drawLayer>1</drawLayer>
 									
-									<key>mainTurretA</key>
+									<key>mainTurret</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
+								
 								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								
 								<value>
 									<key>gunner</key>
 									<turretIds>
-										<li>mainTurretA</li>
-									</turretIds>
-								</value>
-								<value>
-									<key>loader</key>
-									<turretIds>
-										<li>mainTurretA</li>
+										<li>mainTurret</li>
 									</turretIds>
 								</value>
 							</li>
@@ -1255,16 +1240,16 @@
 									<turretDef>YVFTankMainTurret_Artillery</turretDef>
 									<renderProperties>
 										<north>
-											<offset>(0, 0)</offset>
+											<offset>(0, 0.3)</offset>
 										</north>
 										<south>
-											<offset>(0, 0)</offset>
+											<offset>(0, -0.3)</offset>
 										</south>
 										<east>
-											<offset>(0, 0)</offset>
+											<offset>(0.3, 0)</offset>
 										</east>
 										<west>
-											<offset>(0, 0)</offset>
+											<offset>(-0.3, 0)</offset>
 										</west>
 									</renderProperties>
 									
@@ -1276,20 +1261,16 @@
 									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 									<drawLayer>1</drawLayer>
 									
-									<key>mainTurretA</key>
+									<key>mainTurret</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
+								
 								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								
 								<value>
 									<key>gunner</key>
 									<turretIds>
-										<li>mainTurretA</li>
-									</turretIds>
-								</value>
-								<value>
-									<key>loader</key>
-									<turretIds>
-										<li>mainTurretA</li>
+										<li>mainTurret</li>
 									</turretIds>
 								</value>
 							</li>

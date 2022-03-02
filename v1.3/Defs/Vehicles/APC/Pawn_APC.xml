@@ -293,16 +293,16 @@
 						<turretDef>YVFAPCMainTurret_Main</turretDef>
 						<renderProperties>
 							<north>
-								<offset>(0, 1.0)</offset>
+								<offset>(0, 1.6)</offset>
 							</north>
 							<south>
-								<offset>(0, -1.0)</offset>
+								<offset>(0, -1.6)</offset>
 							</south>
 							<east>
-								<offset>(1.0, 0)</offset>
+								<offset>(1.6, 0)</offset>
 							</east>
 							<west>
-								<offset>(-1.0, 0)</offset>
+								<offset>(-1.6, 0)</offset>
 							</west>
 						</renderProperties>
 

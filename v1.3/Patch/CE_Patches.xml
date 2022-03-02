@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Patch>
+    
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>             				
+ 
+                <li Class="PatchOperationInsert">
+				    <xpath>Defs/ThingDef[defName="Laser_Cannon"]</xpath>
+				    <value>
+						<weaponTags>
+							<li>Heavy_Weps</li>							
+							<li>CE_Cannon</li>
+						</weaponTags>
+						<verbs>
+							<li Class="CombatExtended.VerbPropertiesCE">
+								<recoilAmount>1.58</recoilAmount>
+								<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>CombatExtended.Lasers.LaserBeamCE</defaultProjectile>               
+								<warmupTime>0.72</warmupTime>
+								<range>35</range>
+								<soundCast>BurstCannon_Fire</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>20</muzzleFlashScale>
+								<burstShotCount>150</burstShotCount>
+								<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+							</li>
+						</verbs>
+						<comps>
+							<li Class="CombatExtended.CompProperties_AmmoUser">
+								<magazineSize>120</magazineSize>
+								<reloadTime>0.75</reloadTime>
+								<ammoSet>AmmoSet_PlasmaCellHeavy</ammoSet>
+							</li>
+							<li Class="CombatExtended.CompProperties_FireModes">
+								<aiUseBurstMode>TRUE</aiUseBurstMode>
+								<noSingleShot>true</noSingleShot>
+								<aimedBurstShotCount>150</aimedBurstShotCount>
+							</li>
+						</comps>	
+				    </value>
+			    </li>
+ 
+                <li Class="PatchOperationInsert">
+				    <xpath>Defs/ThingDef[defName="Rail_Cannon"]</xpath>
+				    <value>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>					
+                                <li>CE_Cannon</li>
+		                    </weaponTags>
+						    <verbs>
+						        <li Class="CombatExtended.VerbPropertiesCE">
+                                    <recoilAmount>2.15</recoilAmount>
+				                    <warmupTime>3.1</warmupTime>									
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_40x365mmBofors_AP</defaultProjectile>
+                                    <range>100</range>
+									<minRange>10</minRange>
+                                    <soundCast>RailCannon_Fire</soundCast>
+                                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                                    <muzzleFlashScale>40</muzzleFlashScale>
+						        </li>
+						    </verbs>
+						    <comps>
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>40</magazineSize>
+                                    <reloadTime>7</reloadTime>
+                                    <ammoSet>AmmoSet_40x365mmBofors</ammoSet>
+							    </li>
+							    <li Class="CombatExtended.CompProperties_FireModes">
+                                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                                    <aiAimMode>AimedShot</aiAimMode>
+							    </li>
+						    </comps>	
+				    </value>
+			    </li>
+            
+                <li Class="PatchOperatioInsert">
+				    <xpath>Defs/ThingDef[defName="TankMainTurret"]</xpath>
+				    <value>
+						<weaponTags>
+							<li>Heavy_Weps</li>					
+							<li>CE_Cannon</li>
+						</weaponTags>
+						<verbs>
+							<li Class="CombatExtended.VerbPropertiesCE">
+								<recoilAmount>3.02</recoilAmount>
+								<warmupTime>2.6</warmupTime>									
+								<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_120mmCannonShell_HE</defaultProjectile>
+								<range>80</range>
+								<minRange>8</minRange>
+								<soundCast>TankCannon_Fire</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>50</muzzleFlashScale>
+							</li>
+						</verbs>
+						<comps>
+							<li Class="CombatExtended.CompProperties_AmmoUser">
+								<magazineSize>40</magazineSize>
+								<reloadTime>5</reloadTime>
+								<ammoSet>AmmoSet_120mmCannonShell</ammoSet>
+							</li>
+							<li Class="CombatExtended.CompProperties_FireModes">
+								<aiUseBurstMode>FALSE</aiUseBurstMode>
+								<aiAimMode>AimedShot</aiAimMode>
+							</li>
+						</comps>	
+				    </value>
+			    </li>
+ 
+                <li Class="PatchOperationInsert">
+				    <xpath>Defs/ThingDef[defName="APCMainTurret"]</xpath>
+				    <value>
+		                    <weaponTags>
+			                    <li>Heavy_Weps</li>					
+                                <li>CE_Cannon</li>
+		                    </weaponTags>
+						    <verbs>
+						        <li Class="CombatExtended.VerbPropertiesCE">
+                                    <recoilAmount>1.51</recoilAmount>
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_40x311mmR_HE</defaultProjectile>         
+                                    <warmupTime>0.56</warmupTime>
+                                    <range>55</range>
+									<minRange>5.5</minRange>
+                                    <soundCast>BurstCannon_Fire</soundCast>
+                                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                                    <muzzleFlashScale>20</muzzleFlashScale>
+                                    <burstShotCount>75</burstShotCount>
+                                    <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+						        </li>
+						    </verbs>
+						    <comps>
+							    <li Class="CombatExtended.CompProperties_AmmoUser">
+                                    <magazineSize>60</magazineSize>
+                                    <reloadTime>1</reloadTime>
+                                    <ammoSet>AmmoSet_40x311mmR</ammoSet>
+							    </li>
+							    <li Class="CombatExtended.CompProperties_FireModes">
+                                    <aiUseBurstMode>TRUE</aiUseBurstMode>
+                                    <noSingleShot>true</noSingleShot>
+                                    <aimedBurstShotCount>75</aimedBurstShotCount> 
+							    </li>
+						    </comps>	
+				    </value>
+			    </li>
+				
+                <li Class="PatchOperationInsert">
+				    <xpath>Defs/ThingDef[defName="Machine_Cannon"]</xpath>
+				    <value>
+						<weaponTags>
+							<li>Heavy_Weps</li>							
+							<li>CE_Cannon</li>
+						</weaponTags>
+						<verbs>
+							<li Class="CombatExtended.VerbPropertiesCE">
+								<recoilAmount>1.58</recoilAmount>
+								<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_127x55mmAR_FMJ</defaultProjectile>               
+								<warmupTime>0.72</warmupTime>
+								<range>35</range>
+								<soundCast>BurstCannon_Fire</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>20</muzzleFlashScale>
+								<burstShotCount>150</burstShotCount>
+								<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+							</li>
+						</verbs>
+						<comps>
+							<li Class="CombatExtended.CompProperties_AmmoUser">
+								<magazineSize>120</magazineSize>
+								<reloadTime>0.75</reloadTime>
+								<ammoSet>AmmoSet_127x55mmAR</ammoSet>
+							</li>
+							<li Class="CombatExtended.CompProperties_FireModes">
+								<aiUseBurstMode>TRUE</aiUseBurstMode>
+								<noSingleShot>true</noSingleShot>
+								<aimedBurstShotCount>150</aimedBurstShotCount>
+							</li>
+						</comps>	
+				    </value>
+			    </li>				
+				
+                <li Class="PatchOperationInsert">
+				    <xpath>Defs/ThingDef[defName="Machine_Gun"]</xpath>
+				    <value>	
+						<weaponTags>
+							<li>Heavy_Weps</li>							
+							<li>CE_Cannon</li>
+						</weaponTags>
+						<verbs>
+							<li Class="CombatExtended.VerbPropertiesCE">
+								<recoilAmount>1.32</recoilAmount>
+								<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_762x39mmNATO_FMJ</defaultProjectile>           
+								<warmupTime>0.36</warmupTime>
+								<range>42</range>
+								<burstShotCount>60</burstShotCount>
+								<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+								<soundCast>BurstCannon_Fire</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>10</muzzleFlashScale>
+							</li>
+						</verbs>		
+						<comps>
+							<li Class="CombatExtended.CompProperties_AmmoUser">
+								<magazineSize>220</magazineSize>
+								<reloadTime>0.25</reloadTime>
+								<ammoSet>AmmoSet_762x39mmNATO</ammoSet>
+							</li>
+							<li Class="CombatExtended.CompProperties_FireModes">
+								<aiUseBurstMode>TRUE</aiUseBurstMode>
+								<noSingleShot>true</noSingleShot>  
+								<aimedBurstShotCount>300</aimedBurstShotCount> 
+							</li>
+						</comps>	
+				    </value>
+			    </li>
+
+                <li Class="PatchOperationInsert">
+				    <xpath>Defs/ThingDef[defName="Naval_Cannon"]</xpath>
+				    <value>
+						<verbs>
+							<li Class="CombatExtended.VerbPropertiesCE">
+								<recoilAmount>3.02</recoilAmount>									
+								<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_28cmSpgrShell_HE</defaultProjectile>
+								<warmupTime>6.29</warmupTime>
+								<range>500</range>
+								<minRange>15</minRange>				
+								<soundCast>TankCannon_Fire</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>72</muzzleFlashScale>	
+								<burstShotCount>2</burstShotCount>
+								<ticksBetweenBurstShots>4</ticksBetweenBurstShots>									
+							</li>
+						</verbs>
+						<comps>
+							<li Class="CombatExtended.CompProperties_AmmoUser">
+								<magazineSize>25</magazineSize>
+								<reloadTime>9</reloadTime>
+								<spawnUnloaded>false</spawnUnloaded>
+								<ammoSet>AmmoSet_28cmSpgrShell</ammoSet>
+							</li>
+							<li Class="CombatExtended.CompProperties_FireModes">
+								<aiUseBurstMode>TRUE</aiUseBurstMode>
+								<aiAimMode>AimedShot</aiAimMode>
+								<aimedBurstShotCount>2</aimedBurstShotCount>
+							</li>										
+							<li Class="CompProperties_Forbiddable"/>
+						</comps>						
+				    </value>
+			    </li>
+				
+                <li Class="PatchOperationInsert">
+				    <xpath>Defs/ThingDef[defName="Arty_Cannon"]</xpath>
+				    <value>
+						<weaponTags>
+							<li>Heavy_Weps</li>							
+							<li>CE_Cannon</li>
+						</weaponTags>	
+						<verbs>					
+							<li Class="CombatExtended.VerbPropertiesCE">
+								<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+								<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+								<hasStandardCommand>true</hasStandardCommand>								
+								<defaultProjectile>Bullet_155mmHowitzerShell_HE</defaultProjectile>
+								<warmupTime>3.4</warmupTime>
+								<minRange>30</minRange>
+								<range>680</range>
+								<burstShotCount>1</burstShotCount>
+								<soundCast>TankCannon_Fire</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>51</muzzleFlashScale>
+								<targetParams>
+									<canTargetLocations>true</canTargetLocations>
+								</targetParams>		
+							</li>
+						</verbs>
+						<comps>
+							<li Class="CombatExtended.CompProperties_AmmoUser">
+								<magazineSize>220</magazineSize>
+								<reloadTime>0.25</reloadTime>
+								<ammoSet>AmmoSet_155mmHowitzerShell</ammoSet>
+							</li>	
+							<li Class="CombatExtended.CompProperties_Charges">
+								<chargeSpeeds>
+									<li>30</li>
+									<li>50</li>
+									<li>70</li>
+									<li>90</li>
+								</chargeSpeeds>
+							</li>								
+						</comps>		
+                    </value>
+                </li>	
+
+				<li Class="PatchOperationFindMod">
+				    <mods>
+					    <li>The Vehicle Framework</li>
+					</mods>
+					
+					<match Class="PatchOperationSequence">
+					    <success>Always</success>
+						<operations>						
+						
+							<li Class="PatchOperationAddModExtension">
+		    	        		<xpath>Defs/Vehicles/[@Name="BaseVehiclePawn"]</xpath>
+		    	        		    <value>
+				        		        <li Class="CombatExtended.RacePropertiesExtensionCE">
+				        		            <bodyShape>Vehicle</bodyShape>
+				        		        </li>
+		    	        		    </value>
+	        	    		</li>						
+							
+							<li Class="PatchOperationInsert">
+		    	        		<xpath>Defs/ThingDef[@Name="BaseVehiclePawn"]/comps</xpath>
+		    	        		    <value>
+									    <comps>
+										    <li>
+												<compClass>CombatExtended.CompPawnGizmo</compClass>
+										    </li>											
+										</comps>
+		    	        		    </value>
+	        	    		</li>	
+
+							<li Class="PatchOperationInsert">
+		    	        		<xpath>Defs/ThingDef[@Name="BaseVehiclePawn"]/inspectorTabs</xpath>
+		    	        		    <value>
+										<li>ITab_Pawn_Needs</li>
+										<li>ITab_Pawn_Character</li>
+		    	        		    </value>
+	        	    		</li>
+						</operations>
+					</match>	
+                </li>				
+            </operations>
+        </match>
+	</Operation>			
+</Patch-->

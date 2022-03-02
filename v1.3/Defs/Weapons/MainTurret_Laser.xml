@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<Vehicles.VehicleTurretDef ParentName="TankMainTurret">
+	<Vehicles.VehicleTurretDef Name="Laser_Cannon" ParentName="TankMainTurret">
 		<defName>YVFTankMainTurret_Laser</defName>
 		<label>100MW Laser Cannon</label>
 		

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Thermometer</defName>
+		<label>thermometer</label>
+		<hitPoints>1</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<frostbiteVulnerability>0.01</frostbiteVulnerability>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Hull</defName>
+		<label>body</label>
+		<hitPoints>200</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>		
+		<alive>false</alive>
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Viewport</defName>
+		<label>viewport</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>		
+		<alive>false</alive>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Turret</defName>
+		<label>cabin</label>
+		<hitPoints>40</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>		
+		<alive>false</alive>
+		<tags>
+			<!--li>GunnerSeat</li-->
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Mantlet</defName>
+		<label>mantlet</label>
+		<hitPoints>40</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Barrel</defName>
+		<label>barrel</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Cupola</defName>
+		<label>cupola</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Engine</defName>
+		<label>engine</label>
+		<hitPoints>60</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>BreathingPathway</li>
+			<li>EatingPathway</li>
+			<li>TalkingPathway</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Transmission</defName>
+		<label>transmission</label>
+		<hitPoints>60</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_Fuel</defName>
+		<label>fuel</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>EatingPathway</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_WheelsL</defName>
+		<label>left wheel</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>O21_Vehicle_WheelsR</defName>
+		<label>right wheel</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+</Defs>

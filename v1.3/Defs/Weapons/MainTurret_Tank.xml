@@ -43,7 +43,7 @@
 			<texPath>Weps/Turrets/Tank_Cannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(1.25,3)</drawSize>
+			<drawSize>(1.25,5)</drawSize>
 		</graphicData>
 		
 		<ammunition>

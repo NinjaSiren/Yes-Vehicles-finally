@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<Vehicles.VehicleTurretDef ParentName="TankMainTurret">
+	<Vehicles.VehicleTurretDef Name="Naval_Cannon" ParentName="TankMainTurret">
 		<defName>YVFTankMainTurret_Naval</defName>
 		<label>280mm Smoothbore</label>
 		

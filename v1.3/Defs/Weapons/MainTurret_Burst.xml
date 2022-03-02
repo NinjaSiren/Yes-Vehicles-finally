@@ -52,7 +52,7 @@
 			<texPath>Weps/Turrets/Burst_Cannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(1,2)</drawSize>
+			<drawSize>(1,3)</drawSize>
 		</graphicData>
 		
 		<ammunition>

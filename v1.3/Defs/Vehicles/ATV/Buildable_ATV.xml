@@ -16,7 +16,7 @@
 			<WorkToBuild>15</WorkToBuild>
 			<Flammability>0.05</Flammability>
 		</statBases>
-		<size>(3,5)</size>
+		<size>(2,3)</size>
 		
 		<researchPrerequisites/>
 		

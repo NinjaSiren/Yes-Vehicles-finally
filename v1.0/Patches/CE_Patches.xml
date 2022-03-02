@@ -644,50 +644,38 @@
                 </li>	
 
                 <!-- Enables patches -->
-				<li Class="PatchOperationFindMod">
-				    <mods>
-					    <li>[O21] Vehicle Framework</li>
-					</mods>
-					
-					<match Class="PatchOperationSequence">
-					    <success>Always</success>
-						<operations>						
-						
-							<li Class="PatchOperationAddModExtension">
-		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]</xpath>
-		    	        		    <value>
-				        		        <li Class="CombatExtended.RacePropertiesExtensionCE">
-				        		            <bodyShape>Vehicle</bodyShape>
-				        		        </li>
-		    	        		    </value>
-	        	    		</li>						
-							
-							<li Class="PatchOperationReplace">
-		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]/comps</xpath>
-		    	        		    <value>
-									    <comps>
-										    <li>
-										    	<compClass>CompAttachBase</compClass>
-										    </li>
-										    <li>
-												<compClass>CombatExtended.CompPawnGizmo</compClass>
-										    </li>											
-										</comps>
-		    	        		    </value>
-	        	    		</li>	
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]</xpath>
+						<value>
+							<li Class="CombatExtended.RacePropertiesExtensionCE">
+								<bodyShape>Vehicle</bodyShape>
+							</li>
+						</value>
+				</li>						
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]/comps</xpath>
+						<value>
+							<comps>
+								<li>
+									<compClass>CompAttachBase</compClass>
+								</li>
+								<li>
+									<compClass>CombatExtended.CompPawnGizmo</compClass>
+								</li>											
+							</comps>
+						</value>
+				</li>	
 
-							<li Class="PatchOperationReplace">
-		    	        		<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]/inspectorTabs</xpath>
-		    	        		    <value>
-			    	        		    <inspectorTabs>
-				    	        		    <li>ITab_Pawn_Needs</li>
-				    	        		    <li>ITab_Pawn_Character</li>
-			    	        		    </inspectorTabs>
-		    	        		    </value>
-	        	    		</li>
-						</operations>
-					</match>	
-                </li>				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="O21BaseVehicle"]/inspectorTabs</xpath>
+						<value>
+							<inspectorTabs>
+								<li>ITab_Pawn_Needs</li>
+								<li>ITab_Pawn_Character</li>
+							</inspectorTabs>
+						</value>
+				</li>			
             </operations>
         </match>
 	</Operation>			

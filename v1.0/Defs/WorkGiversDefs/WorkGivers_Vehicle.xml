@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>O21_WorkGiver_RepairVehicle</defName>
+		<label>repair vehicles</label>
+		<giverClass>O21VehicleFramework.WorkGiver_RepairVehicle</giverClass>
+		<workType>Construction</workType>
+		<verb>repair</verb>
+		<gerund>repairing</gerund>
+		<priorityInType>100</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>

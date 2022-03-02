@@ -151,13 +151,13 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<comps>
-		<li Class="CompProperties_Explosive">
-			<explosiveRadius>4.35</explosiveRadius>
-			<explosiveDamageType>Bomb</explosiveDamageType>
-			<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
-			<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
-			<wickTicks>30~60</wickTicks>
-		</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>4.35</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>30~60</wickTicks>
+			</li>
 		</comps>
 		<projectileWhenLoaded>Naval_Shell</projectileWhenLoaded>
 		<costList>
@@ -204,13 +204,13 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<comps>
-		<li Class="CompProperties_Explosive">
-			<explosiveRadius>2.9</explosiveRadius>
-			<explosiveDamageType>Bomb</explosiveDamageType>
-			<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
-			<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
-			<wickTicks>30~60</wickTicks>
-		</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>30~60</wickTicks>
+			</li>
 		</comps>
 		<projectileWhenLoaded>Tank_Shell</projectileWhenLoaded>
 		<costList>
@@ -256,14 +256,16 @@
 			<texPath>Ammo/Tank/LaserCharge</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		<li Class="CompProperties_Explosive">
-			<explosiveRadius>6.53</explosiveRadius>
-			<explosiveDamageType>Bomb</explosiveDamageType>
-			<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
-			<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
-			<wickTicks>30~60</wickTicks>
-		</li>
-		<projectileWhenLoaded>Tank_Shell</projectileWhenLoaded>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6.53</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>30~60</wickTicks>
+			</li>
+		</comps>
+		<projectileWhenLoaded>Laser_Charge</projectileWhenLoaded>
 		<costList>
 			<Steel>15</Steel>
 			<ComponentIndustrial>20</ComponentIndustrial>
@@ -354,13 +356,13 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<comps>
-		<li Class="CompProperties_Explosive">
-			<explosiveRadius>1.5</explosiveRadius>
-			<explosiveDamageType>Bomb</explosiveDamageType>
-			<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
-			<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
-			<wickTicks>30~60</wickTicks>
-		</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>30~60</wickTicks>
+			</li>
 		</comps>
 		<projectileWhenLoaded>APC_Shell</projectileWhenLoaded>
 		<costList>

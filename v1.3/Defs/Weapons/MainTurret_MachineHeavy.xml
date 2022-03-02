@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<Vehicles.VehicleTurretDef ParentName="APCMainTurret">
+	<Vehicles.VehicleTurretDef Name="Machine_Cannon" ParentName="APCMainTurret">
 		<defName>YVFAPCMainTurret_MachineHeavy</defName>
 		<label>14.5mm Machine Gun</label>
 		<weaponType>Rotatable</weaponType>
