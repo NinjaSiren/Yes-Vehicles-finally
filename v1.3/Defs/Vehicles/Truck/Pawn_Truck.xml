@@ -37,6 +37,10 @@
 		<vehicleTech>Industrial</vehicleTech>
 		<vehicleType>Land</vehicleType>
 				
+		<inspectorTabs>
+			<li>Vehicles.UI.ITab_Vehicle_Upgrades</li>
+		</inspectorTabs>		
+				
 		<statBases>
 			<Mass>10000</Mass>
 			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>

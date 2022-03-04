@@ -33,7 +33,11 @@
 		<vehicleCategory>Combat</vehicleCategory>
 		<vehicleTech>Industrial</vehicleTech>
 		<vehicleType>Land</vehicleType>
-				
+			
+		<inspectorTabs>
+			<li>Vehicles.UI.ITab_Vehicle_Upgrades</li>
+		</inspectorTabs>	
+			
 		<statBases>
 			<Mass>40000</Mass>
 			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
@@ -319,443 +323,55 @@
 			</li>
 			<li Class="Vehicles.CompProperties_UpgradeTree">				
 				<upgrades>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>Armor_I</upgradeID>
-						<label>Steel Plating</label>
-						<icon>UI/UpgradeTree/ArmorBG</icon>
-						<gridCoordinate>(2,1)</gridCoordinate>
-						<informationHighlighted>1-inch steel plating for standard defense against bullets and low caliber cannons.</informationHighlighted>
-						<drawColorOne>(0.25, 0.25, 0.25)</drawColorOne>
-						<drawColorTwo>(0.25, 0.25, 0.25)</drawColorTwo>
-						<drawColorThree>(0.25, 0.25, 0.25)</drawColorThree>
-						<work>3500</work>
-						<values>
-							<li>
-								<key>StatUpgradeArmor</key>
-								<value>10</value>
-							</li>
-							<li>
-								<key>StatUpgradeSpeed</key>
-								<value>-0.1</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>400</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes/>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>Armor_II</upgradeID>
-						<label>Composite Armor</label>
-						<icon>UI/UpgradeTree/ArmorBG</icon>
-						<gridCoordinate>(2,3)</gridCoordinate>
-						<informationHighlighted>Armor consisting of layers of various materials. This armor is much lighter but comes at a higher cost.</informationHighlighted>
-
-						<work>12000</work>
-						<values>
-							<li>
-								<key>StatUpgradeArmor</key>
-								<value>15</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>200</count>
-							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>DevilstrandCloth</li>
-									</thingDefs>
-								</filter>
-								<count>150</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes>
-							<li>Armor_I</li>
-						</prerequisiteNodes>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>Armor_III</upgradeID>
-						<label>Depleted Uranium Armor</label>
-						<icon>UI/UpgradeTree/ArmorBG</icon>
-						<gridCoordinate>(1,5)</gridCoordinate>
-						<informationHighlighted>Sandwiched between sheets of steel armor plates, depleted uranium provides a highly dense layer of protection.</informationHighlighted>
-						
-						<drawColorOne>(0.15, 0.15, 0.15)</drawColorOne>
-						<drawColorTwo>(0.15, 0.15, 0.15)</drawColorTwo>
-						<drawColorThree>(0.15, 0.15, 0.15)</drawColorThree>
-						
-						<work>20000</work>
-						<values>
-							<li>
-								<key>StatUpgradeArmor</key>
-								<value>25</value>
-							</li>
-							<li>
-								<key>StatUpgradeSpeed</key>
-								<value>-0.5</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>250</count>
-							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Uranium</li>
-									</thingDefs>
-								</filter>
-								<count>425</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes>
-							<li>Armor_II</li>
-						</prerequisiteNodes>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>Armor_IV</upgradeID>
-						<label>Plasteel Composite Armor</label>
-						<icon>UI/UpgradeTree/ArmorBG</icon>
-						<gridCoordinate>(1,7)</gridCoordinate>
-						<informationHighlighted>Standard composite armor with sheets of Plasteel inbetween each layer. Provides ultimate protection against explosives and armor piercing rounds at a lower cost to speed.</informationHighlighted>
-						<drawColorOne>(0.62, 0.7, 0.71)</drawColorOne>
-						<drawColorTwo>(0.62, 0.7, 0.71)</drawColorTwo>
-						<drawColorThree>(0.62, 0.7, 0.71)</drawColorThree>
-						<work>50000</work>
-						<values>
-							<li>
-								<key>StatUpgradeArmor</key>
-								<value>30</value>
-							</li>
-							<li>
-								<key>StatUpgradeSpeed</key>
-								<value>-0.25</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>150</count>
-							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Plasteel</li>
-									</thingDefs>
-								</filter>
-								<count>300</count>
-							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Synthread</li>
-									</thingDefs>
-								</filter>
-								<count>200</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes>
-							<li>Armor_III</li>
-						</prerequisiteNodes>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>Speed_I</upgradeID>
-						<label>Gas Turbine Engine</label>
-						<icon>UI/UpgradeTree/SpeedBG</icon>
-						<gridCoordinate>(5,1)</gridCoordinate>
-						<informationHighlighted>A type of continuous internal combustion engine that increases speed and acceleration without much extra weight.</informationHighlighted>
-						
-						<work>3500</work>
-						<values>
-							<li>
-								<key>StatUpgradeSpeed</key>
-								<value>0.5</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>250</count>
-							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>ComponentIndustrial</li>
-									</thingDefs>
-								</filter>
-								<count>5</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes/>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>Speed_II</upgradeID>
-						<label>Advanced Parts</label>
-						<icon>UI/UpgradeTree/SpeedBG</icon>
-						<gridCoordinate>(5,3)</gridCoordinate>
-						<informationHighlighted>Using advanced components the apc's engine is able to perform at much faster speeds with less maintenance.</informationHighlighted>
-						
-						<work>11000</work>
-						<values>
-							<li>
-								<key>StatUpgradeSpeed</key>
-								<value>0.75</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>400</count>
-							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>ComponentSpacer</li>
-									</thingDefs>
-								</filter>
-								<count>4</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes>
-							<li>Speed_I</li>
-						</prerequisiteNodes>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>Cargo_I</upgradeID>
-						<label>Bustle Rack</label>
-						<icon>UI/UpgradeTree/CargoBG</icon>
-						<gridCoordinate>(8,1)</gridCoordinate>
-						<informationHighlighted>A storage rack mounted on the back of the turret. Used for carrying extra gear and supplies.</informationHighlighted>
-						
-						<work>300</work>
-						<values>
-							<li>
-								<key>StatUpgradeCargo</key>
-								<value>150</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>150</count>
-							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Cloth</li>
-									</thingDefs>
-								</filter>
-								<count>75</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes/>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>FuelCost_I</upgradeID>
-						<label>Turbine Engine</label>
-						<icon>UI/UpgradeTree/FuelBG</icon>
-						<gridCoordinate>(11,1)</gridCoordinate>
-						<informationHighlighted>1-inch steel plating for standard defense against bullets and low caliber cannons.</informationHighlighted>
-						
-						<work>4000</work>
-						<values>
-							<li>
-								<key>StatUpgradeArmor</key>
-								<value>10</value>
-							</li>
-							<li>
-								<key>StatUpgradeSpeed</key>
-								<value>-0.25</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>500</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes/>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>FuelCost_II</upgradeID>
-						<label>Digital Fuel Control System</label>
-						<icon>UI/UpgradeTree/FuelBG</icon>
-						<gridCoordinate>(11,3)</gridCoordinate>
-						<informationHighlighted>Advanced computer system that controls all aspects of fuel usage and engine performance.</informationHighlighted>
-						
-						<work>6500</work>
-						<values>
-							<li>
-								<key>StatUpgradeFuelEfficiency</key>
-								<value>10</value>
-							</li>
-							<li>
-								<key>StatUpgradeSpeed</key>
-								<value>0.25</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>500</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes>
-							<li>FuelCost_I</li>
-						</prerequisiteNodes>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>FuelCapacity_I</upgradeID>
-						<label>Enlarged Fuel APCs</label>
-						<icon>UI/UpgradeTree/FuelBG</icon>
-						<gridCoordinate>(11,7)</gridCoordinate>
-						<informationHighlighted>1-inch steel plating for standard defense against bullets and low caliber cannons.</informationHighlighted>
-						
-						<work>4500</work>
-						<values>
-							<li>
-								<key>StatUpgradeArmor</key>
-								<value>10</value>
-							</li>
-							<li>
-								<key>StatUpgradeSpeed</key>
-								<value>-0.25</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>500</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes/>
-					</li>
-					<li Class="Vehicles.StatUpgrade">
-						<upgradeID>FuelCapacity_II</upgradeID>
-						<label>Mammoth Fuel APCs</label>
-						<icon>UI/UpgradeTree/FuelBG</icon>
-						<gridCoordinate>(11,9)</gridCoordinate>
-						<informationHighlighted>1-inch steel plating for standard defense against bullets and low caliber cannons.</informationHighlighted>
-						
-						<work>7500</work>
-						<values>
-							<li>
-								<key>StatUpgradeArmor</key>
-								<value>10</value>
-							</li>
-							<li>
-								<key>StatUpgradeSpeed</key>
-								<value>-0.25</value>
-							</li>
-						</values>
-						<ingredients>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>Steel</li>
-									</thingDefs>
-								</filter>
-								<count>500</count>
-							</li>
-						</ingredients>
-						<researchPrerequisites/>
-						<prerequisiteNodes>
-							<li>FuelCapacity_I</li>
-						</prerequisiteNodes>
-					</li>
+					<!-- Main weapon upgrades: 40mm Autocannon -->
 					<li Class="Vehicles.TurretUpgrade">
-						<upgradeID>M2Browning</upgradeID>
-						<label>.50 cal Machine Gun</label>
-						<icon>UI/UpgradeTree/ArmorBG</icon>
+						<upgradeID>APC_Original</upgradeID>
+						<label>40mm Autocannon</label>
+						<icon>UI/UpgradeTree/WeaponBG</icon>
 						<gridCoordinate>(16,1)</gridCoordinate>
-						<informationHighlighted>Double the pain at half the cost.</informationHighlighted>
+						<informationHighlighted>Change main turret to 40mm Autocannon.</informationHighlighted>
 						<replaces>
-							<li>HeavyMachineGun</li>
+							<li>APC_HeavyMachineGun</li>
+							<li>APC_LightMachineGun</li>
 						</replaces>
-						<work>250</work>
+						<work>0.001</work>
 						<turretUpgrades>
 							<li>
 								<key>
-									<turretDef>50CalMounted</turretDef>
+									<turretDef>YVFAPCMainTurret_Main</turretDef>
 									<renderProperties>
 										<north>
-											<offset>(-.44, .38)</offset>
+											<offset>(0, 1.2)</offset>
 										</north>
+										<south>
+											<offset>(0, -1.2)</offset>
+										</south>
+										<east>
+											<offset>(1.2, 0)</offset>
+										</east>
+										<west>
+											<offset>(-1.2, 0)</offset>
+										</west>
 									</renderProperties>
 									
-									<gizmoLabel>.50 Cal</gizmoLabel>
+									<gizmoLabel>40mm Autocannon</gizmoLabel>
 									<autoTargeting>true</autoTargeting>
 									<manualTargeting>true</manualTargeting>
 									
-									<angleRestricted>(300,60)</angleRestricted>
-									<aimPieOffset/>
-									<drawLayer>2</drawLayer>
+									<angleRestricted/>
+									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
+									<drawLayer>1</drawLayer>
 									
-									<key>mountedMachineGun</key>
+									<key>mainTurretO</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
+								
 								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								
 								<value>
-									<key>commander</key>
+									<key>gunner</key>
 									<turretIds>
-										<li>mountedMachineGun</li>
+										<li>mainTurretO</li>
 									</turretIds>
 								</value>
 							</li>
@@ -767,7 +383,7 @@
 										<li>Steel</li>
 									</thingDefs>
 								</filter>
-								<count>900</count>
+								<count>1125</count>
 							</li>
 							<li>
 								<filter>
@@ -775,7 +391,7 @@
 										<li>ComponentIndustrial</li>
 									</thingDefs>
 								</filter>
-								<count>6</count>
+								<count>12</count>
 							</li>
 						</ingredients>
 						<researchPrerequisites/>
@@ -783,42 +399,56 @@
 							<li>Cannons_I</li>
 						</prerequisiteNodes>
 					</li>
+					
+					<!-- Heavy Machine Gun Upgrade -->
 					<li Class="Vehicles.TurretUpgrade">
-						<upgradeID>HeavyMachineGun</upgradeID>
-						<label>Heavy Machine Gun</label>
-						<icon>UI/UpgradeTree/ArmorBG</icon>
-						<gridCoordinate>(16, 3)</gridCoordinate>
-						<informationHighlighted>Double the pain at half the cost.</informationHighlighted>
+						<upgradeID>APC_HeavyMachineGun</upgradeID>
+						<label>14.5mm Machine Gun</label>
+						<icon>UI/UpgradeTree/WeaponBG</icon>
+						<gridCoordinate>(16,3)</gridCoordinate>
+						<informationHighlighted>Change main turret to 14.5mm Machine Gun.</informationHighlighted>
 						<replaces>
-							<li>M2Browning</li>
+							<li>APC_Original</li>
+							<li>APC_LightMachineGun</li>
 						</replaces>
-						<work>350</work>
+						<work>0.001</work>
 						<turretUpgrades>
 							<li>
 								<key>
-									<turretDef>HeavyMachineGunMounted</turretDef>
+									<turretDef>YVFAPCMainTurret_MachineHeavy</turretDef>
 									<renderProperties>
 										<north>
-											<offset>(-.44, .38)</offset>
+											<offset>(0, 1.2)</offset>
 										</north>
+										<south>
+											<offset>(0, -1.2)</offset>
+										</south>
+										<east>
+											<offset>(1.2, 0)</offset>
+										</east>
+										<west>
+											<offset>(-1.2, 0)</offset>
+										</west>
 									</renderProperties>
 									
-									<gizmoLabel>Heavy Machine Gun</gizmoLabel>
+									<gizmoLabel>14.5mm Machine Gun</gizmoLabel>
 									<autoTargeting>true</autoTargeting>
 									<manualTargeting>true</manualTargeting>
 									
-									<angleRestricted>(300,60)</angleRestricted>
-									<aimPieOffset/>
-									<drawLayer>2</drawLayer>
+									<angleRestricted/>
+									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
+									<drawLayer>1</drawLayer>
 									
-									<key>mountedMachineGun</key>
+									<key>mainTurretO</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
+								
 								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								
 								<value>
-									<key>commander</key>
+									<key>gunner</key>
 									<turretIds>
-										<li>mountedMachineGun</li>
+										<li>mainTurretO</li>
 									</turretIds>
 								</value>
 							</li>
@@ -838,7 +468,7 @@
 										<li>ComponentIndustrial</li>
 									</thingDefs>
 								</filter>
-								<count>6</count>
+								<count>12</count>
 							</li>
 						</ingredients>
 						<researchPrerequisites/>
@@ -846,40 +476,56 @@
 							<li>Cannons_I</li>
 						</prerequisiteNodes>
 					</li>
+					
+					<!-- Light Machine Gun Upgrade -->
 					<li Class="Vehicles.TurretUpgrade">
-						<upgradeID>ROSY</upgradeID>
-						<label>Smoke Screen System</label>
-						<icon>UI/UpgradeTree/ArmorBG</icon>
-						<gridCoordinate>(16, 5)</gridCoordinate>
-						<informationHighlighted>Double the pain at half the cost.</informationHighlighted>
-
-						<work>150</work>
+						<upgradeID>APC_LightMachineGun</upgradeID>
+						<label>7.62mm Machine Gun</label>
+						<icon>UI/UpgradeTree/WeaponBG</icon>
+						<gridCoordinate>(16,5)</gridCoordinate>
+						<informationHighlighted>Change main turret to 7.62mm Machine Gun.</informationHighlighted>
+						<replaces>
+							<li>APC_Original</li>
+							<li>APC_HeavyMachineGun</li>
+						</replaces>
+						<work>0.001</work>
 						<turretUpgrades>
 							<li>
 								<key>
-									<turretDef>SmokeLauncherMounted</turretDef>
+									<turretDef>YVFAPCMainTurret_MachineLight</turretDef>
 									<renderProperties>
 										<north>
-											<offset>(-.44, .38)</offset>
+											<offset>(0, 1.2)</offset>
 										</north>
+										<south>
+											<offset>(0, -1.2)</offset>
+										</south>
+										<east>
+											<offset>(1.2, 0)</offset>
+										</east>
+										<west>
+											<offset>(-1.2, 0)</offset>
+										</west>
 									</renderProperties>
 									
-									<gizmoLabel>Heavy Machine Gun</gizmoLabel>
+									<gizmoLabel>7.62mm Machine Gun</gizmoLabel>
 									<autoTargeting>true</autoTargeting>
 									<manualTargeting>true</manualTargeting>
 									
-									<angleRestricted>(315,315)</angleRestricted>
-									<aimPieOffset/>
-									<drawLayer>2</drawLayer>
+									<angleRestricted/>
+									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
+									<drawLayer>1</drawLayer>
 									
-									<key>smokeLauncher</key>
+									<key>mainTurretO</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
+								
 								<!-- If key exists, cannonId's will be concatenated to handler related to existing Key -->
+								
 								<value>
-									<key>commander</key>
+									<key>gunner</key>
 									<turretIds>
-										<li>smokeLauncher</li>
+										<li>mainTurretO</li>
 									</turretIds>
 								</value>
 							</li>
@@ -891,7 +537,7 @@
 										<li>Steel</li>
 									</thingDefs>
 								</filter>
-								<count>900</count>
+								<count>675</count>
 							</li>
 							<li>
 								<filter>
@@ -899,7 +545,7 @@
 										<li>ComponentIndustrial</li>
 									</thingDefs>
 								</filter>
-								<count>6</count>
+								<count>12</count>
 							</li>
 						</ingredients>
 						<researchPrerequisites/>
