@@ -1,16 +1,11 @@
 Yes, Vehicles, Finally! - A somewhat* new way to travel the planet!
 
 Required mods:
-The Vehicle Framework by SmashPhil
-JecsTools by Jecrell
+The Vehicle Framework by SmashPhil and JecsTools by Jecrell
 
-Recommended with:
-Run and Gun by Roolo
-Search and Destroy by Roolo
-EdB Prepare Carefully by Edbmods
+Recommended with: Run and Gun by Roolo, Search and Destroy by Roolo, and EdB Prepare Carefully by Edbmods
 
-Planned re-compatibility with:
-Combat Extended by N7Huntsman
+Planned re-compatibility with: Combat Extended by N7Huntsman
 
 I was searching for a mod of vehicles and it ended up me finding this old mod from B17 to B18. I ended up forking it from github and continuing the work of Mason J. Caboose's Yes, Vehicles mod.
 
