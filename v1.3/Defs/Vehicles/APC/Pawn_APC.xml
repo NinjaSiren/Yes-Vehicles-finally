@@ -362,7 +362,7 @@
 									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 									<drawLayer>1</drawLayer>
 									
-									<key>mainTurretO</key>
+									<key>mainTurret</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
 								
@@ -371,7 +371,7 @@
 								<value>
 									<key>gunner</key>
 									<turretIds>
-										<li>mainTurretO</li>
+										<li>mainTurret</li>
 									</turretIds>
 								</value>
 							</li>
@@ -439,7 +439,7 @@
 									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 									<drawLayer>1</drawLayer>
 									
-									<key>mainTurretO</key>
+									<key>mainTurret</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
 								
@@ -448,7 +448,7 @@
 								<value>
 									<key>gunner</key>
 									<turretIds>
-										<li>mainTurretO</li>
+										<li>mainTurret</li>
 									</turretIds>
 								</value>
 							</li>
@@ -516,7 +516,7 @@
 									<aimPieOffset>(0.075, 2.75)</aimPieOffset>
 									<drawLayer>1</drawLayer>
 									
-									<key>mainTurretO</key>
+									<key>mainTurret</key>
 									<parentKey>mainTurret</parentKey>
 								</key>
 								
@@ -525,7 +525,7 @@
 								<value>
 									<key>gunner</key>
 									<turretIds>
-										<li>mainTurretO</li>
+										<li>mainTurret</li>
 									</turretIds>
 								</value>
 							</li>
